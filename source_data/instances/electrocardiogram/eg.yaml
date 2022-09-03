@@ -1,56 +1,21 @@
----
-#ECG - INTP
-- name: "Electrocardiogram Interpretation"
-  identifier: "INTP"
-  based_on: "Base Observation"
-  identified_by:  
-    name: "Test"
-    enabled: true  
-    has_complex_datatype: 
-     - 
-      short_name: CD 
-      has_property: 
-      -
-        name: "code"
-        question_text: ""
-        prompt_text: ""
-        format: "8"
-        has_coded_value:
-        - 
-          cl: C71153
-          cli: C41255     
+- name: Electrocardiogram Interpretation
+  identifier: INTP
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C71153
+        cli: C41255
   has_items:
-  - name: "Category Code"
-    enabled: false
-  - name: "Subcategory Code"
-    enabled: false
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
-  - name: "Not Done"
-    enabled: false
-  - name: "Reason Not Done"
-    enabled: false 
-  - name: "Result"
-    enabled: true  
-    has_complex_datatype: 
-    - 
-      short_name: CD
-      has_property: 
-      - 
-        name: "code"
-        question_text: "Overall result"
-        prompt_text: "Overall result"
-        format: "20"
-        has_coded_value:
-        - 
-          cl: C101834
-          cli: C14165
-        - 
-          cl: C101834
-          cli: C25401
+  - name: Result
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C101834
+        cli: C14165
+      - cl: C101834
+        cli: C25401

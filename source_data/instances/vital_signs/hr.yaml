@@ -1,118 +1,51 @@
----
-#HR
-- name: "Heart Rate"
-  identifier: "HR"
-  based_on: "Base Observation"
-  identified_by:  
-    name: "Test"
-    enabled: true  
-    has_complex_datatype: 
-     - 
-      short_name: CD 
-      has_property: 
-      -
-        name: "code"
-        question_text: ""
-        prompt_text: ""
-        format: "8"
-        has_coded_value:
-        - 
-          cl: C66741
-          cli: C49677
-      
-  has_items:
-  - name: "Category Code"
-    enabled: false
-  - name: "Subcategory Code"
-    enabled: false
-  - name: "Position"
+- name: Heart Rate
+  identifier: HR
+  based_on: Base Observation
+  identified_by:
+    name: Test
     enabled: true
-    has_complex_datatype: 
-    - 
-      short_name: CD
-      has_property: 
-      - 
-        :label: code
-        question_text: "Body Position"
-        prompt_text: "Position"
-        format: "40"
-        has_coded_value:
-        - 
-          cl: C71148 
-          cli: C62166
-        - 
-          cl: C71148 
-          cli: C62122
-        - 
-          cl: C71148
-          cli: C62167
-
-  - name: "Site of Administration"
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C66741
+        cli: C49677
+  has_items:
+  - name: Position
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C71148
+        cli: C62166
+      - cl: C71148
+        cli: C62122
+      - cl: C71148
+        cli: C62167
+  - name: Site of Administration
     enabled: true
     collect: false
-    has_complex_datatype: 
-    - 
-      short_name: CD
-      has_property: 
-      - 
-        :label: code
-        question_text: "Location of Measurement"
-        prompt_text: "Location"
-        format: "40"
-        has_coded_value:
-        - 
-          cl: C74456 
-          cli: C32141 
-
-  - name: "Laterality"
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C74456
+        cli: C32141
+  - name: Laterality
     enabled: true
-    has_complex_datatype: 
-    - 
-      short_name: CD
-      has_property: 
-      - 
-        :label: code
-        question_text: "Laterality"
-        prompt_text: "Laterality"
-        format: "40"
-        has_coded_value:
-        - 
-          cl: C99073 
-          cli: C25229
-        - 
-          cl: C99073 
-          cli: C25228
-        - 
-          cl: C99073
-          cli: C13332
-
-  - name: "Method"
-    enabled: false 
-  - name: "Not Done"
-    enabled: false
-  - name: "Reason Not Done"
-    enabled: false 
-  - name: "Result"
-    enabled: true  
-    has_complex_datatype: 
-    - 
-      short_name: PQR
-      has_property: 
-      - 
-        name: "value"
-        question_text: "Result"
-        prompt_text: "Result"
-        format: "5.2"
-        has_coded_value: []
-      - 
-        name: "code"
-        question_text: "Unit"
-        prompt_text: "Unit"
-        format: "20"
-        has_coded_value:
-        - 
-          cl: C66770
-          cli: C49670
-        - 
-          cl: C66770
-          cli: C42547
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C99073
+        cli: C25229
+      - cl: C99073
+        cli: C25228
+      - cl: C99073
+        cli: C13332
+  - name: Result
+    enabled: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C66770
+        cli: C49670
+      - cl: C66770
+        cli: C42547

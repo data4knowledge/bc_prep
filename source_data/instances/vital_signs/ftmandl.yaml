@@ -1,77 +1,28 @@
----
-#WEIGHT
-- name: "Fetal Mandibular Length"
-  identifier: "FTMANDL"
-  based_on: "Base Observation"
-  identified_by:  
-    name: "Test"
-    enabled: true 
-    collect: false 
-    has_complex_datatype: 
-     - 
-      short_name: CD 
-      has_property: 
-      -
-        name: "code"
-        question_text: ""
-        prompt_text: ""
-        format: "8"
-        has_coded_value:
-        - 
-          cl: C66741
-          cli: C174375
-      
+- name: Fetal Mandibular Length
+  identifier: FTMANDL
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C66741
+        cli: C174375
   has_items:
-  - name: "Date Time"
-    enabled: true  
-    has_complex_datatype: 
-    - short_name: DATETIME
-      has_property: 
-      - 
-        name: "value"
-        question_text: "Date and time"
-        prompt_text: "Date Time"
-        format: ""  
-  - name: "Category Code"
-    enabled: false
-  - name: "Subcategory Code"
-    enabled: false
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
-  - name: "Not Done"
-    enabled: false
-  - name: "Reason Not Done"
-    enabled: false 
-  - name: "Result"
-    enabled: true  
-    has_complex_datatype: 
-    - 
-      short_name: PQR
-      has_property: 
-      - 
-        name: "value"
-        question_text: "Fetal Mandibular Length"
-        prompt_text: "Result"
-        format: "5.1"
-        has_coded_value: []
-      - 
-        name: "code"
-        question_text: "Unit"
-        prompt_text: "Unit"
-        format: "20"
-        has_coded_value:
-        - 
-          cl: C66770
-          cli: C49668
-        - 
-          cl: C66770
-          cli: C48500
-        - 
-          cl: C66770
-          cli: C28251
+  - name: Date Time
+    enabled: true
+    data_type:
+    - name: date_time
+  - name: Result
+    enabled: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C66770
+        cli: C49668
+      - cl: C66770
+        cli: C48500
+      - cl: C66770
+        cli: C28251

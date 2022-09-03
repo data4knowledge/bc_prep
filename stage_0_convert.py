@@ -4,13 +4,15 @@ from utility.utility import *
 def process_instances():
   files = files_in_dir('source_data/instances')
   for filename in files:
-    with open(filename) as file:
+    with open(filename, "r+") as file:
       instances = yaml.load(file, Loader=yaml.FullLoader)
       new_instances = []
       for instance in instances:
+        ignore_file = False
         new_instance = instance
         ident = new_instance['identified_by']
         if not 'has_complex_datatype' in ident:
+          ignore_file = True
           continue
         vs = ident['has_complex_datatype'][0]['has_property'][0]
         vs.pop('name')
@@ -54,5 +56,9 @@ def process_instances():
             else:
               print("DATATYPE:", item['has_complex_datatype'][0]['short_name'])
         print(new_instance)
+      if not ignore_file:
+        file.seek(0)
+        yaml.dump(new_instances, file, sort_keys=False)
+        file.truncate()
 
 process_instances()                
