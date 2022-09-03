@@ -10,7 +10,15 @@ def format_name(name):
     name = name.lower()
     name = name.replace(" ", "_")
     return name
-    
+
+def template_uri(name):
+  uri_name = format_name(name)
+  return "http://id.d4k.dk/dataset/bc_template/%s" % (uri_name)
+      
+def instance_uri(name):
+  uri_name = format_name(name)
+  return "http://id.d4k.dk/dataset/bc_instance/%s" % (uri_name), uri_name
+
 def delete_dir(target_dir):
   files = os.listdir(target_dir)
   for f in files:

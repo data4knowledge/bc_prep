@@ -10,8 +10,7 @@ def process():
     templates = yaml.load(file, Loader=yaml.FullLoader)
     for template in templates:
       print("Template:", template["name"])
-      uri_name = format_name(template["name"])
-      base_uri = "http://id.d4k.dk/dataset/bc_template/%s" % (uri_name)
+      base_uri = template_uri(template["name"])
       nodes["BC_TEMPLATE"].append({"name": template["name"], "uri": base_uri})
 
       # Identifier Node and Associated Data Type
