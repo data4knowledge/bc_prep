@@ -10,6 +10,10 @@
       - cl: C71153
         cli: C41255
   has_items:
+  - name: Date Time
+    enabled: true
+    data_type:
+    - name: date_time
   - name: Result
     enabled: true
     data_type:
