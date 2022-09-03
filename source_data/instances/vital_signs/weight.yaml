@@ -1,37 +1,37 @@
 ---
 #WEIGHT
-- :name: "Weight"
-  :based_on: "Base Observation"
-  :identified_by: 
-    :name: "Test"
-    :enabled: true 
-    :collect: false 
-    :data_type:
-    - :name: coding
-      :value_set:
+- name: "Weight"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type:
+    - name: coding
+      value_set:
       - 
         :cl: C66741
         :cli: C25208
-  :has_items:
-  - :name: "Date Time"
-    :enabled: true  
-    :data_type: 
-    - :name: date_time
-  - :name: "Position"
-    :enabled: false
-  - :name: "Site of Administration"
-    :enabled: false
-  - :name: "Laterality"
-    :enabled: false
-  - :name: "Method"
-    :enabled: false 
-  - :name: "Result"
-    :enabled: true
-    :collect: true
-    :data_type: 
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Position"
+    enabled: false
+  - name: "Site of Administration"
+    enabled: false
+  - name: "Laterality"
+    enabled: false
+  - name: "Method"
+    enabled: false 
+  - name: "Result"
+    enabled: true
+    collect: true
+    data_type: 
     - 
-      :name: quantity
-      :value_set:
+      name: quantity
+      value_set:
       - 
         :cl: C66770
         :cli: C28252

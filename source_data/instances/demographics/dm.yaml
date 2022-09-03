@@ -1,30 +1,30 @@
 ---
 #RACE
-- :name: "Race"
-  :based_on: "Base Observation"
-  :identified_by: 
-    :name: "Test"
-    :enabled: true
-    :collect: false  
-    :data_type: 
+- name: "Race"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true
+    collect: false  
+    data_type: 
      - 
-      :name: coding 
-      :value_set:
+      name: coding 
+      value_set:
       - 
         :cl: D000001
         :cli: D100001
-  :has_items:
-  - :name: "Date Time"
-    :enabled: true  
-    :data_type: 
-    - :name: date_time
-  - :name: "Result"
-    :enabled: true  
-    :collect: true
-    :data_type: 
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
     - 
-      :name: coding
-      :value_set:
+      name: coding
+      value_set:
       - 
         :cl: C74457
         :cli: C16352
@@ -46,39 +46,39 @@
       - 
         :cl: C74457
         :cli: C43234
-  - :name: "Result Other"
-    :enabled: true  
-    :collect: true
-    :data_type: 
+  - name: "Result Other"
+    enabled: true  
+    collect: true
+    data_type: 
     -
-      :name: string
+      name: string
 #SEX
-- :name: "Sex"
-  :based_on: "Base Observation"
-  :identified_by: 
-    :name: "Test"
-    :enabled: true 
-    :collect: false 
-    :data_type: 
+- name: "Sex"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
      - 
-      :name: coding 
-      :value_set:
+      name: coding 
+      value_set:
       - 
         :cl: D000001
         :cli: D100002
       
-  :has_items:
-  - :name: "Date Time"
-    :enabled: true  
-    :data_type: 
-    - :name: date_time
-  - :name: "Result"
-    :enabled: true  
-    :collect: true
-    :data_type: 
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
     - 
-      :name: coding
-      :value_set:
+      name: coding
+      value_set:
       - 
         :cl: C66731
         :cli: C16576
@@ -92,39 +92,39 @@
         :cl: C66731
         :cli: C17998
 #AGE
-- :name: "Age"
-  :based_on: "Base Observation"
-  :identified_by: 
-    :name: "Test"
-    :enabled: true
-    :collect: false  
-    :data_type: 
+- name: "Age"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true
+    collect: false  
+    data_type: 
     - 
-      :name: coding 
-      :value_set:
+      name: coding 
+      value_set:
       - 
         :cl: D000001
         :cli: D100000
-  :has_items:
-  - :name: "Date Time"
-    :enabled: true  
-    :data_type: 
-    - :name: date_time
-  - :name: "Position"
-    :enabled: false
-  - :name: "Site of Administration"
-    :enabled: false
-  - :name: "Laterality"
-    :enabled: false
-  - :name: "Method"
-    :enabled: false 
-  - :name: "Result"
-    :enabled: true  
-    :collect: true
-    :data_type: 
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Position"
+    enabled: false
+  - name: "Site of Administration"
+    enabled: false
+  - name: "Laterality"
+    enabled: false
+  - name: "Method"
+    enabled: false 
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
     - 
-      :name: quantity
-      :value_set:
+      name: quantity
+      value_set:
       - :cl: C66781
         :cli: C25301
       - :cl: C66781
@@ -136,31 +136,31 @@
       - :cl: C66781
         :cli: C29848
 #ETHNICITY
-- :name: "Ethnicity"
-  :based_on: "Base Observation"
-  :identified_by: 
-    :name: "Test"
-    :enabled: true  
-    :collect: false
-    :data_type: 
+- name: "Ethnicity"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true  
+    collect: false
+    data_type: 
      - 
-      :name: coding 
-      :value_set:
+      name: coding 
+      value_set:
       - 
         :cl: D000001
         :cli: D100003
-  :has_items:
-  - :name: "Date Time"
-    :enabled: true  
-    :data_type: 
-    - :name: date_time
-  - :name: "Result"
-    :enabled: true  
-    :collect: true
-    :data_type: 
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
     - 
-      :name: coding
-      :value_set:
+      name: coding
+      value_set:
       - 
         :cl: C66790
         :cli: C17459

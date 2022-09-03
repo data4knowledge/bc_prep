@@ -1,17 +1,17 @@
 ---
 #HR
-- :label: "Heart Rate"
+- name: "Heart Rate"
   :identifier: "HR"
-  :based_on: http://www.s-cubed.dk/BASIC_OBS_PQR/V1#BCT
-  :identified_by: 
-    :label: "Test"
-    :enabled: true  
+  based_on: http://www.s-cubed.dk/BASIC_OBS_PQR/V1#BCT
+  identified_by:  
+    name: "Test"
+    enabled: true  
     :has_complex_datatype: 
      - 
       :short_name: CD 
       :has_property: 
       -
-        :label: "code"
+        name: "code"
         :question_text: ""
         :prompt_text: ""
         :format: "8"
@@ -20,13 +20,13 @@
           :cl: C66741
           :cli: C49677
       
-  :has_items:
-  - :label: "Category Code"
-    :enabled: false
-  - :label: "Subcategory Code"
-    :enabled: false
-  - :label: "Position"
-    :enabled: true
+  has_items:
+  - name: "Category Code"
+    enabled: false
+  - name: "Subcategory Code"
+    enabled: false
+  - name: "Position"
+    enabled: true
     :has_complex_datatype: 
     - 
       :short_name: CD
@@ -47,8 +47,8 @@
           :cl: C71148
           :cli: C62167
 
-  - :label: "Site of Administration"
-    :enabled: true
+  - name: "Site of Administration"
+    enabled: true
     :collet: false
     :has_complex_datatype: 
     - 
@@ -64,8 +64,8 @@
           :cl: C74456 
           :cli: C32141 
 
-  - :label: "Laterality"
-    :enabled: true
+  - name: "Laterality"
+    enabled: true
     :has_complex_datatype: 
     - 
       :short_name: CD
@@ -86,26 +86,26 @@
           :cl: C99073
           :cli: C13332
 
-  - :label: "Method"
-    :enabled: false 
-  - :label: "Not Done"
-    :enabled: false
-  - :label: "Reason Not Done"
-    :enabled: false 
-  - :label: "Result"
-    :enabled: true  
+  - name: "Method"
+    enabled: false 
+  - name: "Not Done"
+    enabled: false
+  - name: "Reason Not Done"
+    enabled: false 
+  - name: "Result"
+    enabled: true  
     :has_complex_datatype: 
     - 
       :short_name: PQR
       :has_property: 
       - 
-        :label: "value"
+        name: "value"
         :question_text: "Result"
         :prompt_text: "Result"
         :format: "5.2"
         :has_coded_value: []
       - 
-        :label: "code"
+        name: "code"
         :question_text: "Unit"
         :prompt_text: "Unit"
         :format: "20"
