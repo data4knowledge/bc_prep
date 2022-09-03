@@ -49,79 +49,82 @@ def process():
         relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
         relationships["HAS_IDENTIFIER"].append({"from": base_uri, "to": item_uri})
         if "data_type" in item:
-            for data_type in item["data_type"]: 
-                #print(item["data_type"])
-                name = format_name(data_type["name"])
-                data_type_uri = "%s/%s" % (item_uri, name)
+          for data_type in item["data_type"]: 
+            #print(item["data_type"])
+            name = format_name(data_type["name"])
+            data_type_uri = "%s/%s" % (item_uri, name)
+            record = {
+              "name": data_type["name"],
+              "uri": data_type_uri
+            }
+            nodes["BC_DATA_TYPE"].append(record)
+            relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": data_type_uri})
+            if "value_set" in data_type:
+              #print(data_type["value_set"])
+              for term in data_type["value_set"]: 
+                #print(term)
+                cl = term["cl"]
+                cli = term["cli"]
+                term_uri = "%s/%s-%s" % (data_type_uri, cl.lower(), cli.lower())
                 record = {
-                    "name": data_type["name"],
-                    "uri": data_type_uri
+                  "cl": cl,
+                  "cli": cli,
+                  "uri": term_uri
                 }
-                nodes["BC_DATA_TYPE"].append(record)
-                relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": data_type_uri})
-                if "value_set" in data_type:
-                    #print(data_type["value_set"])
-                    for term in data_type["value_set"]: 
-                        #print(term)
-                        cl = term["cl"]
-                        cli = term["cli"]
-                        term_uri = "%s/%s-%s" % (data_type_uri, cl.lower(), cli.lower())
-                        record = {
-                            "cl": cl,
-                            "cli": cli,
-                            "uri": term_uri
-                        }
-                        nodes["BC_VALUE_SET"].append(record)
-                        relationships["HAS_RESPONSE"].append({"from": data_type_uri, "to": term_uri})
+                nodes["BC_VALUE_SET"].append(record)
+                relationships["HAS_RESPONSE"].append({"from": data_type_uri, "to": term_uri})
 
         # Now all the items
         for item in instance["has_items"]: 
-            name = format_name(item["name"])
-            collect = False
-            if "collect" in item:
-                collect = item["collect"]
-            item_uri = "%s/%s" % (base_uri, name)
-            record = {
-                "name": item["name"], 
-                "collect": collect,
-                "enabled": item["enabled"],
-                "uri": item_uri
-            }
-            nodes["BC_ITEM"].append(record)
-            relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
-            if qualifier_item == item["name"]:
-                relationships["HAS_QUALIFIER"].append({"from": identifier_uri, "to": item_uri})
-            if "data_type" in item:
-                for data_type in item["data_type"]: 
-                    name = format_name(data_type["name"])
-                    data_type_uri = "%s/%s" % (item_uri, name)
-                    record = {
-                        "name": data_type["name"],
-                        "uri": data_type_uri
-                    }
-                    nodes["BC_DATA_TYPE"].append(record)
-                    relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": data_type_uri})
-                    if "value_set" in data_type:
-                        #print(data_type["value_set"])
-                        for term in data_type["value_set"]: 
-                            #print(term)
-                            cl = term["cl"]
-                            cli = term["cli"]
-                            term_uri = "%s/%s-%s" % (data_type_uri, cl.lower(), cli.lower())
-                            record = {
-                                "cl": cl,
-                                "cli": cli,
-                                "uri": term_uri
-                            }
-                            nodes["BC_VALUE_SET"].append(record)
-                            relationships["HAS_RESPONSE"].append({"from": data_type_uri, "to": term_uri})
+          if item["enabled"]:
+            continue
+          name = format_name(item["name"])
+          collect = False
+          if "collect" in item:
+            collect = item["collect"]
+          item_uri = "%s/%s" % (base_uri, name)
+          record = {
+            "name": item["name"], 
+            "collect": collect,
+            "enabled": item["enabled"],
+            "uri": item_uri
+          }
+          nodes["BC_ITEM"].append(record)
+          relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
+          if qualifier_item == item["name"]:
+            relationships["HAS_QUALIFIER"].append({"from": identifier_uri, "to": item_uri})
+          if "data_type" in item:
+            for data_type in item["data_type"]: 
+              name = format_name(data_type["name"])
+              data_type_uri = "%s/%s" % (item_uri, name)
+              record = {
+                "name": data_type["name"],
+                "uri": data_type_uri
+              }
+              nodes["BC_DATA_TYPE"].append(record)
+              relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": data_type_uri})
+              if "value_set" in data_type:
+                #print(data_type["value_set"])
+                for term in data_type["value_set"]: 
+                  #print(term)
+                  cl = term["cl"]
+                  cli = term["cli"]
+                  term_uri = "%s/%s-%s" % (data_type_uri, cl.lower(), cli.lower())
+                  record = {
+                    "cl": cl,
+                    "cli": cli,
+                    "uri": term_uri
+                  }
+                  nodes["BC_VALUE_SET"].append(record)
+                  relationships["HAS_RESPONSE"].append({"from": data_type_uri, "to": term_uri})
+
     for k, v in narrower.items():
-        if len(v) > 0:
-            from_uri = k
-            for bc in v:
-                to_uri = bc_uri[bc]
-                print("Narrower from %s to %s" % (from_uri, to_uri))
-                relationships["BC_NARROWER"].append({"from": from_uri, "to": to_uri})
+      if len(v) > 0:
+        from_uri = k
+        for bc in v:
+          to_uri = bc_uri[bc]
+          print("Narrower from %s to %s" % (from_uri, to_uri))
+          relationships["BC_NARROWER"].append({"from": from_uri, "to": to_uri})
 
                 
 delete_dir("load_data/instances")
