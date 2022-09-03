@@ -1,0 +1,27 @@
+---
+- :name: "Exposure"
+  :based_on: "Intervention"
+  :identified_by: 
+    :name: "Drug Exposure"
+    :enabled: true
+    :collect: false 
+    :data_type:
+     - 
+      :name: coding
+      :value_set:
+      - 
+        :cl: D000001
+        :cli: D100005
+  :has_items:
+  - :name: "Intervention"
+    :enabled: true
+    :data_type: 
+    - :name: codeable_concept
+  - :name: "Start Date Time"
+    :enabled: true
+    :data_type: 
+    - :name: date_time
+  - :name: "End Date Time"
+    :enabled: true
+    :data_type: 
+    - :name: date_time
