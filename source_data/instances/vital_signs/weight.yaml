@@ -10,8 +10,8 @@
     - name: coding
       value_set:
       - 
-        :cl: C66741
-        :cli: C25208
+        cl: C66741
+        cli: C25208
   has_items:
   - name: "Date Time"
     enabled: true  
@@ -33,8 +33,8 @@
       name: quantity
       value_set:
       - 
-        :cl: C66770
-        :cli: C28252
+        cl: C66770
+        cli: C28252
       - 
-        :cl: C66770
-        :cli: C48531
+        cl: C66770
+        cli: C48531

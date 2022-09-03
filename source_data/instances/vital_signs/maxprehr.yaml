@@ -6,19 +6,19 @@
     name: "Test"
     enabled: true 
     collect: false 
-    :has_complex_datatype: 
+    has_complex_datatype: 
      - 
-      :short_name: CD 
-      :has_property: 
+      short_name: CD 
+      has_property: 
       -
         name: "code"
-        :question_text: ""
-        :prompt_text: ""
-        :format: "8"
-        :has_coded_value:
+        question_text: ""
+        prompt_text: ""
+        format: "8"
+        has_coded_value:
         - 
-          :cl: C66741
-          :cli: C147492
+          cl: C66741
+          cli: C147492
       
   has_items:
   - name: "Category Code"
@@ -27,64 +27,64 @@
     enabled: false
   - name: "Position"
     enabled: true
-    :has_complex_datatype: 
+    has_complex_datatype: 
     - 
-      :short_name: CD
-      :has_property: 
+      short_name: CD
+      has_property: 
       - 
         :label: code
-        :question_text: "Body Position"
-        :prompt_text: "Position"
-        :format: "40"
-        :has_coded_value:
+        question_text: "Body Position"
+        prompt_text: "Position"
+        format: "40"
+        has_coded_value:
         - 
-          :cl: C71148 
-          :cli: C77532
+          cl: C71148 
+          cli: C77532
         - 
-          :cl: C71148 
-          :cli: C62173
+          cl: C71148 
+          cli: C62173
         - 
-          :cl: C71148 
-          :cli: C100758
+          cl: C71148 
+          cli: C100758
         - 
-          :cl: C71148 
-          :cli: C62172
+          cl: C71148 
+          cli: C62172
         - 
-          :cl: C71148 
-          :cli: C62165
+          cl: C71148 
+          cli: C62165
         - 
-          :cl: C71148 
-          :cli: C62169
+          cl: C71148 
+          cli: C62169
         - 
-          :cl: C71148 
-          :cli: C62171
+          cl: C71148 
+          cli: C62171
         - 
-          :cl: C71148 
-          :cli: C62174
+          cl: C71148 
+          cli: C62174
         - 
-          :cl: C71148 
-          :cli: C111310
+          cl: C71148 
+          cli: C111310
         - 
-          :cl: C71148 
-          :cli: C62122
+          cl: C71148 
+          cli: C62122
         - 
-          :cl: C71148 
-          :cli: C150885
+          cl: C71148 
+          cli: C150885
         - 
-          :cl: C71148 
-          :cli: C92604
+          cl: C71148 
+          cli: C92604
         - 
-          :cl: C71148 
-          :cli: C62166
+          cl: C71148 
+          cli: C62166
         - 
-          :cl: C71148 
-          :cli: C62167
+          cl: C71148 
+          cli: C62167
         - 
-          :cl: C71148 
-          :cli: C62168
+          cl: C71148 
+          cli: C62168
         - 
-          :cl: C71148 
-          :cli: C90480
+          cl: C71148 
+          cli: C90480
   - name: "Site of Administration"
     enabled: false
   - name: "Laterality"
@@ -97,22 +97,22 @@
     enabled: false 
   - name: "Result"
     enabled: true  
-    :has_complex_datatype: 
+    has_complex_datatype: 
     - 
-      :short_name: PQR
-      :has_property: 
+      short_name: PQR
+      has_property: 
       - 
         name: "value"
-        :question_text: "Maximum Predicted Heart Rate"
-        :prompt_text: "Result"
-        :format: "4.1"
-        :has_coded_value: []
+        question_text: "Maximum Predicted Heart Rate"
+        prompt_text: "Result"
+        format: "4.1"
+        has_coded_value: []
       - 
         name: "code"
-        :question_text: "Unit"
-        :prompt_text: "Unit"
-        :format: "20"
-        :has_coded_value:
+        question_text: "Unit"
+        prompt_text: "Unit"
+        format: "20"
+        has_coded_value:
         - 
-          :cl: C66770
-          :cli: C49673
+          cl: C66770
+          cli: C49673

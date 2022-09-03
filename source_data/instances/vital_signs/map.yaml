@@ -7,19 +7,19 @@
     name: "Test"
     enabled: true 
     collect: false 
-    :has_complex_datatype: 
+    has_complex_datatype: 
      - 
-      :short_name: CD 
-      :has_property: 
+      short_name: CD 
+      has_property: 
       -
         name: "code"
-        :question_text: ""
-        :prompt_text: ""
-        :format: "8"
-        :has_coded_value:
+        question_text: ""
+        prompt_text: ""
+        format: "8"
+        has_coded_value:
         - 
-          :cl: C66741
-          :cli: C49679
+          cl: C66741
+          cli: C49679
       
   has_items:
   - name: "Category Code"
@@ -40,22 +40,22 @@
     enabled: false 
   - name: "Result"
     enabled: true  
-    :has_complex_datatype: 
+    has_complex_datatype: 
     - 
-      :short_name: PQR
-      :has_property: 
+      short_name: PQR
+      has_property: 
       - 
         name: "value"
-        :question_text: "Mean Arterial Pressure"
-        :prompt_text: "Result"
-        :format: "4.1"
-        :has_coded_value: []
+        question_text: "Mean Arterial Pressure"
+        prompt_text: "Result"
+        format: "4.1"
+        has_coded_value: []
       - 
         name: "code"
-        :question_text: "Unit"
-        :prompt_text: "Unit"
-        :format: "20"
-        :has_coded_value:
+        question_text: "Unit"
+        prompt_text: "Unit"
+        format: "20"
+        has_coded_value:
         - 
-          :cl: C66770
-          :cli: C49670
+          cl: C66770
+          cli: C49670

@@ -2,7 +2,7 @@
 # GLUCOSE
 - name: "Glucose"
   based_on: "Base Laboratory"
-  :narrower: 
+  narrower: 
   - "Glucose in blood"
   - "Glucose in serum"
   - "Glucose in urine"
@@ -15,8 +15,8 @@
       name: coding
       value_set:
       - 
-        :cl: C65047
-        :cli: C105585
+        cl: C65047
+        cli: C105585
   has_items:
   - name: "Specimen"
     enabled: true
@@ -26,14 +26,14 @@
       name: coding
       value_set:
       - 
-        :cl: C78734
-        :cli: C13283
+        cl: C78734
+        cli: C13283
       - 
-        :cl: C78734
-        :cli: C13325
+        cl: C78734
+        cli: C13325
       - 
-        :cl: C78734
-        :cli: C12434
+        cl: C78734
+        cli: C12434
   - name: "Position"
     enabled: false
   - name: "Site of Administration"
@@ -50,25 +50,25 @@
       name: quantity
       value_set:
       - 
-        :cl: C71620
-        :cli: C25613
+        cl: C71620
+        cli: C25613
       - 
-        :cl: C71620
-        :cli: C111253
+        cl: C71620
+        cli: C111253
 - name: "Glucose in blood"
   based_on: "Base Laboratory"
   identified_by:  
     name: "Test"
     enabled: true 
     collect: false 
-    :qualified_by: "Specimen"
+    qualified_by: "Specimen"
     data_type: 
      - 
       name: coding
       value_set:
       - 
-        :cl: C65047
-        :cli: C105585
+        cl: C65047
+        cli: C105585
   has_items:
   - name: "Specimen"
     enabled: true
@@ -78,8 +78,8 @@
       name: coding
       value_set:
       - 
-        :cl: C78734
-        :cli: C12434
+        cl: C78734
+        cli: C12434
   - name: "Position"
     enabled: false
   - name: "Site of Administration"
@@ -96,25 +96,25 @@
       name: quantity
       value_set:
       - 
-        :cl: C71620
-        :cli: C25613
+        cl: C71620
+        cli: C25613
       - 
-        :cl: C71620
-        :cli: C111253
+        cl: C71620
+        cli: C111253
 - name: "Glucose in serum"
   based_on: "Base Laboratory"
   identified_by:  
     name: "Test"
     enabled: true 
     collect: false 
-    :qualified_by: "Specimen"
+    qualified_by: "Specimen"
     data_type: 
      - 
       name: coding
       value_set:
       - 
-        :cl: C65047
-        :cli: C105585
+        cl: C65047
+        cli: C105585
   has_items:
   - name: "Specimen"
     enabled: true
@@ -124,8 +124,8 @@
       name: coding
       value_set:
       -
-        :cl: C78734
-        :cli: C13325
+        cl: C78734
+        cli: C13325
   - name: "Position"
     enabled: false
   - name: "Site of Administration"
@@ -142,25 +142,25 @@
       name: quantity
       value_set:
       - 
-        :cl: C71620
-        :cli: C25613
+        cl: C71620
+        cli: C25613
       - 
-        :cl: C71620
-        :cli: C111253
+        cl: C71620
+        cli: C111253
 - name: "Glucose in urine"
   based_on: "Base Laboratory"
   identified_by:  
     name: "Test"
     enabled: true 
     collect: false 
-    :qualified_by: "Specimen"
+    qualified_by: "Specimen"
     data_type: 
      - 
       name: coding
       value_set:
       - 
-        :cl: C65047
-        :cli: C105585
+        cl: C65047
+        cli: C105585
   has_items:
   - name: "Specimen"
     enabled: true
@@ -170,8 +170,8 @@
       name: coding
       value_set:
       - 
-        :cl: C78734
-        :cli: C13283
+        cl: C78734
+        cli: C13283
   - name: "Position"
     enabled: false
   - name: "Site of Administration"
@@ -188,8 +188,8 @@
       name: quantity
       value_set:
       - 
-        :cl: C71620
-        :cli: C25613
+        cl: C71620
+        cli: C25613
       - 
-        :cl: C71620
-        :cli: C111253
+        cl: C71620
+        cli: C111253

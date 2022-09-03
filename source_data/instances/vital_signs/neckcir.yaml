@@ -6,31 +6,31 @@
     name: "Test"
     enabled: true 
     collect: false 
-    :has_complex_datatype: 
+    has_complex_datatype: 
      - 
-      :short_name: CD 
-      :has_property: 
+      short_name: CD 
+      has_property: 
       -
         name: "code"
-        :question_text: ""
-        :prompt_text: ""
-        :format: "8"
-        :has_coded_value:
+        question_text: ""
+        prompt_text: ""
+        format: "8"
+        has_coded_value:
         - 
-          :cl: C66741
-          :cli: C154891
+          cl: C66741
+          cli: C154891
       
   has_items:
   - name: "Date Time"
     enabled: true  
-    :has_complex_datatype: 
-    - :short_name: DATETIME
-      :has_property: 
+    has_complex_datatype: 
+    - short_name: DATETIME
+      has_property: 
       - 
         name: "value"
-        :question_text: "Date and time"
-        :prompt_text: "Date Time"
-        :format: ""  
+        question_text: "Date and time"
+        prompt_text: "Date Time"
+        format: ""  
   - name: "Category Code"
     enabled: false
   - name: "Subcategory Code"
@@ -49,28 +49,28 @@
     enabled: false 
   - name: "Result"
     enabled: true  
-    :has_complex_datatype: 
+    has_complex_datatype: 
     - 
-      :short_name: PQR
-      :has_property: 
+      short_name: PQR
+      has_property: 
       - 
         name: "value"
-        :question_text: "Neck Circumference"
-        :prompt_text: "Result"
-        :format: "5.1"
-        :has_coded_value: []
+        question_text: "Neck Circumference"
+        prompt_text: "Result"
+        format: "5.1"
+        has_coded_value: []
       - 
         name: "code"
-        :question_text: "Unit"
-        :prompt_text: "Unit"
-        :format: "20"
-        :has_coded_value:
+        question_text: "Unit"
+        prompt_text: "Unit"
+        format: "20"
+        has_coded_value:
         - 
-          :cl: C66770
-          :cli: C49668
+          cl: C66770
+          cli: C49668
         - 
-          :cl: C66770
-          :cli: C48500
+          cl: C66770
+          cli: C48500
         - 
-          :cl: C66770
-          :cli: C28251
+          cl: C66770
+          cli: C28251

@@ -11,8 +11,8 @@
       name: coding 
       value_set:
       - 
-        :cl: D000001
-        :cli: D100001
+        cl: D000001
+        cli: D100001
   has_items:
   - name: "Date Time"
     enabled: true  
@@ -26,26 +26,26 @@
       name: coding
       value_set:
       - 
-        :cl: C74457
-        :cli: C16352
+        cl: C74457
+        cli: C16352
       - 
-        :cl: C74457
-        :cli: C41259
+        cl: C74457
+        cli: C41259
       - 
-        :cl: C74457
-        :cli: C41260
+        cl: C74457
+        cli: C41260
       - 
-        :cl: C74457
-        :cli: C41219
+        cl: C74457
+        cli: C41219
       - 
-        :cl: C74457
-        :cli: C41261
+        cl: C74457
+        cli: C41261
       - 
-        :cl: C74457
-        :cli: C17998
+        cl: C74457
+        cli: C17998
       - 
-        :cl: C74457
-        :cli: C43234
+        cl: C74457
+        cli: C43234
   - name: "Result Other"
     enabled: true  
     collect: true
@@ -64,8 +64,8 @@
       name: coding 
       value_set:
       - 
-        :cl: D000001
-        :cli: D100002
+        cl: D000001
+        cli: D100002
       
   has_items:
   - name: "Date Time"
@@ -80,17 +80,17 @@
       name: coding
       value_set:
       - 
-        :cl: C66731
-        :cli: C16576
+        cl: C66731
+        cli: C16576
       - 
-        :cl: C66731
-        :cli: C20197 
+        cl: C66731
+        cli: C20197 
       - 
-        :cl: C66731
-        :cli: C45908 
+        cl: C66731
+        cli: C45908 
       - 
-        :cl: C66731
-        :cli: C17998
+        cl: C66731
+        cli: C17998
 #AGE
 - name: "Age"
   based_on: "Base Observation"
@@ -103,8 +103,8 @@
       name: coding 
       value_set:
       - 
-        :cl: D000001
-        :cli: D100000
+        cl: D000001
+        cli: D100000
   has_items:
   - name: "Date Time"
     enabled: true  
@@ -125,16 +125,16 @@
     - 
       name: quantity
       value_set:
-      - :cl: C66781
-        :cli: C25301
-      - :cl: C66781
-        :cli: C25529
-      - :cl: C66781
-        :cli: C29846
-      - :cl: C66781
-        :cli: C29844        
-      - :cl: C66781
-        :cli: C29848
+      - cl: C66781
+        cli: C25301
+      - cl: C66781
+        cli: C25529
+      - cl: C66781
+        cli: C29846
+      - cl: C66781
+        cli: C29844        
+      - cl: C66781
+        cli: C29848
 #ETHNICITY
 - name: "Ethnicity"
   based_on: "Base Observation"
@@ -147,8 +147,8 @@
       name: coding 
       value_set:
       - 
-        :cl: D000001
-        :cli: D100003
+        cl: D000001
+        cli: D100003
   has_items:
   - name: "Date Time"
     enabled: true  
@@ -162,14 +162,14 @@
       name: coding
       value_set:
       - 
-        :cl: C66790
-        :cli: C17459
+        cl: C66790
+        cli: C17459
       - 
-        :cl: C66790
-        :cli: C41222
+        cl: C66790
+        cli: C41222
       - 
-        :cl: C66790
-        :cli: C43234
+        cl: C66790
+        cli: C43234
       - 
-        :cl: C66790
-        :cli: C17998
+        cl: C66790
+        cli: C17998

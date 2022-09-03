@@ -6,8 +6,7 @@ import pathlib
 uri_to_id = {}
 id_number = 1
 
-def delete_dir(dir_path):
-  target_dir = "load_data"
+def delete_dir(target_dir):
   files = os.listdir(target_dir)
   for f in files:
     os.remove("%s/%s" % (target_dir, f))

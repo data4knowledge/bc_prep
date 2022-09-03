@@ -6,19 +6,19 @@
   identified_by:  
     name: "Test"
     enabled: true  
-    :has_complex_datatype: 
+    has_complex_datatype: 
      - 
-      :short_name: CD 
-      :has_property: 
+      short_name: CD 
+      has_property: 
       -
         name: "code"
-        :question_text: ""
-        :prompt_text: ""
-        :format: "8"
-        :has_coded_value:
+        question_text: ""
+        prompt_text: ""
+        format: "8"
+        has_coded_value:
         - 
-          :cl: C71153
-          :cli: C41255     
+          cl: C71153
+          cli: C41255     
   has_items:
   - name: "Category Code"
     enabled: false
@@ -38,19 +38,19 @@
     enabled: false 
   - name: "Result"
     enabled: true  
-    :has_complex_datatype: 
+    has_complex_datatype: 
     - 
-      :short_name: CD
-      :has_property: 
+      short_name: CD
+      has_property: 
       - 
         name: "code"
-        :question_text: "Overall result"
-        :prompt_text: "Overall result"
-        :format: "20"
-        :has_coded_value:
+        question_text: "Overall result"
+        prompt_text: "Overall result"
+        format: "20"
+        has_coded_value:
         - 
-          :cl: C101834
-          :cli: C14165
+          cl: C101834
+          cli: C14165
         - 
-          :cl: C101834
-          :cli: C25401
+          cl: C101834
+          cli: C25401

@@ -7,19 +7,19 @@
     name: "Test"
     enabled: true
     collect: false  
-    :has_complex_datatype: 
+    has_complex_datatype: 
      - 
-      :short_name: CD 
-      :has_property: 
+      short_name: CD 
+      has_property: 
       -
         name: "code"
-        :question_text: ""
-        :prompt_text: ""
-        :format: "8"
-        :has_coded_value:
+        question_text: ""
+        prompt_text: ""
+        format: "8"
+        has_coded_value:
         - 
-          :cl: C66741
-          :cli: C49680
+          cl: C66741
+          cli: C49680
       
   has_items:
   - name: "Category Code"
@@ -40,22 +40,22 @@
     enabled: false 
   - name: "Result"
     enabled: true  
-    :has_complex_datatype: 
+    has_complex_datatype: 
     - 
-      :short_name: CD
-      :has_property: 
+      short_name: CD
+      has_property: 
       - 
         :label: code
-        :question_text: "Body Frame Size"
-        :prompt_text: "Result"
-        :format: "200"
-        :has_coded_value:
+        question_text: "Body Frame Size"
+        prompt_text: "Result"
+        format: "200"
+        has_coded_value:
         - 
-          :cl: C66733
-          :cli: C25376
+          cl: C66733
+          cli: C25376
         - 
-          :cl: C66733
-          :cli: C49507
+          cl: C66733
+          cli: C49507
         - 
-          :cl: C66733
-          :cli: C49508
+          cl: C66733
+          cli: C49508

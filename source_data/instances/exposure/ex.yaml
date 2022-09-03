@@ -10,8 +10,8 @@
       name: coding
       value_set:
       - 
-        :cl: D000001
-        :cli: D100005
+        cl: D000001
+        cli: D100005
   has_items:
   - name: "Intervention"
     enabled: true

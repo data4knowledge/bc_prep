@@ -1,0 +1,5 @@
+"id:ID","name","uri"
+"1","Base Observation","http://id.d4k.dk/dataset/bc_template/base_observation"
+"2","Base Laboratory","http://id.d4k.dk/dataset/bc_template/base_laboratory"
+"3","Event Observation","http://id.d4k.dk/dataset/bc_template/event_observation"
+"4","Intervention","http://id.d4k.dk/dataset/bc_template/intervention"
