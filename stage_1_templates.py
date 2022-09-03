@@ -5,11 +5,6 @@ uri_to_id = {}
 nodes = { "BC_TEMPLATE": [], "BC_ITEM": [], "BC_DATA_TYPE": [] }
 relationships = { "HAS_ITEM": [], "HAS_IDENTIFIER": [], "HAS_DATA_TYPE": []}
 
-def format_name(name):
-    name = name.lower()
-    name = name.replace(" ", "_")
-    return name
-
 def process():
   with open("source_data/templates/templates.yaml") as file:
     templates = yaml.load(file, Loader=yaml.FullLoader)

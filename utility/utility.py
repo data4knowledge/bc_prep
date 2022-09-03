@@ -6,6 +6,11 @@ import pathlib
 uri_to_id = {}
 id_number = 1
 
+def format_name(name):
+    name = name.lower()
+    name = name.replace(" ", "_")
+    return name
+    
 def delete_dir(target_dir):
   files = os.listdir(target_dir)
   for f in files:

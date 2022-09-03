@@ -5,11 +5,6 @@ nodes = { "BC_INSTANCE": [], "BC_ITEM": [], "BC_DATA_TYPE": [], "BC_VALUE_SET": 
 relationships = { "HAS_ITEM": [], "HAS_IDENTIFIER": [], "HAS_QUALIFIER": [], "BC_NARROWER": [], "HAS_DATA_TYPE": [], "HAS_RESPONSE": [] }
 bc_uri = {}
 
-def format_name(name):
-    name = name.lower()
-    name = name.replace(" ", "_")
-    return name
-
 def process():
   files = files_in_dir('source_data/instances')
   for filename in files:
@@ -17,7 +12,7 @@ def process():
       narrower = {}
       instances = yaml.load(file, Loader=yaml.FullLoader)
       for instance in instances:
-        print(instance)
+        #print(instance)
         print("instance:", instance["name"])
         uri_name = format_name(instance["name"])
         base_uri = "http://id.d4k.dk/dataset/bc_instance/%s" % (uri_name)
@@ -76,7 +71,8 @@ def process():
 
         # Now all the items
         for item in instance["has_items"]: 
-          if item["enabled"]:
+          print("Enabled:", item["enabled"])
+          if not item["enabled"]:
             continue
           name = format_name(item["name"])
           collect = False
@@ -91,6 +87,7 @@ def process():
           }
           nodes["BC_ITEM"].append(record)
           relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
+          print("Rel: [from: %s, to: %s]" % (base_uri, item_uri))
           if qualifier_item == item["name"]:
             relationships["HAS_QUALIFIER"].append({"from": identifier_uri, "to": item_uri})
           if "data_type" in item:
