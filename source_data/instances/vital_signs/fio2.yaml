@@ -2,7 +2,7 @@
 #WEIGHT
 - name: "Fraction of Inspired Oxygen"
   :identifier: "FIO2"
-  based_on: http://www.s-cubed.dk/BASIC_OBS_PQR/V1#BCT
+  based_on: "Base Observation"
   identified_by:  
     name: "Test"
     enabled: true 

@@ -1,7 +1,7 @@
 import yaml
 from utility.utility import *
 
-nodes = { "BC_TEMPLATE": [], "BC_INSTANCE": [], "BC_ITEM": [], "BC_DATA_TYPE": [], "BC_VALUE_SET": [] }
+nodes = { "BC_TEMPLATE": [], "BC_INSTANCE": [], "BC_TEMPLATE_ITEM": [], "BC_INSTANCE_ITEM": [], "BC_DATA_TYPE": [], "BC_VALUE_SET": [] }
 relationships = { "BASED_ON": [], "HAS_ITEM": [], "HAS_IDENTIFIER": [], "HAS_QUALIFIER": [], "BC_NARROWER": [], "HAS_DATA_TYPE": [], "HAS_RESPONSE": [] }
 bc_uri = {}
 uri_to_id = {}
@@ -26,7 +26,7 @@ def process_templates():
       }
       if ":canonical" in template["identified_by"]:
         record["canonical"] = template["identified_by"]["canonical"]
-      nodes["BC_ITEM"].append(record)
+      nodes["BC_TEMPLATE_ITEM"].append(record)
       relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": base_uri, "to": item_uri})
 
@@ -53,7 +53,7 @@ def process_templates():
         }
         if ":canonical" in item:
           record["canonical"] = item["canonical"]
-        nodes["BC_ITEM"].append(record)
+        nodes["BC_TEMPLATE_ITEM"].append(record)
         relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
         parent_uri = item_uri
         for data_type in item["data_type"]: 
@@ -102,7 +102,7 @@ def process_instances():
           "enabled": item["enabled"],
           "uri": item_uri
         }
-        nodes["BC_ITEM"].append(record)
+        nodes["BC_INSTANCE_ITEM"].append(record)
         relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
         relationships["HAS_IDENTIFIER"].append({"from": base_uri, "to": item_uri})
         if "data_type" in item:
@@ -147,7 +147,7 @@ def process_instances():
             "enabled": item["enabled"],
             "uri": item_uri
           }
-          nodes["BC_ITEM"].append(record)
+          nodes["BC_INSTANCE_ITEM"].append(record)
           relationships["HAS_ITEM"].append({"from": base_uri, "to": item_uri})
           print("Rel: [from: %s, to: %s]" % (base_uri, item_uri))
           if qualifier_item == item["name"]:

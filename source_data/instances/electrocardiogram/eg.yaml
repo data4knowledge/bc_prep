@@ -2,7 +2,7 @@
 #ECG - INTP
 - name: "Electrocardiogram Interpretation"
   :identifier: "INTP"
-  based_on: http://www.s-cubed.dk/BASIC_OBS_CD/V1#BCT
+  based_on: "Base Observation"
   identified_by:  
     name: "Test"
     enabled: true  

@@ -1,7 +1,7 @@
 ---
 - name: "Neck Circumference"
   :identifier: "NECKCIR"
-  based_on: http://www.s-cubed.dk/BASIC_OBS_PQR/V1#BCT
+  based_on: "Base Observation"
   identified_by:  
     name: "Test"
     enabled: true 
