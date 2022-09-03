@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Fetal Estimated Weight"
-  :identifier: "FTEWT"
+  identifier: "FTEWT"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

@@ -1,6 +1,6 @@
 ---
 - name: "Neck Circumference"
-  :identifier: "NECKCIR"
+  identifier: "NECKCIR"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

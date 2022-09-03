@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Energy Expenditure"
-  :identifier: "ENRGEXP"
+  identifier: "ENRGEXP"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

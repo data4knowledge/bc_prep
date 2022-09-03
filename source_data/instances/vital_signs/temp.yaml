@@ -1,7 +1,7 @@
 ---
 #TEMP
 - name: "Temperature"
-  :identifier: "TEMP"
+  identifier: "TEMP"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

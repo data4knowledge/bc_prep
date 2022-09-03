@@ -1,7 +1,6 @@
 ---
-#WEIGHT
 - name: "Basal Metabolic Rate"
-  :identifier: "BMR"
+  identifier: "BMR"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

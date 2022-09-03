@@ -3,11 +3,11 @@ import os
 import glob
 from stringcase import pascalcase, snakecase
 
-def file_load(driver, subdir):
+def file_load(driver):
   project_root = os.path.abspath(os.path.dirname(__file__))
   load_files = []
-  for filename in glob.glob("load_data/%s/*.csv" % (subdir)):
-    parts = filename.replace("load_data/%s/" % (subdir), "").split("-")
+  for filename in glob.glob("load_data/*.csv"):
+    parts = filename.replace("load_data/", "").split("-")
     file_path = os.path.join(project_root, filename)
     #print(file_path)
     if parts[0] == "node":
@@ -45,8 +45,6 @@ database = "neo4j"
 print("Deleting database ...")
 clear_neo4j(driver)
 print("Database deleted. Load new data ...")
-result = file_load(driver, "templates")
+result = file_load(driver)
 print("Templates load complete. %s nodes and %s relationships loaded in %s milliseconds." % (result['nodes'], result['relationships'], result['time']))
-result = file_load(driver, "instances")
-print("Instances load complete. %s nodes and %s relationships loaded in %s milliseconds." % (result['nodes'], result['relationships'], result['time']))
 

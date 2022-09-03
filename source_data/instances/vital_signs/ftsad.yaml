@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Fetal Sagittal Abdominal Diameter"
-  :identifier: "FTSAD"
+  identifier: "FTSAD"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

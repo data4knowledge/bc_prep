@@ -1,7 +1,7 @@
 ---
 #BMI
 - name: "Pulse Pressure"
-  :identifier: "PULSEPR"
+  identifier: "PULSEPR"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Subscapular Skinfold Thickness"
-  :identifier: "SSSKNF"
+  identifier: "SSSKNF"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

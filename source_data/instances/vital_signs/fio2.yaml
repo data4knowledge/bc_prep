@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Fraction of Inspired Oxygen"
-  :identifier: "FIO2"
+  identifier: "FIO2"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

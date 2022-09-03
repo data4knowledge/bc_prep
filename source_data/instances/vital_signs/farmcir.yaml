@@ -1,6 +1,6 @@
 ---
 - name: "Hip Circumference"
-  :identifier: "HIPCIR"
+  identifier: "HIPCIR"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

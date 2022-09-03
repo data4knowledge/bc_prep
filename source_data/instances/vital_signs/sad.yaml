@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Sagittal Abdominal Diameter"
-  :identifier: "SAD"
+  identifier: "SAD"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

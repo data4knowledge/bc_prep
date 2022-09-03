@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Total Body Length"
-  :identifier: "BODLNGTH"
+  identifier: "BODLNGTH"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

@@ -1,6 +1,6 @@
 ---
 - name: "Maximum Predicted Heart Rate"
-  :identifier: "MAXPREHR"
+  identifier: "MAXPREHR"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

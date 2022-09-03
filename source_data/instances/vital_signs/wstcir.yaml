@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Waist Circumference"
-  :identifier: "WSTCIR"
+  identifier: "WSTCIR"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

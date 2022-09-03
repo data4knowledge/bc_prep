@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Triceps Skinfold Thicknesss"
-  :identifier: "TRSKNF"
+  identifier: "TRSKNF"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

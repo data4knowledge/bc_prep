@@ -1,7 +1,7 @@
 ---
 #HEIGHT
 - name: "Height"
-  :identifier: "HEIGHT"
+  identifier: "HEIGHT"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

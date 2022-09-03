@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Respiratory Rate"
-  :identifier: "RESP"
+  identifier: "RESP"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

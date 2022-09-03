@@ -1,7 +1,6 @@
 ---
-#WEIGHT
 - name: "Estimated Body Weight"
-  :identifier: "EWEIGHT"
+  identifier: "EWEIGHT"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

@@ -1,7 +1,7 @@
 ---
 #TEMP
 - name: "Core Body Temperature"
-  :identifier: "TEMPCB"
+  identifier: "TEMPCB"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

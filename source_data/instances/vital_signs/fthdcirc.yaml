@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Fetal Head Circumference"
-  :identifier: "FTHDCIRC"
+  identifier: "FTHDCIRC"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

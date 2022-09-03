@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Total Body Water Measurement"
-  :identifier: "TBW"
+  identifier: "TBW"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

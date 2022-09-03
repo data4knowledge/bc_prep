@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Mandibular Length"
-  :identifier: "MANDL"
+  identifier: "MANDL"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

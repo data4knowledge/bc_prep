@@ -1,7 +1,6 @@
 ---
-#WEIGHT
 - name: "Abdominal Skinfold Thickness"
-  :identifier: "ABSKNF"
+  identifier: "ABSKNF"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

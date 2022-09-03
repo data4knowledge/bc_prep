@@ -1,7 +1,7 @@
 ---
 #RACE
 - name: "Body Frame Size"
-  :identifier: "FRMSIZE"
+  identifier: "FRMSIZE"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

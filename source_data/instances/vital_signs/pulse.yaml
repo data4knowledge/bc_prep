@@ -1,7 +1,7 @@
 ---
 #BMI
 - name: "Pulse Rate"
-  :identifier: "PULSE"
+  identifier: "PULSE"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

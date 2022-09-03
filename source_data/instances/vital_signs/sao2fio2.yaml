@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Oxygen Saturation/Fraction Inspired O2"
-  :identifier: "SAO2FIO2"
+  identifier: "SAO2FIO2"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

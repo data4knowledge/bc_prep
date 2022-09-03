@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Body Surface Area"
-  :identifier: "BSA"
+  identifier: "BSA"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

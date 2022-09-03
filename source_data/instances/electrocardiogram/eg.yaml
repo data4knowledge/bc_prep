@@ -1,7 +1,7 @@
 ---
 #ECG - INTP
 - name: "Electrocardiogram Interpretation"
-  :identifier: "INTP"
+  identifier: "INTP"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

@@ -1,7 +1,6 @@
 ---
-#WEIGHT
 - name: "Waist-Hip Ratio"
-  :identifier: "WAISTHIP"
+  identifier: "WAISTHIP"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

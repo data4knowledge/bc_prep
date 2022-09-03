@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Ideal Body Weight"
-  :identifier: "IDEALWT"
+  identifier: "IDEALWT"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

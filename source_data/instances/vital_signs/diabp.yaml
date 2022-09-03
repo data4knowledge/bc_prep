@@ -1,7 +1,7 @@
 ---
 #DIABP
 - name: "Diastolic Blood Pressure"
-  :identifier: "DIABP"
+  identifier: "DIABP"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

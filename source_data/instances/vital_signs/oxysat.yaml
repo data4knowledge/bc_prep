@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Oxygen Saturation Measurement"
-  :identifier: "OXYSAT"
+  identifier: "OXYSAT"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

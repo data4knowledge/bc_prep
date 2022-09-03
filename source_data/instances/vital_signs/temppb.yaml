@@ -1,7 +1,7 @@
 ---
 #TEMP
 - name: "Peripheral Body Temperature"
-  :identifier: "TEMPPB"
+  identifier: "TEMPPB"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"

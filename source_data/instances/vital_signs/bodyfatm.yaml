@@ -1,7 +1,7 @@
 ---
 #WEIGHT
 - name: "Body Fat Measurement"
-  :identifier: "BODYFATM"
+  identifier: "BODYFATM"
   based_on: "Base Observation"
   identified_by:  
     name: "Test"
