@@ -34,14 +34,6 @@
       - 
         cl: C78734
         cli: C12434
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
   - name: "Result"
     enabled: true  
     collect: true
@@ -80,14 +72,6 @@
       - 
         cl: C78734
         cli: C12434
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
   - name: "Result"
     enabled: true  
     collect: true
@@ -126,14 +110,7 @@
       -
         cl: C78734
         cli: C13325
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
+
   - name: "Result"
     enabled: true  
     collect: true
@@ -172,14 +149,7 @@
       - 
         cl: C78734
         cli: C13283
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
+
   - name: "Result"
     enabled: true  
     collect: true
