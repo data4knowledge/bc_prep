@@ -13,7 +13,7 @@ relationships = {
   "IDENTIFIED_BY": [], "HAS_STATUS": [], "SCOPED_BY": [], "MANAGED_BY": [],
 }
 bc_uri = {}
-#uri_to_id = {}
+crm_paths = {}
 
 def process_templates(the_instance_uri, ns_uri, ra_uri):
   with open("source_data/templates/templates.yaml") as file:
@@ -36,7 +36,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         record["canonical"] = template["identified_by"]["canonical"]
         crm_server = CRMServer()
         result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
-        print("CRM:", record["canonical"], result)
+        crm_paths[template["identified_by"]["canonical"]] = result
       nodes["TemplateItem"].append(record)
       relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": the_template_uri, "to": item_uri})
@@ -66,7 +66,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
           record["canonical"] = item["canonical"]
           crm_server = CRMServer()
           result = crm_server.crm_node_data_types(item["canonical"])
-          print("CRM:", record["canonical"], result)
+          crm_paths[template["identified_by"]["canonical"]] = result
         nodes["TemplateItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
         parent_uri = item_uri
