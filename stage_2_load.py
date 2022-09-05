@@ -2,8 +2,9 @@ from neo4j import GraphDatabase
 import os
 import glob
 from stringcase import pascalcase, snakecase
+from utility.service_environment import ServiceEnvironment
 
-def file_load(driver):
+def file_load(driver, database):
   project_root = os.path.abspath(os.path.dirname(__file__))
   load_files = []
   for filename in glob.glob("load_data/*.csv"):
@@ -16,7 +17,7 @@ def file_load(driver):
       load_files.append({ "type": parts[1].upper(), "filename": file_path })
 
   result = None
-  session = driver.session()
+  session = driver.session(database=database)
   nodes = []
   relationships = []
   for file_item in load_files:
@@ -34,17 +35,19 @@ def file_load(driver):
 def clear(tx):
   tx.run("CALL apoc.periodic.iterate('MATCH (n) WHERE NOT n:`_Neodash_Dashboard` RETURN n', 'DETACH DELETE n', {batchSize:1000})")
 
-def clear_neo4j(driver):
-  with driver.session() as session:
+def clear_neo4j(driver, database):
+  with driver.session(database=database) as session:
     session.write_transaction(clear)
   driver.close()
 
-driver = GraphDatabase.driver("bolt://localhost:7687/", auth=("neo4j", "cdisc"))
-database = "neo4j"
+db_name = ServiceEnvironment().get('NEO4J_DB_NAME')
+url = ServiceEnvironment().get('NEO4J_URL')
+usr = ServiceEnvironment().get('NEO4J_USER')
+pwd = ServiceEnvironment().get('NEO4J_PWD')
+driver = GraphDatabase.driver(url, auth=(usr, pwd))
 
 print("Deleting database ...")
-clear_neo4j(driver)
+clear_neo4j(driver, db_name)
 print("Database deleted. Load new data ...")
-result = file_load(driver)
-print("Templates load complete. %s nodes and %s relationships loaded in %s milliseconds." % (result['nodes'], result['relationships'], result['time']))
-
+result = file_load(driver, db_name)
+print("Load complete. %s nodes and %s relationships loaded in %s milliseconds." % (result['nodes'], result['relationships'], result['time']))

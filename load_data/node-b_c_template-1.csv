@@ -1,0 +1,5 @@
+"id:ID","name","uri"
+"1","Base Observation","https://bc.d4k.dk/bc_template/base_observation"
+"2","Base Laboratory","https://bc.d4k.dk/bc_template/base_laboratory"
+"3","Event Observation","https://bc.d4k.dk/bc_template/event_observation"
+"4","Intervention","https://bc.d4k.dk/bc_template/intervention"
