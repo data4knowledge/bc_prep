@@ -34,9 +34,9 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
       }
       if "canonical" in template["identified_by"]:
         record["canonical"] = template["identified_by"]["canonical"]
-        #crm_server = CRMServer()
-        #result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
-        #print("CRM:", record["canonical"], result)
+        crm_server = CRMServer()
+        result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
+        print("CRM:", record["canonical"], result)
       nodes["TemplateItem"].append(record)
       relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": the_template_uri, "to": item_uri})
@@ -64,9 +64,9 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         }
         if "canonical" in item:
           record["canonical"] = item["canonical"]
-          # crm_server = CRMServer()
-          # result = crm_server.crm_node_data_types(item["canonical"])
-          # print("CRM:", record["canonical"], result)
+          crm_server = CRMServer()
+          result = crm_server.crm_node_data_types(item["canonical"])
+          print("CRM:", record["canonical"], result)
         nodes["TemplateItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
         parent_uri = item_uri
@@ -111,7 +111,6 @@ def process_instances(base_uri, ns_uri, ra_uri):
         collect = False
         if "collect" in item:
           collect = item["collect"]
-        #print(item)
         record = {
           "name": item["name"], 
           "collect": collect,
