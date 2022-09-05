@@ -1,6 +1,7 @@
 import yaml
 from utility.utility import *
 from utility.ra_server import *
+from utility.crm_server import *
 from stringcase import pascalcase, snakecase
 
 nodes = { 
@@ -19,7 +20,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
     templates = yaml.load(file, Loader=yaml.FullLoader)
     for template in templates:
       the_template_uri = template_uri(the_instance_uri, template["name"])
-      print("Template:", template["name"], the_template_uri)
+      #print("Template:", template["name"], the_template_uri)
       nodes["BCTemplate"].append({"name": template["name"], "uri": the_template_uri})
       add_identifier_and_status(the_template_uri, template["name"].upper(), "2022-09-01", ns_uri, ra_uri, nodes, relationships)
       name = format_name(template["identified_by"]["name"])
@@ -31,8 +32,11 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         "uri": item_uri,
         "canonical": ""
       }
-      if ":canonical" in template["identified_by"]:
+      if "canonical" in template["identified_by"]:
         record["canonical"] = template["identified_by"]["canonical"]
+        crm_server = CRMServer()
+        result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
+        print("CRM:", record["canonical"], result)
       nodes["BCTemplateItem"].append(record)
       relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": the_template_uri, "to": item_uri})
@@ -58,8 +62,11 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
           "uri": item_uri,
           "canonical": ""
         }
-        if ":canonical" in item:
+        if "canonical" in item:
           record["canonical"] = item["canonical"]
+          crm_server = CRMServer()
+          result = crm_server.crm_node_data_types(item["canonical"])
+          print("CRM:", record["canonical"], result)
         nodes["BCTemplateItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
         parent_uri = item_uri
@@ -81,9 +88,9 @@ def process_instances(base_uri, ns_uri, ra_uri):
       instances = yaml.load(file, Loader=yaml.FullLoader)
       for instance in instances:
         #print(instance)
-        print("instance:", instance["name"])
+        #print("instance:", instance["name"])
         based_on_uri = template_uri(base_uri, instance["based_on"])
-        print("based on:", based_on_uri)
+        #print("based on:", based_on_uri)
         the_instance_uri, uri_name = instance_uri(base_uri, instance["name"])
         nodes["BCInstance"].append({"name": instance["name"], "uri": the_instance_uri})           
         relationships["BASED_ON"].append({"from": the_instance_uri, "to": based_on_uri})
@@ -104,7 +111,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
         collect = False
         if "collect" in item:
           collect = item["collect"]
-        print(item)
+        #print(item)
         record = {
           "name": item["name"], 
           "collect": collect,
@@ -191,15 +198,15 @@ def process_instances(base_uri, ns_uri, ra_uri):
         from_uri = k
         for bc in v:
           to_uri = bc_uri[bc]
-          print("Narrower from %s to %s" % (from_uri, to_uri))
+          #print("Narrower from %s to %s" % (from_uri, to_uri))
           relationships["BC_NARROWER"].append({"from": from_uri, "to": to_uri})
 
 delete_dir("load_data")
 
 ns_s_json = RaServer().namespace_by_name("d4k BC namespace")
-print(ns_s_json)
+#print(ns_s_json)
 ra_s_json = RaServer().registration_authority_by_namespace_uuid(ns_s_json['uuid'])
-print(ra_s_json)
+#print(ra_s_json)
 
 process_templates(ns_s_json['value'], ns_s_json['uri'], ra_s_json['uri'])
 process_instances(ns_s_json['value'], ns_s_json['uri'], ra_s_json['uri'])
