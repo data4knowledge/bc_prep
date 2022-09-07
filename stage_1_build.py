@@ -23,7 +23,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
     for template in templates:
       the_template_uri = template_uri(the_instance_uri, template["name"])
       #print("Template:", template["name"], the_template_uri)
-      nodes["Template"].append({"name": template["name"], "uri": the_template_uri})
+      nodes["Template"].append({"name": template["name"], "uri": the_template_uri, "uuid": uuid4() })
       add_identifier_and_status(the_template_uri, template["name"].upper(), "2022-09-01", ns_uri, ra_uri, nodes, relationships)
       name = format_name(template["identified_by"]["name"])
       item_uri = "%s/%s" % (the_template_uri, name)
@@ -32,6 +32,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         "mandatory": template["identified_by"]["mandatory"],
         "enabled": template["identified_by"]["enabled"],
         "uri": item_uri,
+        "uuid": uuid4(),
         "canonical": ""
       }
       if "canonical" in template["identified_by"]:
@@ -48,7 +49,8 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
       item_uri = "%s/%s" % (parent_uri, name)
       record = {
         "name": template["identified_by"]["data_type"][0]["name"],
-        "uri": item_uri
+        "uri": item_uri,
+        "uuid": uuid4()
       }
       nodes["DataType"].append(record)
       relationships["HAS_DATA_TYPE"].append({"from": parent_uri, "to": item_uri})
@@ -61,8 +63,9 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
           "name": item["name"], 
           "mandatory": item["mandatory"],
           "enabled": item["enabled"],
+          "canonical": "",
           "uri": item_uri,
-          "canonical": ""
+          "uuid": uuid4()
         }
         if "canonical" in item:
           record["canonical"] = item["canonical"]
@@ -78,7 +81,8 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
           item_uri = "%s/%s" % (parent_uri, name)
           record = {
             "name": data_type["name"],
-            "uri": item_uri
+            "uri": item_uri,
+            "uuid": uuid4()
           }
           nodes["DataType"].append(record)
           relationships["HAS_DATA_TYPE"].append({"from": parent_uri, "to": item_uri})
@@ -96,7 +100,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
         based_on_uri = template_uri(base_uri, instance["based_on"])
         #print("based on:", based_on_uri)
         the_instance_uri, uri_name = instance_uri(base_uri, instance["name"])
-        nodes["Instance"].append({"name": instance["name"], "uri": the_instance_uri})           
+        nodes["Instance"].append({ "name": instance["name"], "uri": the_instance_uri, "uuid": uuid4() })           
         relationships["BASED_ON"].append({"from": the_instance_uri, "to": based_on_uri})
         add_identifier_and_status(the_instance_uri, instance["name"].upper(), "2022-09-01", ns_uri, ra_uri, nodes, relationships)
         bc_uri[uri_name] = the_instance_uri
@@ -119,7 +123,8 @@ def process_instances(base_uri, ns_uri, ra_uri):
           "name": item["name"], 
           "collect": collect,
           "enabled": item["enabled"],
-          "uri": item_uri
+          "uri": item_uri,
+          "uuid": uuid4()
         }
         nodes["InstanceItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_instance_uri, "to": item_uri})
@@ -162,7 +167,8 @@ def process_instances(base_uri, ns_uri, ra_uri):
             "name": item["name"], 
             "collect": collect,
             "enabled": item["enabled"],
-            "uri": item_uri
+            "uri": item_uri,
+            "uuid": uuid4()
           }
           nodes["InstanceItem"].append(record)
           relationships["HAS_ITEM"].append({"from": the_instance_uri, "to": item_uri})
