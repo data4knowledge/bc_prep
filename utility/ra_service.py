@@ -1,7 +1,7 @@
 import requests
 from utility.service_environment import ServiceEnvironment
 
-class RaServer():
+class RaService():
 
   def __init__(self):
     self.__api_url = ServiceEnvironment().get("RA_SERVER_URL")

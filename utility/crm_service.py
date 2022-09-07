@@ -1,7 +1,7 @@
 import requests
 from utility.service_environment import ServiceEnvironment
 
-class CRMServer():
+class CRMService():
 
   def __init__(self):
     self.__api_url = ServiceEnvironment().get("CRM_SERVER_URL")

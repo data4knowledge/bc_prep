@@ -1,9 +1,11 @@
 import yaml
 from utility.utility import *
-from utility.ra_server import *
-from utility.crm_server import *
+from utility.ra_service import *
+from utility.crm_service import *
+from utility.ct_service import *
 from stringcase import pascalcase, snakecase
 from utility.fhir import add_data_type
+
 nodes = { 
   "Template": [], "Instance": [], "TemplateItem": [], "InstanceItem": [], "DataType": [], "DataTypeProperty": [], "ValueSet": [],
   'ScopedIdentifier': [], 'Namespace': [], 'RegistrationStatus': [], 'RegistrationAuthority': [] 
@@ -34,9 +36,9 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
       }
       if "canonical" in template["identified_by"]:
         record["canonical"] = template["identified_by"]["canonical"]
-        crm_server = CRMServer()
-        result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
-        crm_paths[template["identified_by"]["canonical"]] = result
+        #crm_server = CRMServer()
+        #result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
+        #crm_paths[template["identified_by"]["canonical"]] = result
       nodes["TemplateItem"].append(record)
       relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": the_template_uri, "to": item_uri})
@@ -64,9 +66,10 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         }
         if "canonical" in item:
           record["canonical"] = item["canonical"]
-          crm_server = CRMServer()
-          result = crm_server.crm_node_data_types(item["canonical"])
-          crm_paths[template["identified_by"]["canonical"]] = result
+          #crm_server = CRMServer()
+          #result = crm_server.crm_node_data_types(item["canonical"])
+          #print(result)
+          #crm_paths[template["identified_by"]["canonical"]] = result
         nodes["TemplateItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
         parent_uri = item_uri
@@ -81,6 +84,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
           relationships["HAS_DATA_TYPE"].append({"from": parent_uri, "to": item_uri})
 
 def process_instances(base_uri, ns_uri, ra_uri):
+  ct_server = CTService()
   files = files_in_dir('source_data/instances')
   for filename in files:
     with open(filename) as file:
@@ -130,14 +134,19 @@ def process_instances(base_uri, ns_uri, ra_uri):
                 #print(term)
                 cl = term["cl"]
                 cli = term["cli"]
-                term_uri = "%s/%s-%s" % (dt_uri, cl.lower(), cli.lower())
+                result = ct_server.term_reference(cl, cli)
+                if result == None:
+                  result = { 'uri': "", 'notation': "", 'pref_label': "" }
                 record = {
+                  "uuid": str(uuid4()),
                   "cl": cl,
                   "cli": cli,
-                  "uri": term_uri
+                  "term_uri": result['uri'],
+                  "notation": result['notation'],
+                  "pref_label": result['pref_label']
                 }
                 nodes["ValueSet"].append(record)
-                relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": term_uri})
+                relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
 
         # Now all the items
         for item in instance["has_items"]: 
@@ -170,14 +179,19 @@ def process_instances(base_uri, ns_uri, ra_uri):
                   #print(term)
                   cl = term["cl"]
                   cli = term["cli"]
-                  term_uri = "%s/%s-%s" % (dt_uri, cl.lower(), cli.lower())
+                  result = ct_server.term_reference(cl, cli)
+                  if result == None:
+                    result = { 'uri': "", 'notation': "", 'pref_label': "" }
                   record = {
+                    "uuid": str(uuid4()),
                     "cl": cl,
                     "cli": cli,
-                    "uri": term_uri
+                    "term_uri": result['uri'],
+                    "notation": result['notation'],
+                    "pref_label": result['pref_label']
                   }
                   nodes["ValueSet"].append(record)
-                  relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": term_uri})
+                  relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
 
     for k, v in narrower.items():
       if len(v) > 0:
@@ -189,9 +203,9 @@ def process_instances(base_uri, ns_uri, ra_uri):
 
 delete_dir("load_data")
 
-ns_s_json = RaServer().namespace_by_name("d4k BC namespace")
+ns_s_json = RaService().namespace_by_name("d4k BC namespace")
 #print(ns_s_json)
-ra_s_json = RaServer().registration_authority_by_namespace_uuid(ns_s_json['uuid'])
+ra_s_json = RaService().registration_authority_by_namespace_uuid(ns_s_json['uuid'])
 #print(ra_s_json)
 
 process_templates(ns_s_json['value'], ns_s_json['uri'], ra_s_json['uri'])
