@@ -16,6 +16,7 @@ relationships = {
 }
 bc_uri = {}
 crm_paths = {}
+crm_map = {}
 
 def process_templates(the_instance_uri, ns_uri, ra_uri):
   with open("source_data/templates/templates.yaml") as file:
@@ -24,6 +25,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
       the_template_uri = template_uri(the_instance_uri, template["name"])
       #print("Template:", template["name"], the_template_uri)
       nodes["Template"].append({"name": template["name"], "uri": the_template_uri, "uuid": uuid4() })
+      crm_map[template["name"]] = {}
       add_identifier_and_status(the_template_uri, template["name"].upper(), "2022-09-01", ns_uri, ra_uri, nodes, relationships)
       name = format_name(template["identified_by"]["name"])
       item_uri = "%s/%s" % (the_template_uri, name)
@@ -37,9 +39,10 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
       }
       if "canonical" in template["identified_by"]:
         record["canonical"] = template["identified_by"]["canonical"]
-        #crm_server = CRMServer()
-        #result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
-        #crm_paths[template["identified_by"]["canonical"]] = result
+        crm_server = CRMService()
+        result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
+        crm_paths[template["identified_by"]["canonical"]] = result
+        crm_map[template['name']][record['name']] = record['canonical']
       nodes["TemplateItem"].append(record)
       relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": the_template_uri, "to": item_uri})
@@ -69,10 +72,11 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         }
         if "canonical" in item:
           record["canonical"] = item["canonical"]
-          #crm_server = CRMServer()
-          #result = crm_server.crm_node_data_types(item["canonical"])
-          #print(result)
-          #crm_paths[template["identified_by"]["canonical"]] = result
+          crm_server = CRMService()
+          result = crm_server.crm_node_data_types(item["canonical"])
+          print(result)
+          crm_paths[item["canonical"]] = result
+          crm_map[template['name']][record['name']] = record['canonical']
         nodes["TemplateItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
         parent_uri = item_uri
@@ -131,7 +135,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
         relationships["HAS_IDENTIFIER"].append({"from": the_instance_uri, "to": item_uri})
         if "data_type" in item:
           for data_type in item["data_type"]: 
-            dt_uri = add_data_type(item_uri, data_type["name"], nodes, relationships)
+            dt_uri = add_data_type(item['name'], item_uri, data_type["name"], nodes, relationships, crm_paths, crm_map[instance["based_on"]])
             relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": dt_uri})
             if "value_set" in data_type:
               #print(data_type["value_set"])
@@ -177,7 +181,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
             relationships["HAS_QUALIFIER"].append({"from": identifier_uri, "to": item_uri})
           if "data_type" in item:
             for data_type in item["data_type"]: 
-              dt_uri = add_data_type(item_uri, data_type["name"], nodes, relationships)
+              dt_uri = add_data_type(item['name'], item_uri, data_type["name"], nodes, relationships, crm_paths, crm_map[instance["based_on"]])
               relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": dt_uri})
               if "value_set" in data_type:
                 #print(data_type["value_set"])
