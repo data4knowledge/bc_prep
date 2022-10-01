@@ -23,7 +23,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
     templates = yaml.load(file, Loader=yaml.FullLoader)
     for template in templates:
       the_template_uri = template_uri(the_instance_uri, template["name"])
-      #print("Template:", template["name"], the_template_uri)
+      print("Template:", template["name"], the_template_uri)
       nodes["Template"].append({"name": template["name"], "uri": the_template_uri, "uuid": uuid4() })
       crm_map[template["name"]] = {}
       add_identifier_and_status(the_template_uri, template["name"].upper(), "2022-09-01", ns_uri, ra_uri, nodes, relationships)
@@ -74,7 +74,7 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
           record["canonical"] = item["canonical"]
           crm_server = CRMService()
           result = crm_server.crm_node_data_types(item["canonical"])
-          print(result)
+          #print(result)
           crm_paths[item["canonical"]] = result
           crm_map[template['name']][record['name']] = record['canonical']
         nodes["TemplateItem"].append(record)
@@ -100,7 +100,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
       instances = yaml.load(file, Loader=yaml.FullLoader)
       for instance in instances:
         #print(instance)
-        #print("instance:", instance["name"])
+        print("Instance:", instance["name"])
         based_on_uri = template_uri(base_uri, instance["based_on"])
         #print("based on:", based_on_uri)
         the_instance_uri, uri_name = instance_uri(base_uri, instance["name"])

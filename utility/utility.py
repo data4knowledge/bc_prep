@@ -30,7 +30,7 @@ def delete_dir(target_dir):
   files = os.listdir(target_dir)
   for f in files:
     os.remove("%s/%s" % (target_dir, f))
-    print("Deleted %s" % (f))
+    #print("Deleted %s" % (f))
 
 def files_in_dir(target_path):
   result = []

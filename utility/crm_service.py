@@ -12,5 +12,5 @@ class CRMService():
   def api_get(self, url):
     headers =  {"Content-Type":"application/json"}
     response = requests.get("%s%s" % (self.__api_url, url), headers=headers)
-    print(response)
+    #print(response)
     return response.json()

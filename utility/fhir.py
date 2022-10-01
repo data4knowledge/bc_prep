@@ -98,21 +98,23 @@ def add_data_type(parent_name, parent_uri, data_type, nodes, relationships, crm_
       name = v['name']
       child_uri = "%s/%s" % (item_uri, format_name(name))
       path = "%s.%s" % (crm_path, name)
-      print("NAME:", parent_name)
+      #print("NAME:", parent_name)
       if parent_name in crm_map:
-        print("CRM MAP:", crm_map[parent_name])
-        print("CRM PATH:", crm_paths[crm_map[parent_name]])
-        print("PATH:", path)
-        print("CRM PATH:", crm_paths[crm_map[parent_name]]["%s.%s" % (crm_map[parent_name], path)])
+        #print("CRM MAP:", crm_map[parent_name])
+        #print("CRM PATH:", crm_paths[crm_map[parent_name]])
+        #print("PATH:", path)
+        #print("CRM PATH:", crm_paths[crm_map[parent_name]]["%s.%s" % (crm_map[parent_name], path)])
         crm_uri = crm_paths[crm_map[parent_name]]["%s.%s" % (crm_map[parent_name], path)]
       else:
         crm_uri = None
       record = {
         "name": name,
         "uri": child_uri,
-        "crm_uri": crm_uri
+        "crm_uri": crm_uri,
+        "uuid": uuid4()
       }
       nodes["DataTypeProperty"].append(record)
+      #print(record)
     relationships["HAS_PROPERTY"].append({"from": item_uri, "to": child_uri})
   return item_uri
     
