@@ -1,0 +1,13 @@
+- name: Frame Size
+  identifier: FRMSIZE
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C49680
+  has_items: []

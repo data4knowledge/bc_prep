@@ -1,0 +1,13 @@
+- name: Body Mass Index
+  identifier: BMI
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C16358
+  has_items: []

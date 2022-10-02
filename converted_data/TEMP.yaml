@@ -1,0 +1,28 @@
+- name: Temperature
+  identifier: TEMP
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C174446
+  has_items:
+  - name: Site of Administration
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: AXILLA
+      - cl: TO BE LOOKED UP
+        cli: EAR
+      - cl: TO BE LOOKED UP
+        cli: FOREHEAD
+      - cl: TO BE LOOKED UP
+        cli: ORAL CAVITY
+      - cl: TO BE LOOKED UP
+        cli: RECTUM

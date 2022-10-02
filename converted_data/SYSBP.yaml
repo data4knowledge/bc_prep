@@ -1,0 +1,48 @@
+- name: Systolic Blood Pressure
+  identifier: SYSBP
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C25298
+  has_items:
+  - name: Position
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: SITTING
+      - cl: TO BE LOOKED UP
+        cli: STANDING
+      - cl: TO BE LOOKED UP
+        cli: SUPINE
+  - name: Site of Administration
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: BRACHIAL ARTERY
+      - cl: TO BE LOOKED UP
+        cli: COROTID ARTERY
+      - cl: TO BE LOOKED UP
+        cli: DORSALIS PEDIS ARTERY
+      - cl: TO BE LOOKED UP
+        cli: FEMORAL ARTERY
+      - cl: TO BE LOOKED UP
+        cli: RADIAL ARTER
+  - name: Laterality
+    enabled: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: LEFT
+      - cl: TO BE LOOKED UP
+        cli: RIGHT

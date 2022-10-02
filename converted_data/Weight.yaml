@@ -1,0 +1,13 @@
+- name: Weight
+  identifier: WEIGHT
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C81328
+  has_items: []

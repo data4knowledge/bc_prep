@@ -1,0 +1,18 @@
+- name: Waist Circumference
+  identifier: WSTCIR
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C100948
+  has_items:
+  - name: Site of Administration
+    enabled: true
+    data_type:
+    - name: coding
+      value_set: []

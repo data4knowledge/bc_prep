@@ -1,0 +1,23 @@
+- name: Hemoglobin in Blood by Dipstick
+  identifier: HGBBLDDIP
+  based_on: Base Laboratory
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: TO BE LOOKED UP
+        cli: C64848
+  has_items:
+  - name: Specimen
+    enabled: true
+    data_type:
+    - name: coding
+      value_set: []
+  - name: Method
+    enabled: true
+    data_type:
+    - name: coding
+      value_set: []
