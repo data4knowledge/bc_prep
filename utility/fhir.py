@@ -12,6 +12,26 @@ DATA_TYPES = {
       }
     }
   },
+  "date": {
+    "parent": {
+      "name": "date",
+    },
+    "child": {
+      "value": { 
+        "name": "value" ,
+      }
+    }
+  },
+  "boolean": {
+    "parent": {
+      "name": "boolean",
+    },
+    "child": {
+      "value": { 
+        "name": "value" ,
+      }
+    }
+  },
   "string": {
     "parent": {
       "name": "string",

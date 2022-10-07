@@ -1,4 +1,4 @@
-- name: Oxygen Saturation Measurement
+- name: Oxygen Saturation
   identifier: OXYSAT
   based_on: Base Observation
   identified_by:

@@ -1,0 +1,68 @@
+---
+- name: "Medical History"
+  based_on: "Medical Event Observation"
+  identified_by:  
+    name: "Event Type"
+    enabled: true
+    collect: false 
+    data_type:
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100010
+  has_items:
+  - name: "Event"
+    enabled: true
+    data_type: 
+    - name: codeable_concept
+  - name: "Result"
+    enabled: true
+    data_type: 
+    - name: boolean
+    - name: coding
+  - name: "Start Date Time"
+    enabled: true
+    data_type: 
+    - name: date_time
+  - name: "End Date Time"
+    enabled: true
+    data_type: 
+    - name: date_time
+- name: "Pregnant"
+  based_on: "Medical Event Observation"
+  identified_by:  
+    name: "Event Type"
+    enabled: true
+    collect: false 
+    data_type:
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100010
+  has_items:
+  - name: "Event"
+    enabled: true
+    collect: false
+    data_type: 
+    - name: codeable_concept
+  - name: "Result"
+    enabled: true
+    data_type: 
+    - name: coding
+      value_set:
+      -
+        cl: C66742
+        cli: C49487
+      -
+        cl: C66742
+        cli: C49488
+      -
+        cl: C66742
+        cli: C17998
+      -
+        cl: C66742
+        cli: C48660

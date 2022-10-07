@@ -144,15 +144,16 @@ def process_instances(base_uri, ns_uri, ra_uri):
                 cl = term["cl"]
                 cli = term["cli"]
                 result = ct_server.term_reference(cl, cli)
-                if result == None:
+                if result == []:
                   result = { 'uri': "", 'notation': "", 'pref_label': "" }
+                #print(result)
                 record = {
                   "uuid": str(uuid4()),
                   "cl": cl,
                   "cli": cli,
-                  "term_uri": result['uri'],
-                  "notation": result['notation'],
-                  "pref_label": result['pref_label']
+                  "term_uri": result[0]['child']['uri'],
+                  "notation": result[0]['child']['notation'],
+                  "pref_label": result[0]['child']['pref_label']
                 }
                 nodes["ValueSet"].append(record)
                 relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
@@ -190,15 +191,15 @@ def process_instances(base_uri, ns_uri, ra_uri):
                   cl = term["cl"]
                   cli = term["cli"]
                   result = ct_server.term_reference(cl, cli)
-                  if result == None:
+                  if result == []:
                     result = { 'uri': "", 'notation': "", 'pref_label': "" }
                   record = {
                     "uuid": str(uuid4()),
                     "cl": cl,
                     "cli": cli,
-                    "term_uri": result['uri'],
-                    "notation": result['notation'],
-                    "pref_label": result['pref_label']
+                    "term_uri": result[0]['child']['uri'],
+                    "notation": result[0]['child']['notation'],
+                    "pref_label": result[0]['child']['pref_label']
                   }
                   nodes["ValueSet"].append(record)
                   relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
