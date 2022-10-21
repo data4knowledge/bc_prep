@@ -7,7 +7,7 @@ class CTService():
     self.__api_url = ServiceEnvironment().get("CT_SERVER_URL")
   
   def term_reference(self, cl, cli):
-    return self.api_get("v1/terms?codelist=%s&term=%s" % (cl, cli))
+    return self.api_get("/v1/codeLists/terms?codelist=%s&term=%s" % (cl, cli))
 
   def api_get(self, url):
     headers =  {"Content-Type":"application/json"}
