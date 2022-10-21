@@ -138,22 +138,20 @@ def process_instances(base_uri, ns_uri, ra_uri):
             dt_uri = add_data_type(item['name'], item_uri, data_type["name"], nodes, relationships, crm_paths, crm_map[instance["based_on"]])
             relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": dt_uri})
             if "value_set" in data_type:
-              #print(data_type["value_set"])
               for term in data_type["value_set"]: 
-                #print(term)
                 cl = term["cl"]
                 cli = term["cli"]
                 result = ct_server.term_reference(cl, cli)
                 if result == []:
-                  result = { 'uri': "", 'notation': "", 'pref_label': "" }
-                #print(result)
+                  print("***** CL NOT FOUND %s, %s *****" % (cl, cli))
+                  result = [ { 'uri': "", 'notation': "", 'pref_label': "" } ]
                 record = {
                   "uuid": str(uuid4()),
                   "cl": cl,
                   "cli": cli,
-                  "term_uri": result[0]['child']['uri'],
-                  "notation": result[0]['child']['notation'],
-                  "pref_label": result[0]['child']['pref_label']
+                  "term_uri": result[0]['uri'],
+                  "notation": result[0]['notation'],
+                  "pref_label": result[0]['pref_label']
                 }
                 nodes["ValueSet"].append(record)
                 relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
@@ -192,14 +190,15 @@ def process_instances(base_uri, ns_uri, ra_uri):
                   cli = term["cli"]
                   result = ct_server.term_reference(cl, cli)
                   if result == []:
-                    result = { 'uri': "", 'notation': "", 'pref_label': "" }
+                    print("***** CL NOT FOUND %s, %s *****" % (cl, cli))
+                    result = [ { 'uri': "", 'notation': "", 'pref_label': "" } ]
                   record = {
                     "uuid": str(uuid4()),
                     "cl": cl,
                     "cli": cli,
-                    "term_uri": result[0]['child']['uri'],
-                    "notation": result[0]['child']['notation'],
-                    "pref_label": result[0]['child']['pref_label']
+                    "term_uri": result[0]['uri'],
+                    "notation": result[0]['notation'],
+                    "pref_label": result[0]['pref_label']
                   }
                   nodes["ValueSet"].append(record)
                   relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
