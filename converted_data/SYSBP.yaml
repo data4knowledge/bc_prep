@@ -8,41 +8,42 @@
     data_type:
     - name: coding
       value_set:
-      - cl: TO BE LOOKED UP
+      - cl: C66741
         cli: C25298
   has_items:
+  - name: Result
+    enabled: true
+    data_type:
+    - name: quantity
+      value_set: []
   - name: Position
     enabled: true
     data_type:
     - name: coding
       value_set:
-      - cl: TO BE LOOKED UP
-        cli: SITTING
-      - cl: TO BE LOOKED UP
-        cli: STANDING
-      - cl: TO BE LOOKED UP
-        cli: SUPINE
+      - cl: C71148
+        cli: C62122
+      - cl: C71148
+        cli: C62166
+      - cl: C71148
+        cli: C62167
   - name: Site of Administration
     enabled: true
     data_type:
     - name: coding
       value_set:
-      - cl: TO BE LOOKED UP
-        cli: BRACHIAL ARTERY
-      - cl: TO BE LOOKED UP
-        cli: COROTID ARTERY
-      - cl: TO BE LOOKED UP
-        cli: DORSALIS PEDIS ARTERY
-      - cl: TO BE LOOKED UP
-        cli: FEMORAL ARTERY
-      - cl: TO BE LOOKED UP
-        cli: RADIAL ARTER
+      - cl: C74456
+        cli: C12681
+      - cl: C74456
+        cli: C32478
+      - cl: C74456
+        cli: C12715
   - name: Laterality
     enabled: true
     data_type:
     - name: coding
       value_set:
-      - cl: TO BE LOOKED UP
-        cli: LEFT
-      - cl: TO BE LOOKED UP
-        cli: RIGHT
+      - cl: C99073
+        cli: C25229
+      - cl: C99073
+        cli: C25228

@@ -5,9 +5,24 @@
     name: Test
     enabled: true
     collect: false
+    data_type: []
+  has_items:
+  - name: Result
+    enabled: true
     data_type:
-    - name: coding
+    - name: quantity
       value_set:
-      - cl: TO BE LOOKED UP
-        cli: C81328
-  has_items: []
+      - cl: C66770
+        cli: C48531
+      - cl: C71620
+        cli: C48531
+      - cl: C66734
+        cli: C49592
+      - cl: C71620
+        cli: C48155
+      - cl: C66770
+        cli: C48155
+      - cl: C71620
+        cli: C28252
+      - cl: C66770
+        cli: C28252

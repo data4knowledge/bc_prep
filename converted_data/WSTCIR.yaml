@@ -8,9 +8,26 @@
     data_type:
     - name: coding
       value_set:
-      - cl: TO BE LOOKED UP
+      - cl: C66741
         cli: C100948
   has_items:
+  - name: Result
+    enabled: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C66770
+        cli: C49668
+      - cl: C71620
+        cli: C49668
+      - cl: C71620
+        cli: C48500
+      - cl: C66770
+        cli: C48500
+      - cl: C71620
+        cli: C28251
+      - cl: C66770
+        cli: C28251
   - name: Site of Administration
     enabled: true
     data_type:

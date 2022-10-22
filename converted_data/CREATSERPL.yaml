@@ -8,11 +8,28 @@
     data_type:
     - name: coding
       value_set:
-      - cl: TO BE LOOKED UP
+      - cl: C65047
         cli: C64547
   has_items:
+  - name: Result
+    enabled: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C71620
+        cli: C67015
+      - cl: C71620
+        cli: C64572
+      - cl: C71620
+        cli: C64387
+      - cl: C71620
+        cli: C48508
   - name: Specimen
     enabled: true
     data_type:
     - name: coding
-      value_set: []
+      value_set:
+      - cl: C66742
+        cli: C49487
+      - cl: C66742
+        cli: C49488
