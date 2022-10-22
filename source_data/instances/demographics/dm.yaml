@@ -165,3 +165,53 @@
       - 
         cl: C66790
         cli: C17998
+#DoB
+- name: "Date of Birth"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true
+    collect: false  
+    data_type: 
+    - 
+      name: coding 
+      value_set:
+      - 
+        cl: D000001
+        cli: D100006
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
+    - 
+      name: date
+# Enrollment
+- name: "Enrollment Date"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true
+    collect: false  
+    data_type: 
+    - 
+      name: coding 
+      value_set:
+      - 
+        cl: D000001
+        cli: D100009
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
+    - 
+      name: date

@@ -1,0 +1,51 @@
+---
+#Inclusion
+- name: "Inclusion Criteria"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true
+    collect: false  
+    data_type: 
+     - 
+      name: coding 
+      value_set:
+      - 
+        cl: D000001
+        cli: D100007
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
+    - 
+      name: boolean
+#Exclusion
+- name: "Exclusion Criteria"
+  based_on: "Base Observation"
+  identified_by:  
+    name: "Test"
+    enabled: true
+    collect: false  
+    data_type: 
+     - 
+      name: coding 
+      value_set:
+      - 
+        cl: D000001
+        cli: D100008
+  has_items:
+  - name: "Date Time"
+    enabled: true  
+    data_type: 
+    - name: date_time
+  - name: "Result"
+    enabled: true  
+    collect: true
+    data_type: 
+    - 
+      name: boolean

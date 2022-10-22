@@ -7,7 +7,7 @@ class CTService():
     self.__api_url = ServiceEnvironment().get("CT_SERVER_URL")
   
   def term_reference(self, cl, cli):
-    return self.api_get("v1/terms?codelist=%s&term=%s" % (cl, cli))
+    return self.api_get("v1/codeLists/terms?codeList=%s&term=%s" % (cl, cli))
 
   def api_get(self, url):
     headers =  {"Content-Type":"application/json"}
@@ -16,4 +16,5 @@ class CTService():
     if response.status_code == 200:
       return response.json()
     else:
+      print(response.text)
       return None

@@ -16,14 +16,16 @@ relationships = {
 }
 bc_uri = {}
 crm_paths = {}
+crm_map = {}
 
 def process_templates(the_instance_uri, ns_uri, ra_uri):
   with open("source_data/templates/templates.yaml") as file:
     templates = yaml.load(file, Loader=yaml.FullLoader)
     for template in templates:
       the_template_uri = template_uri(the_instance_uri, template["name"])
-      #print("Template:", template["name"], the_template_uri)
+      print("Template:", template["name"], the_template_uri)
       nodes["Template"].append({"name": template["name"], "uri": the_template_uri, "uuid": uuid4() })
+      crm_map[template["name"]] = {}
       add_identifier_and_status(the_template_uri, template["name"].upper(), "2022-09-01", ns_uri, ra_uri, nodes, relationships)
       name = format_name(template["identified_by"]["name"])
       item_uri = "%s/%s" % (the_template_uri, name)
@@ -37,9 +39,10 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
       }
       if "canonical" in template["identified_by"]:
         record["canonical"] = template["identified_by"]["canonical"]
-        #crm_server = CRMServer()
-        #result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
-        #crm_paths[template["identified_by"]["canonical"]] = result
+        crm_server = CRMService()
+        result = crm_server.crm_node_data_types(template["identified_by"]["canonical"])
+        crm_paths[template["identified_by"]["canonical"]] = result
+        crm_map[template['name']][record['name']] = record['canonical']
       nodes["TemplateItem"].append(record)
       relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
       relationships["HAS_IDENTIFIER"].append({"from": the_template_uri, "to": item_uri})
@@ -69,10 +72,11 @@ def process_templates(the_instance_uri, ns_uri, ra_uri):
         }
         if "canonical" in item:
           record["canonical"] = item["canonical"]
-          #crm_server = CRMServer()
-          #result = crm_server.crm_node_data_types(item["canonical"])
+          crm_server = CRMService()
+          result = crm_server.crm_node_data_types(item["canonical"])
           #print(result)
-          #crm_paths[template["identified_by"]["canonical"]] = result
+          crm_paths[item["canonical"]] = result
+          crm_map[template['name']][record['name']] = record['canonical']
         nodes["TemplateItem"].append(record)
         relationships["HAS_ITEM"].append({"from": the_template_uri, "to": item_uri})
         parent_uri = item_uri
@@ -96,7 +100,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
       instances = yaml.load(file, Loader=yaml.FullLoader)
       for instance in instances:
         #print(instance)
-        #print("instance:", instance["name"])
+        print("Instance:", instance["name"])
         based_on_uri = template_uri(base_uri, instance["based_on"])
         #print("based on:", based_on_uri)
         the_instance_uri, uri_name = instance_uri(base_uri, instance["name"])
@@ -131,24 +135,23 @@ def process_instances(base_uri, ns_uri, ra_uri):
         relationships["HAS_IDENTIFIER"].append({"from": the_instance_uri, "to": item_uri})
         if "data_type" in item:
           for data_type in item["data_type"]: 
-            dt_uri = add_data_type(item_uri, data_type["name"], nodes, relationships)
+            dt_uri = add_data_type(item['name'], item_uri, data_type["name"], nodes, relationships, crm_paths, crm_map[instance["based_on"]])
             relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": dt_uri})
             if "value_set" in data_type:
-              #print(data_type["value_set"])
               for term in data_type["value_set"]: 
-                #print(term)
                 cl = term["cl"]
                 cli = term["cli"]
                 result = ct_server.term_reference(cl, cli)
-                if result == None:
-                  result = { 'uri': "", 'notation': "", 'pref_label': "" }
+                if result == []:
+                  print("***** CL NOT FOUND %s, %s *****" % (cl, cli))
+                  result = [ { 'uri': "", 'notation': "", 'pref_label': "" } ]
                 record = {
                   "uuid": str(uuid4()),
                   "cl": cl,
                   "cli": cli,
-                  "term_uri": result['uri'],
-                  "notation": result['notation'],
-                  "pref_label": result['pref_label']
+                  "term_uri": result[0]['uri'],
+                  "notation": result[0]['notation'],
+                  "pref_label": result[0]['pref_label']
                 }
                 nodes["ValueSet"].append(record)
                 relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})
@@ -177,7 +180,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
             relationships["HAS_QUALIFIER"].append({"from": identifier_uri, "to": item_uri})
           if "data_type" in item:
             for data_type in item["data_type"]: 
-              dt_uri = add_data_type(item_uri, data_type["name"], nodes, relationships)
+              dt_uri = add_data_type(item['name'], item_uri, data_type["name"], nodes, relationships, crm_paths, crm_map[instance["based_on"]])
               relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": dt_uri})
               if "value_set" in data_type:
                 #print(data_type["value_set"])
@@ -186,15 +189,16 @@ def process_instances(base_uri, ns_uri, ra_uri):
                   cl = term["cl"]
                   cli = term["cli"]
                   result = ct_server.term_reference(cl, cli)
-                  if result == None:
-                    result = { 'uri': "", 'notation': "", 'pref_label': "" }
+                  if result == []:
+                    print("***** CL NOT FOUND %s, %s *****" % (cl, cli))
+                    result = [ { 'uri': "", 'notation': "", 'pref_label': "" } ]
                   record = {
                     "uuid": str(uuid4()),
                     "cl": cl,
                     "cli": cli,
-                    "term_uri": result['uri'],
-                    "notation": result['notation'],
-                    "pref_label": result['pref_label']
+                    "term_uri": result[0]['uri'],
+                    "notation": result[0]['notation'],
+                    "pref_label": result[0]['pref_label']
                   }
                   nodes["ValueSet"].append(record)
                   relationships["HAS_RESPONSE"].append({"from": dt_uri, "to": record['uuid']})

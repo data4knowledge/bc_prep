@@ -113,6 +113,11 @@
     canonical: TERM  
     data_type: 
     - name: codeable_concept
+  - name: "Result"
+    mandatory: true
+    enabled: true  
+    data_type: 
+    - name: boolean
   - name: "Serious Event"
     mandatory: false
     enabled: true  
@@ -246,6 +251,49 @@
     canonical: "PERIOD END"      
     data_type: 
     - name: date_time
+  - name: "Result"
+    mandatory: true
+    enabled: true  
+    data_type: 
+    - name: boolean
+    - name: coding
+- name: "Medical Event Observation"
+  identified_by:  
+    name: "Event Type"
+    mandatory: true
+    enabled: true  
+    data_type: 
+    - name: coding
+  has_items:
+  - name: "Event"
+    mandatory: true
+    enabled: true  
+    canonical: TERM  
+    data_type: 
+    - name: codeable_concept
+  - name: "Result"
+    mandatory: true
+    enabled: true  
+    data_type: 
+    - name: boolean
+    - name: coding
+  - name: "Start Date Time"
+    mandatory: true
+    enabled: true
+    canonical: "PERIOD START"      
+    data_type: 
+    - name: date_time
+  - name: "End Date Time"
+    mandatory: true
+    enabled: true  
+    canonical: "PERIOD END"      
+    data_type: 
+    - name: date_time
+
+
+
+
+
 
 
 
