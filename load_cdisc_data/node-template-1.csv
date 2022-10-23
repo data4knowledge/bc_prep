@@ -1,0 +1,6 @@
+"id:ID","name","uri","uuid"
+"1","Base Observation","https://bc.d4k.dk/cdisc/bc_template/base_observation","acfbda11-f008-4f17-ae70-efb7b33a0184"
+"2","Base Laboratory","https://bc.d4k.dk/cdisc/bc_template/base_laboratory","ef3fdfca-9590-4b01-8af8-8ab9178693e2"
+"3","Event Observation","https://bc.d4k.dk/cdisc/bc_template/event_observation","ac76372d-0009-47e1-a69e-6600122dbefc"
+"4","Intervention","https://bc.d4k.dk/cdisc/bc_template/intervention","cf9d0d8b-9639-4efd-90c0-06aa824a1e1d"
+"5","Medical Event Observation","https://bc.d4k.dk/cdisc/bc_template/medical_event_observation","f2929450-45da-4ed7-8cf1-21834dcd2ae9"
