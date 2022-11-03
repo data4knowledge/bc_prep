@@ -13,10 +13,12 @@
   has_items:
   - name: Date Time
     enabled: true
+    collect: true
     data_type:
     - name: date_time
   - name: Position
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -36,6 +38,7 @@
         cli: C32141
   - name: Laterality
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -47,6 +50,7 @@
         cli: C13332
   - name: Result
     enabled: true
+    collect: true
     data_type:
     - name: quantity
       value_set:

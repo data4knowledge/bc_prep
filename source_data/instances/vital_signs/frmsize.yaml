@@ -13,6 +13,7 @@
   has_items:
   - name: Result
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:

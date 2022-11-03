@@ -13,6 +13,7 @@
   has_items:
   - name: Position
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -50,6 +51,7 @@
         cli: C90480
   - name: Result
     enabled: true
+    collect: true
     data_type:
     - name: quantity
       value_set:

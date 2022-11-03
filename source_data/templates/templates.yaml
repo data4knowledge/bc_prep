@@ -12,6 +12,7 @@
   - name: "Position"
     mandatory: false
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Site of Administration"

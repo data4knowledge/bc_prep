@@ -15,89 +15,111 @@
   has_items:
   - name: "Event"
     enabled: true
+    collect: true
     data_type: 
     - name: codeable_concept
   - name: "Serious Event"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Severity"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Causality"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Relationship to Non-Study Treatment"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Action taken"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Other Action Taken"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Concomitant or Additional Treatment Given"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Outcome"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Pattern of Event"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Hospitalization Required"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Is Life Threatening"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Occurred with Overdose"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Other Medically Important Serious Event"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Involves Cancer"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Results in Death"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Standard Toxicity Grade"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Start Date Time"
     enabled: true
+    collect: true
     data_type: 
     - name: date_time
   - name: "End Date Time"
     enabled: true
+    collect: true
     data_type: 
     - name: date_time
   - name: "Location of Event"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Congenital Anomaly or Birth Defect"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
   - name: "Persist or Significant Disability/Incapacity"
     enabled: true
+    collect: true
     data_type: 
     - name: coding

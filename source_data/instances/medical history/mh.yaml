@@ -15,19 +15,23 @@
   has_items:
   - name: "Event"
     enabled: true
+    collect: true
     data_type: 
     - name: codeable_concept
   - name: "Result"
     enabled: true
+    collect: true
     data_type: 
     - name: boolean
     - name: coding
   - name: "Start Date Time"
     enabled: true
+    collect: true
     data_type: 
     - name: date_time
   - name: "End Date Time"
     enabled: true
+    collect: true
     data_type: 
     - name: date_time
 - name: "Pregnant"
@@ -51,6 +55,7 @@
     - name: codeable_concept
   - name: "Result"
     enabled: true
+    collect: true
     data_type: 
     - name: coding
       value_set:

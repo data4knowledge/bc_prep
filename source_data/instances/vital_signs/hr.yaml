@@ -4,6 +4,7 @@
   identified_by:
     name: Test
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -12,6 +13,7 @@
   has_items:
   - name: Position
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -31,6 +33,7 @@
         cli: C32141
   - name: Laterality
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -42,6 +45,7 @@
         cli: C13332
   - name: Result
     enabled: true
+    collect: true
     data_type:
     - name: quantity
       value_set:

@@ -47,6 +47,11 @@
       - 
         cl: C71620
         cli: C111253
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
 - name: "Glucose in blood"
   based_on: "Base Laboratory"
   identified_by:  
@@ -85,6 +90,11 @@
       - 
         cl: C71620
         cli: C111253
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
 - name: "Glucose in serum"
   based_on: "Base Laboratory"
   identified_by:  
@@ -124,6 +134,11 @@
       - 
         cl: C71620
         cli: C111253
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
 - name: "Glucose in urine"
   based_on: "Base Laboratory"
   identified_by:  
@@ -163,3 +178,8 @@
       - 
         cl: C71620
         cli: C111253
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time

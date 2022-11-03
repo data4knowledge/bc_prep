@@ -4,6 +4,7 @@
   identified_by:
     name: Test
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:
@@ -12,10 +13,12 @@
   has_items:
   - name: Date Time
     enabled: true
+    collect: true
     data_type:
     - name: date_time
   - name: Result
     enabled: true
+    collect: true
     data_type:
     - name: coding
       value_set:

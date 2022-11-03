@@ -15,13 +15,16 @@
   has_items:
   - name: "Intervention"
     enabled: true
+    collect: true
     data_type: 
     - name: codeable_concept
   - name: "Start Date Time"
     enabled: true
+    collect: true
     data_type: 
     - name: date_time
   - name: "End Date Time"
     enabled: true
+    collect: true
     data_type: 
     - name: date_time
