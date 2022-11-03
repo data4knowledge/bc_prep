@@ -15,16 +15,9 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
-  - name: "Position"
-    enabled: false
-  - name: "Site of Administration"
-    enabled: false
-  - name: "Laterality"
-    enabled: false
-  - name: "Method"
-    enabled: false 
   - name: "Result"
     enabled: true
     collect: true

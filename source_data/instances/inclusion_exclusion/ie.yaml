@@ -16,11 +16,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: boolean
@@ -41,11 +42,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: boolean

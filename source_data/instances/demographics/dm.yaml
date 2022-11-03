@@ -16,11 +16,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: coding
@@ -48,7 +49,7 @@
         cli: C43234
   - name: "Result Other"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     -
       name: string
@@ -70,11 +71,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: coding
@@ -108,11 +110,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: quantity
@@ -144,11 +147,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: coding
@@ -182,11 +186,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: date
@@ -207,11 +212,12 @@
   has_items:
   - name: "Date Time"
     enabled: true  
+    collect: true
     data_type: 
     - name: date_time
   - name: "Result"
     enabled: true  
-    collect: true
+    collect: true 
     data_type: 
     - 
       name: date

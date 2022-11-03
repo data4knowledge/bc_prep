@@ -8,7 +8,7 @@
     - name: coding
       value_set:
       - cl: C66741
-        cli: C25206
+        cli: C174446
   has_items:
   - name: Date Time
     enabled: true

@@ -28,6 +28,7 @@
   - name: "Result"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: boolean
     - name: coding

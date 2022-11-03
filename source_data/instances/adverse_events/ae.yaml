@@ -22,63 +22,63 @@
     data_type: 
     - name: coding
   - name: "Severity"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Causality"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Relationship to Non-Study Treatment"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Action taken"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Other Action Taken"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Concomitant or Additional Treatment Given"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Outcome"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Pattern of Event"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Hospitalization Required"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Is Life Threatening"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Occurred with Overdose"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Other Medically Important Serious Event"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Involves Cancer"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Results in Death"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Standard Toxicity Grade"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Start Date Time"
@@ -90,14 +90,14 @@
     data_type: 
     - name: date_time
   - name: "Location of Event"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Congenital Anomaly or Birth Defect"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding
   - name: "Persist or Significant Disability/Incapacity"
-    enabled: false 
+    enabled: true
     data_type: 
     - name: coding

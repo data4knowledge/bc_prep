@@ -4,6 +4,7 @@
     name: "Test"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: TEST  
     data_type: 
     - name: coding 
@@ -16,28 +17,33 @@
   - name: "Site of Administration"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Laterality"
     mandatory: false
     enabled: true  
+    collect: true    
     canonical: LATERALITY
     data_type: 
     - name: coding
   - name: "Method"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Date Time"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: "DATE TIME"  
     data_type: 
     - name: date_time
   - name: "Result"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: RESULT
     data_type: 
     - name: quantity
@@ -45,6 +51,7 @@
   - name: "Result Other"
     mandatory: false
     enabled: true  
+    collect: true    
     canonical: "RESULT OTHER"
     data_type: 
     - name: string
@@ -53,6 +60,7 @@
     name: "Test"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: TEST  
     data_type: 
     - name: coding 
@@ -60,43 +68,51 @@
   - name: "Position"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Site of Administration"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Laterality"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Directionality"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Method"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Date Time"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: "DATE TIME"  
     data_type: 
     - name: date_time
   - name: "Result"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: quantity
     - name: coding
   - name: "Specimen"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
 - name: "Event Observation"
@@ -104,98 +120,117 @@
     name: "Event Type"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   has_items:
   - name: "Event"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: TERM  
     data_type: 
     - name: codeable_concept
   - name: "Result"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: boolean
   - name: "Serious Event"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Severity"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Causality"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Relationship to Non-Study Treatment"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Action taken"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Other Action Taken"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Concomitant or Additional Treatment Given"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Outcome"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Pattern of Event"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Hospitalization Required"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Is Life Threatening"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Occurred with Overdose"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Other Medically Important Serious Event"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Involves Cancer"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Results in Death"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Standard Toxicity Grade"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Start Date Time"
@@ -207,22 +242,26 @@
   - name: "End Date Time"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: "PERIOD END"      
     data_type: 
     - name: date_time
   - name: "Location of Event"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Congenital Anomaly or Birth Defect"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   - name: "Persist or Significant Disability/Incapacity"
     mandatory: false
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
 - name: "Intervention"
@@ -230,12 +269,14 @@
     name: "Intervention Type"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   has_items:
   - name: "Intervention"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: TREATMENT
     data_type: 
     - name: codeable_concept
@@ -248,12 +289,14 @@
   - name: "End Date Time"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: "PERIOD END"      
     data_type: 
     - name: date_time
   - name: "Result"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: boolean
     - name: coding
@@ -262,18 +305,21 @@
     name: "Event Type"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: coding
   has_items:
   - name: "Event"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: TERM  
     data_type: 
     - name: codeable_concept
   - name: "Result"
     mandatory: true
     enabled: true  
+    collect: true
     data_type: 
     - name: boolean
     - name: coding
@@ -286,6 +332,7 @@
   - name: "End Date Time"
     mandatory: true
     enabled: true  
+    collect: true    
     canonical: "PERIOD END"      
     data_type: 
     - name: date_time
