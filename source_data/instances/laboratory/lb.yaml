@@ -196,7 +196,7 @@
       value_set:
       - 
         cl: C65047
-        cli: C64796	
+        cli: C64796
   has_items:
   - name: "Specimen"
     enabled: true
@@ -207,7 +207,7 @@
       value_set:
       - 
         cl: C78734
-        cli: C112235	
+        cli: C112235
   - name: "Result"
     enabled: true  
     collect: true 

@@ -11,8 +11,8 @@
       name: coding
       value_set:
       - 
-        cl: C100453
-        cli: C120527	
+        cl: C120527
+        cli: C100453
   has_items:
   - name: "Result"
     enabled: true  
@@ -45,7 +45,7 @@
       value_set:
       - 
         cl: D000001
-        cli: D100012	
+        cli: D100011
   has_items:
   - name: "Result"
     enabled: true  
@@ -75,7 +75,7 @@
       value_set:
       - 
         cl: D000001
-        cli: D100013
+        cli: D100012
   has_items:
   - name: "Result"
     enabled: true  
@@ -105,7 +105,7 @@
       value_set:
       - 
         cl: D000001
-        cli: D100014
+        cli: D100013
   has_items:
   - name: "Result"
     enabled: true  

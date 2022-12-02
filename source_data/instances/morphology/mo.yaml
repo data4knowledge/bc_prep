@@ -26,8 +26,8 @@
     data_type:
     - name: coding
       value_set:
-      - cl: C12392
-        cli: C74456
+      - cl: C74456
+        cli: C12392
   - name: Result
     enabled: true
     collect: true
@@ -35,7 +35,7 @@
     - name: quantity
       value_set:
       - cl: C71620
-        cli: C49668	
+        cli: C49668
 - name: Spleen Size
   based_on: Base Observation
   identified_by:
@@ -64,8 +64,8 @@
     data_type:
     - name: coding
       value_set:
-      - cl: C12432
-        cli: C74456
+      - cl: C74456
+        cli: C12432
   - name: Result
     enabled: true
     collect: true
@@ -73,4 +73,4 @@
     - name: quantity
       value_set:
       - cl: C71620
-        cli: C49668	
+        cli: C49668
