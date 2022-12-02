@@ -183,3 +183,43 @@
     collect: true
     data_type:
     - name: date_time
+- name: "Hematocrit"
+  based_on: "Base Laboratory"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: C65047
+        cli: C64796	
+  has_items:
+  - name: "Specimen"
+    enabled: true
+    collect: true
+    data_type: 
+    - 
+      name: coding
+      value_set:
+      - 
+        cl: C78734
+        cli: C112235	
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set:
+      - 
+        cl: C71620
+        cli: C25613
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time

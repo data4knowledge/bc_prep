@@ -21,6 +21,12 @@
     collect: true
     data_type: 
     - name: coding
+  - name: "Location"
+    mandatory: false
+    enabled: true  
+    collect: true
+    data_type: 
+    - name: coding
   - name: "Laterality"
     mandatory: false
     enabled: true  

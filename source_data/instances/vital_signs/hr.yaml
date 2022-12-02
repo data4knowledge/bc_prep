@@ -4,7 +4,7 @@
   identified_by:
     name: Test
     enabled: true
-    collect: true
+    collect: false
     data_type:
     - name: coding
       value_set:

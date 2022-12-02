@@ -1,0 +1,76 @@
+- name: Liver Size
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C124300
+        cli: C25681
+  has_items:
+  - name: Method
+    enabled: true
+    collect: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C85492
+        cli: C17230
+      - cl: C85492
+        cli: C16950
+  - name: Location
+    enabled: true
+    collect: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C12392
+        cli: C74456
+  - name: Result
+    enabled: true
+    collect: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C71620
+        cli: C49668	
+- name: Spleen Size
+  based_on: Base Observation
+  identified_by:
+    name: Test
+    enabled: true
+    collect: false
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C124300
+        cli: C25681
+  has_items:
+  - name: Method
+    enabled: true
+    collect: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C85492
+        cli: C17230
+      - cl: C85492
+        cli: C16950
+  - name: Location
+    enabled: true
+    collect: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C12432
+        cli: C74456
+  - name: Result
+    enabled: true
+    collect: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C71620
+        cli: C49668	

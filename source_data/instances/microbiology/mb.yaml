@@ -1,0 +1,124 @@
+---
+- name: "Plasmodium"
+  based_on: "Base Laboratory"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: C100453
+        cli: C120527	
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: coding
+      value_set:
+      - 
+        cl: C102580
+        cli: C38757
+      - 
+        cl: C102580
+        cli: C38758
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "Plasmodium vivax, Asexual"
+  based_on: "Base Laboratory"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100012	
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set:
+      - 
+        cl: C71620
+        cli: C116237
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "Plasmodium vivax, Sexual"
+  based_on: "Base Laboratory"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100013
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set:
+      - 
+        cl: C71620
+        cli: C116237
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "Plasmodium flciparum, Asexual"
+  based_on: "Base Laboratory"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100014
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set:
+      - 
+        cl: C71620
+        cli: C116237
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
