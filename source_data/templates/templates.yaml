@@ -113,6 +113,7 @@
     mandatory: true
     enabled: true  
     collect: true
+    canonical: RESULT
     data_type: 
     - name: quantity
     - name: coding
