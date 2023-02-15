@@ -1,0 +1,148 @@
+---
+- name: "Anemia"
+  based_on: "Base Observation"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100015
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set: []
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "EVI"
+  based_on: "Base Observation"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100016
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set: []
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "NLN"
+  based_on: "Base Observation"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100016
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: coding
+      value_set:
+      - 
+        cl: C66742
+        cli: C49488
+      - 
+        cl: C66742
+        cli: C49487
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "SES"
+  based_on: "Base Observation"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100017
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set: []
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
+- name: "Malaria RDT"
+  based_on: "Base Observation"
+  narrower: [] 
+  identified_by:  
+    name: "Test"
+    enabled: true 
+    collect: false 
+    data_type: 
+     - 
+      name: coding
+      value_set:
+      - 
+        cl: D000001
+        cli: D100018
+  has_items:
+  - name: "Result"
+    enabled: true  
+    collect: true 
+    data_type: 
+    - 
+      name: quantity
+      value_set:
+      - 
+        cl: C102580
+        cli: C38757
+      - 
+        cl: C102580
+        cli: C38758
+  - name: Date Time
+    enabled: true
+    collect: true
+    data_type:
+    - name: date_time
