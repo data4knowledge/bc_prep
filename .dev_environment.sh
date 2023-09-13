@@ -1,5 +1,0 @@
-RA_SERVER_URL="http://127.0.0.1:8010/"
-NEO4J_URI="bolt://localhost:7687"
-NEO4J_DB_NAME="crm-service-dev"
-NEO4J_USERNAME="neo4j"
-NEO4J_PASSWORD="cdisc"
