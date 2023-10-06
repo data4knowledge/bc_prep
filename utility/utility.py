@@ -3,9 +3,19 @@ import os
 from os import walk
 import pathlib
 from uuid import uuid4
+from functools import reduce
+from operator import getitem
 
 uri_and_uuid_to_id = {}
 id_number = 1
+
+def dig(d, keys):
+  try:
+    for level in keys:
+      d = d[level]
+    return d
+  except:
+    return None
 
 def format_name(name):
     name = name.lower()
