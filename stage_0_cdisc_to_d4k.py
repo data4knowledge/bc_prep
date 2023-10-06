@@ -3,6 +3,7 @@ from utility.utility import *
 from utility.ra_service import *
 from utility.crm_service import *
 from utility.ct_service import *
+from utility.sdtm_service import *
 
 class Template():
 
@@ -16,8 +17,8 @@ class Template():
         results = crm_server.crm_node_data_types(item["canonical"])
         for key, value in results.items():
           self._crm_paths[value] = {'name': item["name"], 'data_type_path': key}
-    print(f"\n\nTEMPLATE: {template['name']}")
-    print(f"PATHS: {self._crm_paths}")
+    #print(f"\n\nTEMPLATE: {template['name']}")
+    #print(f"PATHS: {self._crm_paths}")
 
 class Templates():
 
@@ -62,20 +63,26 @@ for name, template in templates.items.items():
   print(f"Name: {name}")
 
 domain_template_map = {
-  'DM': 'Base Observation',
-  'VS': 'Base Observation',
-  'EG': 'Base Observation',
-  'TU': 'Base Observation',
-  'MB': 'Base Observation',
-  'LB': 'Base Laboratory'
+  'DM': {'template': 'Base Observation'},
+  'VS': {'template': 'Base Observation'},
+  'EG': {'template': 'Base Observation'},
+  'TU': {'template': 'Base Observation'},
+  'MB': {'template': 'Base Observation'},
+  'LB': {'template': 'Base Laboratory'}
 }
+sdtm = SDTMService()
+domains = sdtm.get_domains()
+for domain, entry in domain_template_map.items():
+  definition = next(item for item in domains['items'] if item["name"] == domain)
+  entry['definition'] = sdtm.get_domain(definition['uuid'])
+  #print(f"DOMAIN: {entry}")
 
 specializations = Specializations()
 ct = CTService()
 for name, specialization in specializations.items.items():
   domain = specialization.domain
   if domain in domain_template_map:
-    template_name = domain_template_map[domain]
+    template_name = domain_template_map[domain]['template']
     identifier = specialization.identifier()
     if identifier:
       instance = templates.items[template_name].definition
