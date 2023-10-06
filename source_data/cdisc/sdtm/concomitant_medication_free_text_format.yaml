@@ -1,0 +1,245 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C53630
+    title: Concomitant Therapy
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-10-03
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/CMFREE
+    title: Concomitant Medication Free Text Format
+    type: SDTM Dataset Specialization
+datasetSpecializationId: CMFREE
+domain: CM
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Concomitant Medication Free Text Format
+source: CM.CMTRT
+variables:
+- dataElementConceptId: C70902
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: CMTRT
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is original text for
+    object: CMDECOD
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: CMTRT
+  role: Topic
+- dataElementConceptId: C83345
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: CMDECOD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the dictionary-derived term for the value in
+    object: CMTRT
+    predicateTerm: DECODES
+    subject: CMDECOD
+  role: Qualifier
+- dataElementConceptId: C83218
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: CMTRT
+    predicateTerm: GROUPS
+    subject: CMCAT
+  role: Qualifier
+- dataElementConceptId: C83232
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMSCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: CMCAT
+    predicateTerm: GROUPS
+    subject: CMSCAT
+  role: Qualifier
+- dataElementConceptId: C83232
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMCLAS
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the dictionary-derived class name for the value in
+    object: CMTRT
+    predicateTerm: IS_DERIVED_FROM
+    subject: CMCLAS
+  role: Qualifier
+- dataElementConceptId: C83232
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMCLASCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the dictionary-derived class code for the value in
+    object: CMTRT
+    predicateTerm: IS_DECODED_BY
+    subject: CMCLASCD
+  role: Qualifier
+- dataElementConceptId: C83085
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMINDC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the medical condition that is the reason for the treatment in
+    object: CMTRT
+    predicateTerm: INDICATES
+    subject: CMINDC
+  role: Qualifier
+- dataElementConceptId: C83221
+  dataType: text
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMDOSE
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the administered amount of the treatment in
+    object: CMTRT
+    predicateTerm: IS_ATTRIBUTE_FOR
+    subject: CMDOSE
+  role: Qualifier
+- codelist:
+    conceptId: C71620
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71620
+    submissionValue: UNIT
+  dataElementConceptId: C83034
+  dataType: text
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMDOSU
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the unit for
+    object: CMDOSE
+    predicateTerm: IS_UNIT_FOR
+    subject: CMDOSU
+  role: Qualifier
+- codelist:
+    conceptId: C66726
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66726
+    submissionValue: FRM
+  dataElementConceptId: C83110
+  dataType: text
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMDOSFRM
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the physical form of the product in
+    object: CMTRT
+    predicateTerm: IS_ATTRIBUTE_FOR
+    subject: CMDOSFRM
+  role: Qualifier
+- codelist:
+    conceptId: C71113
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71113
+    submissionValue: FREQ
+  dataElementConceptId: C83042
+  dataType: text
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMDOSFRQ
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the frequency of administration of the amount in
+    object: CMDOSE
+    predicateTerm: SPECIFIES
+    subject: CMDOSFRQ
+  role: Qualifier
+- codelist:
+    conceptId: C66729
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66729
+    submissionValue: ROUTE
+  dataElementConceptId: C83120
+  dataType: text
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMROUTE
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the part of the body through which is administered the treatment
+      in
+    object: CMTRT
+    predicateTerm: IS_ATTRIBUTE_FOR
+    subject: CMROUTE
+  role: Qualifier
+- dataElementConceptId: C83235
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMSTDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the start date for
+    object: CMTRT
+    predicateTerm: IS_TIMING_FOR
+    subject: CMSTDTC
+  role: Timing
+- dataElementConceptId: C83225
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: CMENDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the end date for
+    object: CMTRT
+    predicateTerm: IS_TIMING_FOR
+    subject: CMENDTC
+  role: Timing

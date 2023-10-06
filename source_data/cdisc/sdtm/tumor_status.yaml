@@ -1,0 +1,211 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C96643
+    title: Tumor Status
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/TUMSTATE
+    title: Tumor Status
+    type: SDTM Dataset Specialization
+datasetSpecializationId: TUMSTATE
+domain: TR
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Tumor Status
+source: TR.TRTESTCD
+variables:
+- assignedTerm:
+    conceptId: C96643
+    value: TUMSTATE
+  codelist:
+    conceptId: C96779
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96779
+    submissionValue: TRTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TRTESTCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: TRTEST
+    predicateTerm: IS_DECODED_BY
+    subject: TRTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C96643
+    value: Tumor State
+  codelist:
+    conceptId: C96778
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96778
+    submissionValue: TRTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TRTEST
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: decodes the value in
+    object: TRTESTCD
+    predicateTerm: DECODES
+    subject: TRTEST
+  role: Qualifier
+- codelist:
+    conceptId: C124309
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C124309
+    submissionValue: TRPROPRS
+  dataElementConceptId: C117221
+  dataType: text
+  isNonStandard: false
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: TRORRES
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: TRTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: TRORRES
+  role: Qualifier
+  valueList:
+  - PRESENT
+  - ABSENT
+  - UNEQUIVOCAL
+  - EQUIVOCAL
+  vlmTarget: true
+- codelist:
+    conceptId: C124309
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C124309
+    submissionValue: TRPROPRS
+  dataElementConceptId: C117222
+  dataType: text
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TRSTRESC
+  originSource: Sponsor
+  originType: Derived
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: TRTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: TRSTRESC
+  role: Qualifier
+  valueList:
+  - PRESENT
+  - ABSENT
+  - UNEQUIVOCAL
+  - EQUIVOCAL
+  vlmTarget: true
+- codelist:
+    conceptId: C85492
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C85492
+    submissionValue: METHOD
+  comparator: IN
+  dataElementConceptId: C82535
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TRMETHOD
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the method for the test in
+    object: TRTESTCD
+    predicateTerm: SPECIFIES
+    subject: TRMETHOD
+  role: Qualifier
+  valueList:
+  - CT SCAN
+  - CALIPER MEASUREMENT METHOD
+  - ENDOSCOPY
+  - LYMPHANGIOGRAPHY
+  - MAMMOGRAPHY
+  - MRI
+  - NUCLEAR RADIOLOGY
+  - PET SCAN
+  - PET/CT SCAN
+  - PET/MRI SCAN
+  - PHOTOGRAPHY
+  - SCINTIGRAPHY
+  - TOTAL BODY RADIOGRAPHY
+  - ULTRASOUND
+  - X-RAY
+- codelist:
+    conceptId: C78735
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C78735
+    submissionValue: EVAL
+  comparator: IN
+  dataElementConceptId: C51824
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: TREVAL
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the role of the assessor who performed the test in
+    object: TRTESTCD
+    predicateTerm: PERFORMED
+    subject: TREVAL
+  role: Qualifier
+  valueList:
+  - INVESTIGATOR
+  - ADJUDICATOR
+  - INDEPENDENT ASSESSOR
+- codelist:
+    conceptId: C99079
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99079
+    submissionValue: EPOCH
+  comparator: IN
+  dataElementConceptId: C71738
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EPOCH
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the epoch of the performance of the test in
+    object: TRTESTCD
+    predicateTerm: IS_EPOCH_OF
+    subject: EPOCH
+  role: Timing
+  valueList:
+  - SCREENING
+  - TREATMENT
+- dataElementConceptId: C117419
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TRREFID
+  originSource: Sponsor
+  originType: Derived
+  relationship:
+    linkingPhrase: is the identifier for the source data used in the performance of
+      the test in
+    object: TRTESTCD
+    predicateTerm: IDENTIFIES_PRODUCT_IN
+    subject: TRREFID
+  role: Identifier
+- dataElementConceptId: C117411
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TRLNKGRP
+  originSource: Sponsor
+  originType: Derived
+  relationship:
+    linkingPhrase: groups tumor assessments used in overall response identified by
+    object: RSLNKGRP
+    predicateTerm: GROUPS_BY
+    subject: TRLNKGRP
+  role: Identifier

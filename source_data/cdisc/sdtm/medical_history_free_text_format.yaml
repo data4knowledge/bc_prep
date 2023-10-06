@@ -1,0 +1,108 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C200145
+    title: Solicited Medical History
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-10-03
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/MEDHISTFREE
+    title: Medical History Free Text Format
+    type: SDTM Dataset Specialization
+datasetSpecializationId: MEDHISTFREE
+domain: MH
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Medical History Free Text Format
+source: MH.MHTERM
+variables:
+- dataElementConceptId: C83118
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: MHTERM
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is original text for
+    object: MHDECOD
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: MHTERM
+  role: Topic
+- dataElementConceptId: C83346
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MHDECOD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: MHTERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: MHDECOD
+  role: Qualifier
+- dataElementConceptId: C83018
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MHCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: MHTERM
+    predicateTerm: GROUPS
+    subject: MHCAT
+  role: Qualifier
+- dataElementConceptId: C83143
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MHSCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: MHCAT
+    predicateTerm: GROUPS
+    subject: MHSCAT
+  role: Qualifier
+- dataElementConceptId: C83338
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MHSTDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the start date for
+    object: MHTERM
+    predicateTerm: IS_TIMING_FOR
+    subject: MHSTDTC
+  role: Timing
+- dataElementConceptId: C83330
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MHENDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the end date for
+    object: MHTERM
+    predicateTerm: IS_TIMING_FOR
+    subject: MHENDTC
+  role: Timing

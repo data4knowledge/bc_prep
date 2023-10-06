@@ -1,0 +1,637 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C179175
+    title: Solicited Adverse Event
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-10-03
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/AEPRESP
+    title: Adverse Event Prespecified
+    type: SDTM Dataset Specialization
+datasetSpecializationId: AEPRESP
+domain: AE
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-4
+shortName: Adverse Event Prespecified
+source: AE.AETERM
+variables:
+- dataElementConceptId: C78541
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: AETERM
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is original text for
+    object: AEDECODE
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: AETERM
+  role: Topic
+- dataElementConceptId: C83344
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEDECOD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: AETERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: AEDECOD
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AELLT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: AETERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: AELLT
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AELLTCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: AETERM
+    predicateTerm: IS_DECODED_BY
+    subject: AELLTCD
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEPTCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: AETERM
+    predicateTerm: IS_DECODED_BY
+    subject: AEPTCD
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEHLT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: AETERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: AEHLT
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEHLTCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: AETERM
+    predicateTerm: IS_DECODED_BY
+    subject: AEHLTCD
+  role: Qualifier
+- dataElementConceptId: C83198
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AECAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: AETERM
+    predicateTerm: GROUPS
+    subject: AECAT
+  role: Qualifier
+- dataElementConceptId: C83212
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: values are grouped by
+    object: AECAT
+    predicateTerm: IS_GROUPED_BY
+    subject: AESCAT
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C87840
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AEPRESP
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: indicates pre-specification of the value in
+    object: AETERM
+    predicateTerm: IS_INDICATOR_FOR
+    subject: AEPRESP
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEBODSYS
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: AETERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: AEBODSYS
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEBDSYCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: AETERM
+    predicateTerm: IS_DECODED_BY
+    subject: AEBDSYCD
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AESOC
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: AETERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: AESOC
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AESOCCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: AETERM
+    predicateTerm: IS_DECODED_BY
+    subject: AESOCCD
+  role: Qualifier
+- codelist:
+    conceptId: C74456
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74456
+    submissionValue: LOC
+  dataElementConceptId: C83205
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AELOC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: specifies the anatomical location of
+    object: AETERM
+    predicateTerm: SPECIFIES
+    subject: AELOC
+  role: Qualifier
+- codelist:
+    conceptId: C66769
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66769
+    submissionValue: AESEV
+  dataElementConceptId: C53253
+  dataType: text
+  isNonStandard: false
+  length: 20
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESEV
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: specifies the severity of
+    object: AETERM
+    predicateTerm: SPECIFIES
+    subject: AESEV
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C53252
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AESER
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: indicates severity of
+    object: AETERM
+    predicateTerm: INDICATES
+    subject: AESER
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66767
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66767
+    submissionValue: ACN
+  dataElementConceptId: C83013
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEACN
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes actions taken
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AEACN
+  role: Qualifier
+- dataElementConceptId: C83109
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AEACNOTH
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes actions taken
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AEACNOTH
+  role: Qualifier
+- dataElementConceptId: C41358
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: AEREL
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AEREL
+  role: Qualifier
+- dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AERLDEV
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AERLDEV
+  role: Qualifier
+- dataElementConceptId: C83210
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AERELNST
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AERELNST
+  role: Qualifier
+- dataElementConceptId: C83208
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AEPATT
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: identifies a pattern of
+    object: AETERM
+    predicateTerm: IDENTIFIES
+    subject: AEPATT
+  role: Qualifier
+- codelist:
+    conceptId: C66768
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66768
+    submissionValue: OUT
+  dataElementConceptId: C49489
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AEOUT
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes the outcome of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AEOUT
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83211
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESCAN
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESCAN
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83117
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESCONG
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESCONG
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C113380
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESDISAB
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESDISAB
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C48275
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESDTH
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESDTH
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83052
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESHOSP
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESHOSP
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C84266
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESLIFE
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESLIFE
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83214
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESOD
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESOD
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83053
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESMIE
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AESMIE
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83199
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AECONTRT
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: describes relationship of
+    object: AETERM
+    predicateTerm: DESCRIBES
+    subject: AECONTRT
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- dataElementConceptId: C83215
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AESTDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the start date for
+    object: AETERM
+    predicateTerm: IS_TIMING_FOR
+    subject: AESTDTC
+  role: Timing
+- dataElementConceptId: C83201
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: AEENDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the end date for
+    object: AETERM
+    predicateTerm: IS_TIMING_FOR
+    subject: AEENDTC
+  role: Timing

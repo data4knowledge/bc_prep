@@ -1,0 +1,97 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49680
+    title: Body Frame Size
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/FRMSIZE
+    title: Frame Size
+    type: SDTM Dataset Specialization
+datasetSpecializationId: FRMSIZE
+domain: VS
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Frame Size
+source: VS.VSTESTCD
+variables:
+- assignedTerm:
+    conceptId: C49680
+    value: FRMSIZE
+  codelist:
+    conceptId: C66741
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66741
+    submissionValue: VSTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSTESTCD
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: VSTEST
+    predicateTerm: IS_DECODED_BY
+    subject: VSTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C49680
+    value: Body Frame Size
+  codelist:
+    conceptId: C67153
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67153
+    submissionValue: VSTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSTEST
+  relationship:
+    linkingPhrase: decodes the value in
+    object: VSTESTCD
+    predicateTerm: DECODES
+    subject: VSTEST
+  role: Qualifier
+- codelist:
+    conceptId: C66733
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66733
+    submissionValue: SIZE
+  dataElementConceptId: C173522
+  dataType: text
+  isNonStandard: false
+  length: 20
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSORRES
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSORRES
+  role: Qualifier
+  valueList:
+  - SMALL
+  - MEDIUM
+  - LARGE
+  vlmTarget: true
+- codelist:
+    conceptId: C66733
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66733
+    submissionValue: SIZE
+  dataElementConceptId: C173522
+  dataType: text
+  isNonStandard: false
+  length: 20
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESC
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSSTRESC
+  role: Qualifier
+  vlmTarget: true

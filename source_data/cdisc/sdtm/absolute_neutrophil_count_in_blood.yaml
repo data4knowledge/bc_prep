@@ -1,0 +1,209 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C63321
+    title: Absolute Neutrophil Count
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/NEUTBLD
+    title: Absolute Neutrophil Count in Blood
+    type: SDTM Dataset Specialization
+datasetSpecializationId: NEUTBLD
+domain: LB
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Absolute Neutrophil Count in Blood
+source: LB.LBTESTCD
+variables:
+- assignedTerm:
+    conceptId: C63321
+    value: NEUT
+  codelist:
+    conceptId: C65047
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C65047
+    submissionValue: LBTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBTESTCD
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: LBTEST
+    predicateTerm: IS_DECODED_BY
+    subject: LBTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C63321
+    value: Neutrophils
+  codelist:
+    conceptId: C67154
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67154
+    submissionValue: LBTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBTEST
+  relationship:
+    linkingPhrase: decodes the value in
+    object: LBTESTCD
+    predicateTerm: DECODES
+    subject: LBTEST
+  role: Qualifier
+- assignedTerm:
+    value: HEMATOLOGY
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBCAT
+  relationship:
+    linkingPhrase: groups values in
+    object: LBTESTCD
+    predicateTerm: GROUPS
+    subject: LBCAT
+  role: Qualifier
+- dataElementConceptId: C36292
+  dataType: float
+  format: '12.4'
+  isNonStandard: false
+  length: 12
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBORRES
+  originSource: Vendor
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: LBTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: LBORRES
+  role: Qualifier
+  significantDigits: 4
+  vlmTarget: true
+- codelist:
+    conceptId: C71620
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71620
+    submissionValue: UNIT
+  dataElementConceptId: C67391
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBORRESU
+  relationship:
+    linkingPhrase: is the unit for the value in
+    object: LBORRES
+    predicateTerm: IS_UNIT_FOR
+    subject: LBORRESU
+  role: Qualifier
+  valueList:
+  - 10^9/L
+  vlmTarget: true
+- dataElementConceptId: C36292
+  dataType: float
+  format: '12.4'
+  isNonStandard: false
+  length: 12
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBSTRESC
+  originSource: Vendor
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: LBTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: LBSTRESC
+  role: Qualifier
+  significantDigits: 4
+  vlmTarget: true
+- dataElementConceptId: C36292
+  dataType: float
+  format: '12.4'
+  isNonStandard: false
+  length: 12
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBSTRESN
+  originSource: Vendor
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: LBTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: LBSTRESN
+  role: Qualifier
+  significantDigits: 4
+  vlmTarget: true
+- assignedTerm:
+    conceptId: C67255
+    value: 10^9/L
+  codelist:
+    conceptId: C71620
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71620
+    submissionValue: UNIT
+  dataElementConceptId: C67391
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBSTRESU
+  relationship:
+    linkingPhrase: is the unit for the value in
+    object: LBSTRESN
+    predicateTerm: IS_UNIT_FOR
+    subject: LBSTRESU
+  role: Qualifier
+  vlmTarget: true
+- assignedTerm:
+    value: 26499-4
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: LBLOINC
+  relationship:
+    linkingPhrase: identifies an observation described by
+    object: LBTESTCD
+    predicateTerm: IDENTIFIES_OBSERVATION
+    subject: LBLOINC
+  role: Qualifier
+- assignedTerm:
+    conceptId: C12434
+    value: BLOOD
+  codelist:
+    conceptId: C78734
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C78734
+    submissionValue: SPECTYPE
+  comparator: EQ
+  dataElementConceptId: C70713
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: LBSPEC
+  relationship:
+    linkingPhrase: is the specimen tested in
+    object: LBTESTCD
+    predicateTerm: IS_SPECIMEN_TESTED_IN
+    subject: LBSPEC
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83309
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: LBFAST
+  relationship:
+    linkingPhrase: is the subject's fasting status during the performance of the test
+      in
+    object: LBTESTCD
+    predicateTerm: IS_SUBJECT_STATE_FOR
+    subject: LBFAST
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y

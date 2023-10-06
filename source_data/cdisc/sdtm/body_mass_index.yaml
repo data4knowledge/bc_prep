@@ -1,0 +1,140 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C16358
+    title: Body Mass Index (BMI)
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/BMI
+    title: Body Mass Index
+    type: SDTM Dataset Specialization
+datasetSpecializationId: BMI
+domain: VS
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Body Mass Index
+source: VS.VSTESTCD
+variables:
+- assignedTerm:
+    conceptId: C16358
+    value: BMI
+  codelist:
+    conceptId: C66741
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66741
+    submissionValue: VSTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSTESTCD
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: VSTEST
+    predicateTerm: IS_DECODED_BY
+    subject: VSTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C16358
+    value: Body Mass Index
+  codelist:
+    conceptId: C67153
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67153
+    submissionValue: VSTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSTEST
+  relationship:
+    linkingPhrase: decodes the value in
+    object: VSTESTCD
+    predicateTerm: DECODES
+    subject: VSTEST
+  role: Qualifier
+- dataElementConceptId: C138901
+  dataType: float
+  format: '8.3'
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSORRES
+  originSource: Sponsor
+  originType: Derived
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSORRES
+  role: Qualifier
+  vlmTarget: true
+- codelist:
+    conceptId: C71620
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71620
+    submissionValue: UNIT
+  dataElementConceptId: C42575
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSORRESU
+  relationship:
+    linkingPhrase: is the unit for the value in
+    object: VSORRES
+    predicateTerm: IS_UNIT_FOR
+    subject: VSORRESU
+  role: Qualifier
+  subsetCodelist: UNIT_BMI
+  valueList:
+  - kg/m2
+  - psi
+  vlmTarget: true
+- dataElementConceptId: C138901
+  dataType: float
+  format: '8.3'
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESC
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSSTRESC
+  role: Qualifier
+  significantDigits: 3
+  vlmTarget: true
+- dataElementConceptId: C138901
+  dataType: float
+  format: '8.3'
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESN
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSSTRESN
+  role: Qualifier
+  significantDigits: 3
+  vlmTarget: true
+- codelist:
+    conceptId: C66770
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66770
+    submissionValue: VSRESU
+  dataElementConceptId: C42575
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESU
+  relationship:
+    linkingPhrase: is the unit for the value in
+    object: VSSTRESN
+    predicateTerm: IS_UNIT_FOR
+    subject: VSSTRESU
+  role: Qualifier
+  vlmTarget: true

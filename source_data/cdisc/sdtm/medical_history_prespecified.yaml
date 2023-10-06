@@ -1,0 +1,125 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C200145
+    title: Solicited Medical History
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/MEDHISTPRESP
+    title: Medical History Prespecified
+    type: SDTM Dataset Specialization
+datasetSpecializationId: MEDHISTPRESP
+domain: MH
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Medical History Prespecified
+source: MH.MHTERM
+variables:
+- dataElementConceptId: C83118
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: MHTERM
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is original text for
+    object: MHDECOD
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: MHTERM
+  role: Topic
+- dataElementConceptId: C83346
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MHDECOD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: MHTERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: MHDECOD
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C87897
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: MHPRESP
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: indicates pre-specification of the value in
+    object: MHTERM
+    predicateTerm: IS_INDICATOR_FOR
+    subject: MHPRESP
+  role: Qualifier
+  subsetCodelist: NY_Y
+  valueList:
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C83067
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MHOCCUR
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: indicates occurrence of the value in
+    object: MHTERM
+    predicateTerm: IS_INDICATOR_FOR
+    subject: MHOCCUR
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- dataElementConceptId: C83018
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MHCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: MHTERM
+    predicateTerm: GROUPS
+    subject: MHCAT
+  role: Qualifier
+- dataElementConceptId: C83143
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MHSCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: MHCAT
+    predicateTerm: GROUPS
+    subject: MHSCAT
+  role: Qualifier

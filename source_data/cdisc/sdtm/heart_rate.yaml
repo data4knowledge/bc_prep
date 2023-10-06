@@ -1,0 +1,202 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49677
+    title: Heart Rate
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/HR
+    title: Heart Rate
+    type: SDTM Dataset Specialization
+datasetSpecializationId: HR
+domain: VS
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Heart Rate
+source: VS.VSTESTCD
+variables:
+- assignedTerm:
+    conceptId: C49677
+    value: HR
+  codelist:
+    conceptId: C66741
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66741
+    submissionValue: VSTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSTESTCD
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: VSTEST
+    predicateTerm: IS_DECODED_BY
+    subject: VSTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C49677
+    value: Heart Rate
+  codelist:
+    conceptId: C67153
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67153
+    submissionValue: VSTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSTEST
+  relationship:
+    linkingPhrase: decodes the value in
+    object: VSTESTCD
+    predicateTerm: DECODES
+    subject: VSTEST
+  role: Qualifier
+- dataElementConceptId: C173522
+  dataType: integer
+  isNonStandard: false
+  length: 3
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSORRES
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSORRES
+  role: Qualifier
+  vlmTarget: true
+- assignedTerm:
+    conceptId: C49673
+    value: beats/min
+  codelist:
+    conceptId: C66770
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66770
+    submissionValue: VSRESU
+  dataElementConceptId: C73688
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: VSORRESU
+  relationship:
+    linkingPhrase: is the unit for the value in
+    object: VSORRES
+    predicateTerm: IS_UNIT_FOR
+    subject: VSORRESU
+  role: Qualifier
+  vlmTarget: true
+- dataElementConceptId: C173522
+  dataType: integer
+  isNonStandard: false
+  length: 3
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESC
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSSTRESC
+  role: Qualifier
+  vlmTarget: true
+- dataElementConceptId: C173522
+  dataType: integer
+  isNonStandard: false
+  length: 3
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESN
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: VSTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: VSSTRESN
+  role: Qualifier
+  vlmTarget: true
+- assignedTerm:
+    conceptId: C49673
+    value: beats/min
+  codelist:
+    conceptId: C66770
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66770
+    submissionValue: VSRESU
+  dataElementConceptId: C73688
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSSTRESU
+  relationship:
+    linkingPhrase: is the unit for the value in
+    object: VSSTRESN
+    predicateTerm: IS_UNIT_FOR
+    subject: VSSTRESU
+  role: Qualifier
+  vlmTarget: true
+- codelist:
+    conceptId: C71148
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71148
+    submissionValue: POSITION
+  comparator: IN
+  dataElementConceptId: C83114
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSPOS
+  relationship:
+    linkingPhrase: is the subject position during performance of the test in
+    object: VSTESTCD
+    predicateTerm: IS_SUBJECT_STATE_FOR
+    subject: VSPOS
+  role: Qualifier
+  subsetCodelist: VSPOS
+  valueList:
+  - SITTING
+  - STANDING
+  - SUPINE
+- codelist:
+    conceptId: C74456
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74456
+    submissionValue: LOC
+  comparator: IN
+  dataElementConceptId: C83088
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSLOC
+  relationship:
+    linkingPhrase: specifies the anatomical location of the performance of the test
+      in
+    object: VSTESTCD
+    predicateTerm: SPECIFIES
+    subject: VSLOC
+  role: Qualifier
+  subsetCodelist: VSLOC_PULSE
+  valueList:
+  - BRACHIAL ARTERY
+  - CAROTID ARTERY
+  - DORSALIS PEDIS ARTERY
+  - FEMORAL ARTERY
+  - RADIAL ARTERY
+- codelist:
+    conceptId: C99073
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99073
+    submissionValue: LAT
+  comparator: IN
+  dataElementConceptId: C123975
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: VSLAT
+  relationship:
+    linkingPhrase: further specifies the anatomical location in
+    object: VSLOC
+    predicateTerm: SPECIFIES
+    subject: VSLAT
+  role: Qualifier
+  subsetCodelist: VSLAT_BP
+  valueList:
+  - LEFT
+  - RIGHT

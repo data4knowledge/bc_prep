@@ -1,0 +1,182 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C111320
+    title: Supraventricular Arrhythmia ECG Assessment
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/SPRARRY
+    title: Supraventricular Arrhythmia ECG Assessment
+    type: SDTM Dataset Specialization
+datasetSpecializationId: SPRARRY
+domain: EG
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Supraventricular Arrhythmia ECG Assessment
+source: EG.EGTESTCD
+variables:
+- assignedTerm:
+    conceptId: C111320
+    value: SPRARRY
+  codelist:
+    conceptId: C71153
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71153
+    submissionValue: EGTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EGTESTCD
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: EGTEST
+    predicateTerm: IS_DECODED_BY
+    subject: EGTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C111320
+    value: Supraventricular Arrhythmias
+  codelist:
+    conceptId: C71152
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71152
+    submissionValue: EGTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EGTEST
+  relationship:
+    linkingPhrase: decodes the value in
+    object: EGTESTCD
+    predicateTerm: DECODES
+    subject: EGTEST
+  role: Qualifier
+- dataElementConceptId: C70856
+  dataType: text
+  format: '8.3'
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EGORRES
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: EGTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: EGORRES
+  role: Qualifier
+  significantDigits: 3
+  vlmTarget: true
+- codelist:
+    conceptId: C71150
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71150
+    submissionValue: EGSTRESC
+  dataElementConceptId: C70856
+  dataType: text
+  format: '8.3'
+  isNonStandard: false
+  length: 8
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EGSTRESC
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: EGTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: EGSTRESC
+  role: Qualifier
+  significantDigits: 3
+  subsetCodelist: EGSTRESC_SPRARRY
+  valueList:
+  - ABERRANTLY CONDUCTED COMPLEXES
+  - ATRIAL BIGEMINY
+  - ATRIAL COUPLETS
+  - ATRIAL TRIGEMINY
+  - ECTOPIC ATRIAL RHYTHM
+  - JUNCTIONAL BRADYCARDIA
+  - JUNCTIONAL ESCAPE COMPLEXES
+  - JUNCTIONAL ESCAPE RHYTHM
+  - JUNCTIONAL PREMATURE COMPLEX
+  - JUNCTIONAL RHYTHM
+  - PREMATURE ATRIAL COMPLEXES
+  - PREMATURE ATRIAL COMPLEXES BLOCKED
+  - PREMATURE ATRIAL COMPLEXES MULTIFOCAL
+  - PREMATURE ATRIAL COMPLEXES UNIFOCAL
+  - SUPRAVENTRICULAR BIGEMINY
+  - SUPRAVENTRICULAR COUPLET
+  - SUPRAVENTRICULAR ESCAPE BEAT
+  - SUPRAVENTRICULAR PREMATURE COMPLEX, ORIGIN UNKNOWN
+  - SUPRAVENTRICULAR RUN
+  - SUPRAVENTRICULAR TRIGEMINY
+  - WANDERING ATRIAL PACEMAKER
+  vlmTarget: true
+- assignedTerm:
+    value: FINDING
+  comparator: EQ
+  dataElementConceptId: C83254
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: EGCAT
+  relationship:
+    linkingPhrase: groups values in
+    object: EGTESTCD
+    predicateTerm: GROUPS
+    subject: EGCAT
+  role: Qualifier
+- codelist:
+    conceptId: C71148
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71148
+    submissionValue: POSITION
+  dataElementConceptId: C83113
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: EGPOS
+  relationship:
+    linkingPhrase: was the subject position during performance of the test in
+    object: EGTESTCD
+    predicateTerm: IS_SUBJECT_STATE_FOR
+    subject: EGPOS
+  role: Qualifier
+- codelist:
+    conceptId: C71151
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71151
+    submissionValue: EGMETHOD
+  dataElementConceptId: C83089
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EGMETHOD
+  relationship:
+    linkingPhrase: is the method for the test in
+    object: EGTESTCD
+    predicateTerm: SPECIFIES
+    subject: EGMETHOD
+  role: Qualifier
+- codelist:
+    conceptId: C78735
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C78735
+    submissionValue: EVAL
+  comparator: IN
+  dataElementConceptId: C83259
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: EGEVAL
+  relationship:
+    linkingPhrase: is the role of the assessor who performed the test in
+    object: EGTESTCD
+    predicateTerm: PERFORMS
+    subject: EGEVAL
+  role: Qualifer
+  subsetCodelist: EVAL_EG
+  valueList:
+  - ADJUDICATION COMMITTEE
+  - INDEPENDENT ASSESSOR
+  - INVESTIGATOR
+  - VENDOR

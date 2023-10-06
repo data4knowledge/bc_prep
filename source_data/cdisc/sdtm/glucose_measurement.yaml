@@ -1,0 +1,63 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49237
+    title: Chemistry Test
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C105585
+    title: Glucose Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Chemistry Tests
+conceptId: C105585
+dataElementConcepts:
+- conceptId: C36292
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C48207
+  dataType: string
+  exampleSet:
+  - mg/dL
+  - g/L
+  - mmol/L
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48207
+  ncitCode: C48207
+  shortName: Unit of Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  - Plasma
+  - Serum
+  - Urine
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+- conceptId: C83312
+  dataType: string
+  exampleSet:
+  - Test Strip
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83312
+  ncitCode: C83312
+  shortName: Laboratory Test Method
+definition: The determination of the amount of glucose present in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C105585
+ncitCode: C105585
+resultScales:
+- Quantitative
+- Ordinal
+shortName: Glucose Measurement
+synonyms:
+- Glucose

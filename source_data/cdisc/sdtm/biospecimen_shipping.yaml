@@ -1,0 +1,101 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C179747
+    title: Biospecimen Shipping
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/SHIPPING
+    title: Biospecimen Shipping
+    type: SDTM Dataset Specialization
+datasetSpecializationId: SHIPPING
+domain: BE
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-4
+shortName: Biospecimen Shipping
+source: BE.BETERM
+variables:
+- assignedTerm:
+    value: TRANSPORT
+  dataElementConceptId: C25372
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: BECAT
+  relationship:
+    linkingPhrase: groups values in
+    object: BETERM
+    predicateTerm: GROUPS
+    subject: BECAT
+  role: Qualifier
+- assignedTerm:
+    conceptId: C40353
+    value: SHIPPING
+  codelist:
+    conceptId: C124297
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C124297
+    submissionValue: BEDECOD
+  dataElementConceptId: C82977
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: BEDECOD
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: BETERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: BEDECOD
+  role: Qualifier
+- assignedTerm:
+    value: Shipping
+  dataElementConceptId: C82571
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: BETERM
+  relationship:
+    linkingPhrase: is original text for
+    object: BEDECOD
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: BETERM
+  role: Topic
+- codelist:
+    conceptId: C189265
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C189265
+    submissionValue: ACCPARTY
+  dataElementConceptId: C117052
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: BEPARTY
+  role: Topic
+- codelist:
+    conceptId: C78734
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C78734
+    submissionValue: SPECTYPE
+  dataElementConceptId: C70713
+  dataType: text
+  isNonStandard: true
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: BESPEC
+  relationship:
+    linkingPhrase: is the material type of the subject of the activity in
+    object: BETERM
+    predicateTerm: IS_ATTRIBUTE_FOR
+    subject: BESPEC
+  role: Topic

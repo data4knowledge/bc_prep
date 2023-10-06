@@ -1,0 +1,91 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C16735
+    title: Informed Consent
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-10-03
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/CONSENT
+    title: Informed Consent Obtained
+    type: SDTM Dataset Specialization
+datasetSpecializationId: CONSENT
+domain: DS
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Informed Consent Obtained
+source: DS.DECODE
+variables:
+- assignedTerm:
+    conceptId: C74588
+    value: PROTOCOL MILESTONE
+  codelist:
+    conceptId: C74558
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74558
+    submissionValue: DSCAT
+  dataElementConceptId: C83245
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: DSCAT
+  relationship:
+    linkingPhrase: groups values in
+    object: DSTERM
+    predicateTerm: GROUPS
+    subject: DSCAT
+  role: Qualifier
+- assignedTerm:
+    conceptId: C16735
+    value: INFORMED CONSENT OBTAINED
+  codelist:
+    conceptId: C114118
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C114118
+    submissionValue: PROTMLST
+  dataElementConceptId: C83122
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: DSDECOD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: DSTERM
+    predicateTerm: IS_DERIVED_FROM
+    subject: DSDECOD
+  role: Qualifier
+- dataElementConceptId: C82571
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: DSTERM
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is original text for
+    object: DSDECOD
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: DSTERM
+  role: Topic
+- dataElementConceptId: C93579
+  dataType: datetime
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: DSSTDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the start date for
+    object: DSTERM
+    predicateTerm: IS_TIMING_FOR
+    subject: DSSTDTC
+  role: Timing

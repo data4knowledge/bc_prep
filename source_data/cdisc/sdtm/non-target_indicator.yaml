@@ -1,0 +1,149 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C161483
+    title: Non-Target Indicator
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-07-06
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-07-06/datasetspecializations/NTIND
+    title: Non-Target Indicator
+    type: SDTM Dataset Specialization
+datasetSpecializationId: NTIND
+domain: TU
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-2
+shortName: Non-Target Indicator
+source: TU.TUTESTCD
+variables:
+- assignedTerm:
+    conceptId: C161483
+    value: NTIND
+  codelist:
+    conceptId: C96784
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96784
+    submissionValue: TUTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TUTESTCD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: TUTEST
+    predicateTerm: IS_DECODED_BY
+    subject: TUTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C161483
+    value: Non-Target Indicator
+  codelist:
+    conceptId: C96783
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96783
+    submissionValue: TUTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TUTEST
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: decodes the value in
+    object: TUTESTCD
+    predicateTerm: DECODES
+    subject: TUTEST
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C117221
+  dataType: text
+  isNonStandard: false
+  length: 24
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TUORRES
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: TUTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: TUORRES
+  role: Qualifier
+  valueList:
+  - Y
+  - N
+  - U
+  vlmTarget: true
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C117222
+  dataType: text
+  isNonStandard: false
+  length: 24
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: TUSTRESC
+  originSource: Sponsor
+  originType: Derived
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: TUTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: TUSTRESC
+  role: Qualifier
+  valueList:
+  - Y
+  - N
+  - U
+  vlmTarget: true
+- assignedTerm:
+    conceptId: C25936
+    value: INVESTIGATOR
+  codelist:
+    conceptId: C78735
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C78735
+    submissionValue: EVAL
+  comparator: EQ
+  dataElementConceptId: C51824
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: TUEVAL
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the role of the assessor who performed the test in
+    object: TUTESTCD
+    predicateTerm: PERFORMED
+    subject: TUEVAL
+  role: Qualifier
+- assignedTerm:
+    conceptId: C48262
+    value: SCREENING
+  codelist:
+    conceptId: C99079
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99079
+    submissionValue: EPOCH
+  comparator: EQ
+  dataElementConceptId: C71738
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: EPOCH
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is the epoch of the performance of the test in
+    object: TUTESTCD
+    predicateTerm: IS_EPOCH_OF
+    subject: EPOCH
+  role: Timing

@@ -1,0 +1,184 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C38101
+    title: X-Ray Imaging
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-10-03
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/XRAYCHEST
+    title: Chest X-Ray
+    type: SDTM Dataset Specialization
+datasetSpecializationId: XRAYCHEST
+domain: PR
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-4
+shortName: Chest X-Ray
+source: PR.PRTRT
+variables:
+- dataElementConceptId: C117511
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: PRTRT
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is original text for
+    object: PRDECOD
+    predicateTerm: IS_ORIGINAL_TEXT_FOR
+    subject: PRTRT
+  role: Topic
+- assignedTerm:
+    conceptId: C38101
+    value: X-RAY
+  codelist:
+    conceptId: C101858
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C101858
+    submissionValue: PROCEDUR
+  dataElementConceptId: C117512
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: true
+  mandatoryVariable: true
+  name: PRDECOD
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: is a dictionary-derived term for the value in
+    object: PRTRT
+    predicateTerm: DECODES
+    subject: PRDECOD
+  role: Qualifier
+- dataElementConceptId: C117513
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PRCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: PRTRT
+    predicateTerm: GROUPS
+    subject: PRCAT
+  role: Qualifier
+- dataElementConceptId: C117514
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PRSCAT
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: groups values in
+    object: PRCAT
+    predicateTerm: GROUPS
+    subject: PRSCAT
+  role: Qualifier
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C117515
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PRPRESP
+  originSource: Sponsor
+  originType: Assigned
+  relationship:
+    linkingPhrase: indicates pre-specification of the value in
+    object: PRTRT
+    predicateTerm: IS_INDICATOR_FOR
+    subject: PRPRESP
+  role: Qualifier
+  subsetCodelist: NY_Y
+  valueList:
+  - Y
+- codelist:
+    conceptId: C66742
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66742
+    submissionValue: NY
+  dataElementConceptId: C117516
+  dataType: text
+  isNonStandard: false
+  length: 1
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PROCCUR
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: indicates occurrence of the value in
+    object: PRTRT
+    predicateTerm: IS_INDICATOR_FOR
+    subject: PROCCUR
+  role: Qualifier
+  subsetCodelist: NY_NY
+  valueList:
+  - N
+  - Y
+- assignedTerm:
+    conceptId: C25389
+    value: CHEST
+  codelist:
+    conceptId: C74456
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74456
+    submissionValue: LOC
+  dataElementConceptId: C117525
+  dataType: text
+  isNonStandard: false
+  length: 200
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PRLOC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the administration anatomical location for the treatment in
+    object: PRTRT
+    predicateTerm: SPECIFIES
+    subject: PRLOC
+  role: Qualifier
+- dataElementConceptId: C117529
+  dataType: datetime
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PRSTDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the start date for
+    object: PRTRT
+    predicateTerm: IS_TIMING_FOR
+    subject: PRSTDTC
+  role: Timing
+- dataElementConceptId: C117530
+  dataType: datetime
+  isNonStandard: false
+  length: 40
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: PRENDTC
+  originSource: Investigator
+  originType: Collected
+  relationship:
+    linkingPhrase: is the end date for
+    object: PRTRT
+    predicateTerm: IS_TIMING_FOR
+    subject: PRENDTC
+  role: Timing

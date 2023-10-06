@@ -1,0 +1,156 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C132388
+    title: Treponema pallidum Antibody Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations
+    title: SDTM Dataset Specialization Package Effective 2023-10-03
+    type: SDTM Dataset Specialization Package
+  self:
+    href: /mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/TPLAB
+    title: Treponema pallidum Antibody Detection in Serum
+    type: SDTM Dataset Specialization
+datasetSpecializationId: TPLAB
+domain: MB
+sdtmigEndVersion: ''
+sdtmigStartVersion: 3-3
+shortName: Treponema pallidum Antibody Detection in Serum
+source: MB.MBTESTCD
+variables:
+- assignedTerm:
+    conceptId: C132388
+    value: TPLAB
+  codelist:
+    conceptId: C120527
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C120527
+    submissionValue: MBTESTCD
+  comparator: EQ
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MBTESTCD
+  relationship:
+    linkingPhrase: is the code for the value in
+    object: MBTEST
+    predicateTerm: IS_DECODED_BY
+    subject: MBTESTCD
+  role: Topic
+- assignedTerm:
+    conceptId: C132388
+    value: Treponema pallidum Antibody
+  codelist:
+    conceptId: C120528
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C120528
+    submissionValue: MBTEST
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MBTEST
+  relationship:
+    linkingPhrase: decodes the value in
+    object: MBTESTCD
+    predicateTerm: DECODES
+    subject: MBTEST
+  role: Qualifier
+- assignedTerm:
+    conceptId: C174330
+    value: DETECTION
+  codelist:
+    conceptId: C174225
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174225
+    submissionValue: MBFTSDTL
+  comparator: EQ
+  dataElementConceptId: C117062
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MBTSTDTL
+  relationship:
+    linkingPhrase: further describes the test in
+    object: MBTESTCD
+    predicateTerm: SPECIFIES
+    subject: MBTSTDTL
+  role: Qualifier
+- dataElementConceptId: C36292
+  dataType: text
+  isNonStandard: false
+  length: 20
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MBORRES
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: MBTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: MBORRES
+  role: Qualifier
+  vlmTarget: true
+- dataElementConceptId: C36292
+  dataType: text
+  isNonStandard: false
+  length: 20
+  mandatoryValue: false
+  mandatoryVariable: true
+  name: MBSTRESC
+  relationship:
+    linkingPhrase: is the result of the test in
+    object: MBTESTCD
+    predicateTerm: IS_RESULT_OF
+    subject: MBSTRESC
+  role: Qualifier
+  vlmTarget: true
+- assignedTerm:
+    value: 22587-0
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MBLOINC
+  relationship:
+    linkingPhrase: identifies an observation described by
+    object: MBTESTCD
+    predicateTerm: IDENTIFIES_OBSERVATION
+    subject: MBLOINC
+  role: Qualifier
+- assignedTerm:
+    conceptId: C13325
+    value: SERUM
+  codelist:
+    conceptId: C78734
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C78734
+    submissionValue: SPECTYPE
+  comparator: EQ
+  dataElementConceptId: C70713
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MBSPEC
+  relationship:
+    linkingPhrase: is the specimen tested in
+    object: MBTESTCD
+    predicateTerm: IS_SPECIMEN_TESTED_IN
+    subject: MBSPEC
+  role: Qualifier
+- codelist:
+    conceptId: C85492
+    href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C85492
+    submissionValue: METHOD
+  comparator: IN
+  dataElementConceptId: C83312
+  isNonStandard: false
+  mandatoryValue: false
+  mandatoryVariable: false
+  name: MBMETHOD
+  relationship:
+    linkingPhrase: is the method for the test in
+    object: MBTESTCD
+    predicateTerm: SPECIFIES
+    subject: MBMETHOD
+  role: Qualifier
+  valueList:
+  - FLUORESCENT IMMUNOASSAY
+  - HEMAGGLUTINATION ASSAY
+  - CHEMILUMINESCENT MICROPARTICLE IMMUNOASSAY
+  - POLYMERASE CHAIN REACTION
+  - IMMUNOBLOT
+  - RAPID IMMUNOASSAY
