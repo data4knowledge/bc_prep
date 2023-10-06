@@ -1,0 +1,60 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C154812
+    title: Gram Negative Bacteria Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C184647
+    title: Treponema pallidum Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Microbiology Tests
+- Serology Tests
+- Gram Negative Bacteria Measurements
+conceptId: C184647
+dataElementConcepts:
+- conceptId: C117062
+  dataType: string
+  exampleSet:
+  - Detection
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117062
+  ncitCode: C117062
+  shortName: Measurement, Test or Examination Detail
+- conceptId: C36292
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83312
+  dataType: string
+  exampleSet:
+  - Immunofluorescence
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83312
+  ncitCode: C83312
+  shortName: Laboratory Test Method
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  - Serum
+  - Urine
+  - Cerebrospinal Fluid
+  - Body Fluid
+  - Swabbed Material
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of Treponema pallidum in a biological
+  sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C184647
+ncitCode: C184647
+resultScales:
+- Ordinal
+shortName: Treponema pallidum Measurement
+synonyms:
+- TPA

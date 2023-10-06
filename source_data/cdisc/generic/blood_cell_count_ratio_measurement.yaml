@@ -1,0 +1,24 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C28133
+    title: Blood Cell Count
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C67208
+    title: Blood Cell Count Ratio Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Hematology Tests
+- Blood Cell Counts
+- Blood Cell Count Ratio Measurements
+conceptId: C67208
+definition: The determination of the ratio of one blood cell component to another
+  in a blood sample. The measurement may be expressed as either a ratio or a percentage.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67208
+ncitCode: C67208
+shortName: Blood Cell Count Ratio Measurement

@@ -1,0 +1,68 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C35461
+    title: Clinical Course of Disease
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C103420
+    title: New Lesion Progression
+    type: Biomedical Concept
+categories:
+- Response Evaluation Criteria in Solid Tumors
+- Response Evaluation Criteria in Solid Tumors Version 1.1
+- Disease Response Assessment Test
+- Disease Response
+- RECIST 1.1
+- New Lesion
+conceptId: C103420
+dataElementConcepts:
+- conceptId: C117388
+  dataType: string
+  exampleSet:
+  - RECIST 1.1
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117388
+  ncitCode: C117388
+  shortName: Disease Response Category
+- conceptId: C117221
+  dataType: string
+  exampleSet:
+  - EQUIVOCAL
+  - UNEQUIVOCAL
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117221
+  ncitCode: C117221
+  shortName: Original Result or Finding
+- conceptId: C117222
+  dataType: string
+  exampleSet:
+  - EQUIVOCAL
+  - UNEQUIVOCAL
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117222
+  ncitCode: C117222
+  shortName: Character Result or Finding in Standard Format
+- conceptId: C51824
+  dataType: string
+  exampleSet:
+  - INVESTIGATOR
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C51824
+  ncitCode: C51824
+  shortName: Evaluator
+- conceptId: C71738
+  dataType: string
+  exampleSet:
+  - TREATMENT
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71738
+  ncitCode: C71738
+  shortName: Clinical Trial Epoch
+definition: An assessment of the equivocality of disease progression based on a newly
+  identified lesion.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C103420
+ncitCode: C103420
+resultScales:
+- Nominal
+shortName: New Lesion Progression
+synonyms:
+- NEWLPROG

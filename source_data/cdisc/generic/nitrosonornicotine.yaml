@@ -1,0 +1,49 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C45398
+    title: Carcinogenic Nitrosamine
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C44414
+    title: Nitrosonornicotine
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Nitroso Carcinogens
+- Carcinogenic Nitrosamines
+conceptId: C44414
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: NEW_2
+  dataType: string
+  shortName: Unit of Mass or Substance Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Urine
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: A yellow, oily liquid nitrosamine that solidifies at cold temperatures
+  and emits toxic fumes of nitrogen oxides when heated to decomposition. Nitrosonornicotine
+  is found in tobacco products and is likely produced by the nitrosation of nicotine
+  during the making and smoking of tobacco products. This substance is only used in
+  research to induce tumors in experimental animals. Exposure to nitrosonornicotine
+  affects the liver and nitrosonornicotine is reasonably anticipated to be a human
+  carcinogen. (NCI05)
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C44414
+ncitCode: C44414
+resultScales:
+- Quantitative
+shortName: Nitrosonornicotine
+synonyms:
+- NNN
+- N-nitrosonornicotine

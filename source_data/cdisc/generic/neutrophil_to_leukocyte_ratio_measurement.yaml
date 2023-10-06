@@ -1,0 +1,56 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C67208
+    title: Blood Cell Count Ratio Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C64827
+    title: Neutrophil to Leukocyte Ratio Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Hematology Tests
+- Blood Cell Counts
+- Blood Cell Count Ratio Measurements
+conceptId: C64827
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C48570
+  dataType: string
+  exampleSet:
+  - '%'
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48570
+  ncitCode: C48570
+  shortName: Percent Unit
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  - Body fluid
+  - Bone Marrow
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the ratio of neutrophils compared to leukocytes present
+  in a sample. The measurement may be expressed as a ratio or percentage.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64827
+ncitCode: C64827
+resultScales:
+- Quantitative
+shortName: Neutrophil to Leukocyte Ratio Measurement
+synonyms:
+- Neutrophils/Leukocytes
+- NEUTLE

@@ -1,0 +1,21 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C74742
+    title: Hormone Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C75385
+    title: Peptide Hormone Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Gene Products
+conceptId: C75385
+definition: The determination of the amount of any peptide hormone present in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C75385
+ncitCode: C75385
+shortName: Peptide Hormone Measurement

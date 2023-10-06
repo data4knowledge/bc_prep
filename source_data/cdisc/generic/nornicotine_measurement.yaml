@@ -1,0 +1,47 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49237
+    title: Chemistry Test
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-02-13/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-02-13
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-02-13/biomedicalconcepts/C147406
+    title: Nornicotine Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Chemistry Tests
+coding:
+- code: 33917-6
+  system: http://loinc.org/
+  systemName: LOINC
+conceptId: C147406
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C64571
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64571
+  ncitCode: C64571
+  shortName: Unit of Mass Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Urine
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of nornicotine present in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C147406
+ncitCode: C147406
+resultScales:
+- Quantitative
+shortName: Nornicotine Measurement
+synonyms:
+- Nornicotine

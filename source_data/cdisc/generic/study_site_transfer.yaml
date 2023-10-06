@@ -1,0 +1,51 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C150824
+    title: Non-Protocol Disposition Event
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C186208
+    title: Study Site Transfer
+    type: Biomedical Concept
+categories:
+- Subject Disposition
+- Disposition Events
+- Non-Protocol Disposition Events
+- Other Events
+conceptId: C186208
+dataElementConcepts:
+- conceptId: C82571
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82571
+  ncitCode: C82571
+  shortName: Reported Event Term
+- conceptId: C83122
+  dataType: string
+  exampleSet:
+  - Site Transfer
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83122
+  ncitCode: C83122
+  shortName: Disposition Dictionary Derived Term
+- conceptId: C83245
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83245
+  ncitCode: C83245
+  shortName: Disposition Category
+- conceptId: C83248
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83248
+  ncitCode: C83248
+  shortName: Disposition Subcategory
+definition: The study subject has been assigned to a different study site.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186208
+ncitCode: C186208
+resultScales:
+- Nominal
+shortName: Study Site Transfer
+synonyms:
+- Site Transfer
+- Study Subject Site Transfer

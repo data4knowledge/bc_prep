@@ -1,0 +1,61 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C51950
+    title: Neutrophil Count
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C63321
+    title: Absolute Neutrophil Count
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Hematology Tests
+- Blood Cell Counts
+- Leukocyte Counts
+- Neutrophil Counts
+conceptId: C63321
+dataElementConcepts:
+- conceptId: C36292
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C67391
+  dataType: string
+  exampleSet:
+  - 10^9/L
+  - /uL
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67391
+  ncitCode: C67391
+  shortName: Unit of Number Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  - Urine
+  - Body fluid
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The real number of white blood cells (WBC) that are neutrophils. It is
+  derived by multiplying the WBC count by the percent of neutrophils in the differential
+  WBC count. The normal range for ANC is 1.5 to 8.0 (1,500 to 8,000/mm3).
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C63321
+ncitCode: C63321
+resultScales:
+- Quantitative
+- Ordinal
+shortName: Absolute Neutrophil Count
+synonyms:
+- Neutrophils
+- Total Neutrophil Count
+- NEUT

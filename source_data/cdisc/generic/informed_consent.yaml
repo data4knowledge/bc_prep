@@ -1,0 +1,57 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C74588
+    title: Protocol Milestone
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C16735
+    title: Informed Consent
+    type: Biomedical Concept
+categories:
+- Subject Disposition
+- Protocol Milestones
+conceptId: C16735
+dataElementConcepts:
+- conceptId: C82571
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82571
+  ncitCode: C82571
+  shortName: Reported Event Term
+- conceptId: C83122
+  dataType: string
+  exampleSet:
+  - Informed Consent Obtained
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83122
+  ncitCode: C83122
+  shortName: Disposition Dictionary Derived Term
+- conceptId: C83245
+  dataType: string
+  exampleSet:
+  - Protocol Milestone
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83245
+  ncitCode: C83245
+  shortName: Disposition Category
+- conceptId: C83248
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83248
+  ncitCode: C83248
+  shortName: Disposition Subcategory
+- conceptId: C93579
+  dataType: date
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C93579
+  ncitCode: C93579
+  shortName: Informed Consent Date
+definition: Consent by a patient to a surgical or medical procedure or participation
+  in a clinical study after achieving an understanding of the relevant medical facts
+  and the risks involved.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16735
+ncitCode: C16735
+resultScales:
+- Nominal
+shortName: Informed Consent
+synonyms:
+- Informed Consent Obtained

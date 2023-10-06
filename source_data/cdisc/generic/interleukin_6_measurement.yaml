@@ -1,0 +1,52 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C74804
+    title: Cytokine Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C74834
+    title: Interleukin 6 Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Protein or Enzyme Measurements
+- Chemistry Tests
+conceptId: C74834
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C64571
+  dataType: string
+  exampleSet:
+  - ng/L
+  - pg/L
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64571
+  ncitCode: C64571
+  shortName: Unit of Mass Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Serum
+  - Plasma
+  - Body fluid
+  - CSF
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of interleukin 6 present in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74834
+ncitCode: C74834
+resultScales:
+- Quantitative
+- Ordinal
+shortName: Interleukin 6 Measurement
+synonyms:
+- INTLK6
+- Interleukin 6

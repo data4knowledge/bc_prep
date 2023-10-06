@@ -1,0 +1,54 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49286
+    title: Hematology Test
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C64797
+    title: Erythrocyte Mean Corpuscular Hemoglobin
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Hematology Tests
+conceptId: C64797
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C25709
+  dataType: string
+  exampleSet:
+  - pg
+  - fmol
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25709
+  ncitCode: C25709
+  shortName: Unit of Measure
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Red Blood Cells
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The mean cell hemoglobin (MCH), which is the average amount of hemoglobin
+  in the average red cell. The MCH is a calculated value derived from the measurement
+  of hemoglobin and the red cell count.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64797
+ncitCode: C64797
+resultScales:
+- Quantitative
+shortName: Erythrocyte Mean Corpuscular Hemoglobin
+synonyms:
+- RBC Mean Corpuscular Hemoglobin
+- MCH

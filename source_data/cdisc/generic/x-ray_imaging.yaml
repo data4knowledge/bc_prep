@@ -1,0 +1,102 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C16502
+    title: Diagnostic Imaging
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C38101
+    title: X-Ray Imaging
+    type: Biomedical Concept
+categories:
+- Diagnostic Imaging
+- Medical Imaging
+conceptId: C38101
+dataElementConcepts:
+- conceptId: C117511
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117511
+  ncitCode: C117511
+  shortName: Reported Name of Procedure
+- conceptId: C117512
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117512
+  ncitCode: C117512
+  shortName: Standardized Name of Procedure
+- conceptId: C117513
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117513
+  ncitCode: C117513
+  shortName: Procedure Category
+- conceptId: C117514
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117514
+  ncitCode: C117514
+  shortName: Procedure Subcategory
+- conceptId: C117515
+  dataType: boolean
+  exampleSet:
+  - Y
+  - N
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117515
+  ncitCode: C117515
+  shortName: Procedure Pre-specified
+- conceptId: C117516
+  dataType: boolean
+  exampleSet:
+  - Y
+  - N
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117516
+  ncitCode: C117516
+  shortName: Procedure Occurrence
+- conceptId: C117525
+  dataType: string
+  exampleSet:
+  - Chest
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117525
+  ncitCode: C117525
+  shortName: Procedure Location
+- conceptId: C117526
+  dataType: string
+  exampleSet:
+  - Right
+  - Left
+  - Bilateral
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117526
+  ncitCode: C117526
+  shortName: Procedure Laterality
+- conceptId: C117527
+  dataType: string
+  exampleSet:
+  - Inner
+  - Outer
+  - Anterior
+  - Dorsal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117527
+  ncitCode: C117527
+  shortName: Procedure Directionality
+- conceptId: C117529
+  dataType: datetime
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117529
+  ncitCode: C117529
+  shortName: Start Date and Time of Procedure
+- conceptId: C117530
+  dataType: datetime
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117530
+  ncitCode: C117530
+  shortName: End Date and Time of Procedure
+definition: A radiographic procedure using the emission of x-rays to form an image
+  of the structure penetrated by the radiation.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C38101
+ncitCode: C38101
+resultScales:
+- Nominal
+shortName: X-Ray Imaging
+synonyms:
+- Conventional X-Ray
+- Medical Imaging
+- X-Ray
+- Static X-Ray

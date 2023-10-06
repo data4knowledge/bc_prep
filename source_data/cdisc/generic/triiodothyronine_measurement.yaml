@@ -1,0 +1,58 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C74742
+    title: Hormone Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C74747
+    title: Triiodothyronine Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Chemistry Tests
+- Endocrine Tests
+- Hormone Measurements
+conceptId: C74747
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C48207
+  dataType: string
+  exampleSet:
+  - ng/dL
+  - ng/L
+  - ug/L
+  - nmol/L
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48207
+  ncitCode: C48207
+  shortName: Unit of Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Serum
+  - Plasma
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of free and bound triiodothyronine present
+  in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74747
+ncitCode: C74747
+resultScales:
+- Quantitative
+shortName: Triiodothyronine Measurement
+synonyms:
+- T3
+- Total T3

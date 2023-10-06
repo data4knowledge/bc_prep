@@ -1,0 +1,87 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C62085
+    title: ECG Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C117783
+    title: Aggregate QT Interval
+    type: Biomedical Concept
+categories:
+- Electrocardiogram Findings
+coding:
+- code: 8634-8
+  system: http://loinc.org/
+  systemName: LOINC
+conceptId: C117783
+dataElementConcepts:
+- conceptId: C83254
+  dataType: string
+  exampleSet:
+  - Interval
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83254
+  ncitCode: C83254
+  shortName: Electrocardiogram Category
+- conceptId: C83113
+  dataType: string
+  exampleSet:
+  - Supine
+  - Sitting
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83113
+  ncitCode: C83113
+  shortName: Electrocardiogram Position
+- conceptId: C25330
+  dataType: integer
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25330
+  ncitCode: C25330
+  shortName: Duration
+- conceptId: C42574
+  dataType: string
+  exampleSet:
+  - Milliseconds
+  - Seconds
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C42574
+  ncitCode: C42574
+  shortName: Unit of Time
+- conceptId: C83089
+  dataType: string
+  exampleSet:
+  - 12 Lead Standard
+  - 12 Lead Continuous ECG
+  - 10 Lead Standard
+  - 6 Lead Standard
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83089
+  ncitCode: C83089
+  shortName: Electrocardiogram Method
+- conceptId: C123976
+  dataType: string
+  exampleSet:
+  - Lead 1
+  - Lead 2
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C123976
+  ncitCode: C123976
+  shortName: Electrocardiogram Lead
+- conceptId: C83259
+  dataType: string
+  exampleSet:
+  - Investigator
+  - Vendor
+  - Adjudication Committee
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83259
+  ncitCode: C83259
+  shortName: Electrocardiogram Evaluator
+definition: An aggregate QT value based on the measurement of QT intervals from multiple
+  beats within a single ECG. The method of aggregation, which can vary, is typically
+  a measure of central tendency such as the mean. (CDISC)
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117783
+ncitCode: C117783
+resultScales:
+- Quantitative
+shortName: Aggregate QT Interval
+synonyms:
+- QT Interval Aggregate
+- QTAG

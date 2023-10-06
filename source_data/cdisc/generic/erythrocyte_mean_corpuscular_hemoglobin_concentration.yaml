@@ -1,0 +1,54 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49286
+    title: Hematology Test
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C64798
+    title: Erythrocyte Mean Corpuscular Hemoglobin Concentration
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Hematology Tests
+conceptId: C64798
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C48207
+  dataType: string
+  exampleSet:
+  - g/dL
+  - mmol/L
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48207
+  ncitCode: C48207
+  shortName: Unit of Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Red Blood Cells
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The mean cell hemoglobin concentration (MCHC), which is the average concentration
+  of hemoglobin in a given volume of blood. The MCHC is a calculated value derived
+  from the measurement of hemoglobin and the hematocrit.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64798
+ncitCode: C64798
+resultScales:
+- Quantitative
+shortName: Erythrocyte Mean Corpuscular Hemoglobin Concentration
+synonyms:
+- RBC Mean Corpuscular Hemoglobin Concentration
+- MCHC

@@ -1,0 +1,49 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C74588
+    title: Protocol Milestone
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-03-31
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C114209
+    title: Subject is Randomized
+    type: Biomedical Concept
+categories:
+- Subject Disposition
+- Protocol Milestones
+conceptId: C114209
+dataElementConcepts:
+- conceptId: C82571
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82571
+  ncitCode: C82571
+  shortName: Reported Event Term
+- conceptId: C83122
+  dataType: string
+  exampleSet:
+  - Randomized
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83122
+  ncitCode: C83122
+  shortName: Disposition Dictionary Derived Term
+- conceptId: C83245
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83245
+  ncitCode: C83245
+  shortName: Disposition Category
+- conceptId: C83248
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83248
+  ncitCode: C83248
+  shortName: Disposition Subcategory
+definition: A status indication that a subject is already assigned to an arm of a
+  clinical trial by chance.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C114209
+ncitCode: C114209
+resultScales:
+- Nominal
+shortName: Subject is Randomized
+synonyms:
+- Randomized

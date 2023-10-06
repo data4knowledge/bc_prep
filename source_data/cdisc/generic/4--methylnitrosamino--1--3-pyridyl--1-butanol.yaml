@@ -1,0 +1,47 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C45398
+    title: Carcinogenic Nitrosamine
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C127127
+    title: 4-(Methylnitrosamino)-1-(3-Pyridyl)-1-Butanol
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Nitroso Carcinogens
+- Carcinogenic Nitrosamines
+conceptId: C127127
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: NEW_2
+  dataType: string
+  shortName: Unit of Mass or Substance Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Urine
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The major metabolite of the potentially carcinogenic nitrosamine 4-methylnitrosamino-1,3-pyridyl-1-butanone
+  (nicotine-derived nitrosamine ketone; NNK) that is detected in the urine of subjects
+  exposed to tobacco products. 4-(methylnitrosamino)-1-(3-pyridyl)-1-butanol (nicotine-derived
+  nitrosamine alcohol; NNAL) is produced by carbonyl reduction of NNK and may also
+  be a carcinogen.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C127127
+ncitCode: C127127
+resultScales:
+- Quantitative
+shortName: 4-(Methylnitrosamino)-1-(3-Pyridyl)-1-Butanol
+synonyms:
+- NNAL
+- Nicotine-Derived Nitrosamine Alcohol

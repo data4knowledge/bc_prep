@@ -1,0 +1,60 @@
+_links:
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C128947
+    title: Specimen Isolation
+    type: Biomedical Concept
+categories:
+- Biospecimen Events
+conceptId: C128947
+dataElementConcepts:
+- conceptId: C82571
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82571
+  ncitCode: C82571
+  shortName: Reported Event Term
+- conceptId: C82977
+  dataType: string
+  exampleSet:
+  - Isolating
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82977
+  ncitCode: C82977
+  shortName: Dictionary-derived Term
+- conceptId: C25372
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25372
+  ncitCode: C25372
+  shortName: Category
+- conceptId: C25692
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25692
+  ncitCode: C25692
+  shortName: Subcategory
+- conceptId: C117052
+  dataType: string
+  exampleSet:
+  - Site
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117052
+  ncitCode: C117052
+  shortName: Accountable Party
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Tissue
+  - Tumor Tissue
+  - Blood
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The act of separating a sub-component from the original collected specimen.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C128947
+ncitCode: C128947
+resultScales:
+- Nominal
+shortName: Specimen Isolation
+synonyms:
+- Isolating
+- Isolated

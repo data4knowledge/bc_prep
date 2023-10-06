@@ -1,0 +1,66 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C171532
+    title: Severe Acute Respiratory Syndrome Coronavirus 2 Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-07-06
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-07-06/biomedicalconcepts/C171439
+    title: Severe Acute Respiratory Syndrome Coronavirus 2 Antibody Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Microbiology Tests
+- Virology Tests
+- COVID-19 Tests
+- SARS-CoV-2 Tests
+conceptId: C171439
+dataElementConcepts:
+- conceptId: C117062
+  dataType: string
+  exampleSet:
+  - Detection
+  - Antibody Titer
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117062
+  ncitCode: C117062
+  shortName: Measurement, Test or Examination Detail
+- conceptId: C36292
+  dataType: string
+  exampleSet:
+  - Positive
+  - Negative
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83312
+  dataType: string
+  exampleSet:
+  - Immunofluorescence
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83312
+  ncitCode: C83312
+  shortName: Laboratory Test Method
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Serum
+  - Plasma
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of severe acute respiratory syndrome coronavirus
+  2 antibody in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C171439
+ncitCode: C171439
+resultScales:
+- Quantitative
+- Ordinal
+shortName: Severe Acute Respiratory Syndrome Coronavirus 2 Antibody Measurement
+synonyms:
+- SARS-CoV-2 Antibody Detection
+- SARS-CoV-2 Antibody Test
+- COVID-19 Antibody Test
+- COVID-19 Antibody Detection
+- SAR2AB

@@ -1,0 +1,60 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C74954
+    title: Liver Function Test
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C38037
+    title: Total Bilirubin Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Chemistry Tests
+- Liver Function Tests
+conceptId: C38037
+dataElementConcepts:
+- conceptId: C36292
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C48207
+  dataType: string
+  exampleSet:
+  - umol/L
+  - mg/dL
+  - mg/L
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48207
+  ncitCode: C48207
+  shortName: Unit of Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  - Plasma
+  - Serum
+  - Urine
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The measurement of the total amount of bilirubin present in a particular
+  substrate. The substrate most often tested is blood, but other fluids extracted
+  from the body may be used periodically depending on the purpose of the test.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C38037
+ncitCode: C38037
+resultScales:
+- Quantitative
+- Ordinal
+shortName: Total Bilirubin Measurement
+synonyms:
+- Bilirubin
+- Total Bilirubin Level

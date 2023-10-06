@@ -1,0 +1,60 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C184647
+    title: Treponema pallidum Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C198341
+    title: Treponema pallidum DNA Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Microbiology Tests
+- Immunology Tests
+conceptId: C198341
+dataElementConcepts:
+- conceptId: C117062
+  dataType: string
+  exampleSet:
+  - Detection
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117062
+  ncitCode: C117062
+  shortName: Measurement, Test or Examination Detail
+- conceptId: C36292
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83312
+  dataType: string
+  exampleSet:
+  - Line Probe Assay
+  - Nucleic Acid Amplification (NAA)
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83312
+  ncitCode: C83312
+  shortName: Laboratory Test Method
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  - Urine
+  - Cerebrospinal Fluid
+  - Body Fluid
+  - Swabbed Material
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of Treponema pallidum DNA present in a
+  sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C198341
+ncitCode: C198341
+resultScales:
+- Ordinal
+shortName: Treponema pallidum DNA Measurement
+synonyms:
+- TPADNA
+- Syphilis DNA

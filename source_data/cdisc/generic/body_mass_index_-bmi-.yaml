@@ -1,0 +1,40 @@
+_links:
+  parentPackage:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2022-10-26
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C16358
+    title: Body Mass Index (BMI)
+    type: Biomedical Concept
+categories:
+- Vital Signs
+coding:
+- code: 39156-5
+  system: http://loinc.org/
+  systemName: LOINC
+conceptId: C16358
+dataElementConcepts:
+- conceptId: C138901
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C138901
+  ncitCode: C138901
+  shortName: Body Mass Index Finding
+- conceptId: C42575
+  dataType: string
+  exampleSet:
+  - Kilogram per Square Meter
+  - Pounds per Square Inch
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C42575
+  ncitCode: C42575
+  shortName: Unit of Mass Density
+definition: An individual's weight in kilograms divided by the square of the height
+  in meters.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16358
+ncitCode: C16358
+resultScales:
+- Quantitative
+shortName: Body Mass Index (BMI)
+synonyms:
+- BMI
+- Quetelet Index

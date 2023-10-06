@@ -1,0 +1,29 @@
+_links:
+  parentPackage:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2022-10-26
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2022-10-26/biomedicalconcepts/C49680
+    title: Body Frame Size
+    type: Biomedical Concept
+categories:
+- Vital Signs
+conceptId: C49680
+dataElementConcepts:
+- conceptId: C173522
+  dataType: string
+  exampleSet:
+  - Small
+  - Medium
+  - Large
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173522
+  ncitCode: C173522
+  shortName: Vital Signs Result
+definition: The categorization of a person's body frame into small, medium and large
+  based on the measurement of wrist circumference or the breadth of the elbow.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C49680
+ncitCode: C49680
+resultScales:
+- Ordinal
+shortName: Body Frame Size

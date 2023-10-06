@@ -1,0 +1,65 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C82571
+    title: Reported Event Term
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-03-31
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C83118
+    title: Medical History Reported Term
+    type: Biomedical Concept
+categories:
+- Reported Events
+- Medical History Events
+- Medical Conditions
+- Presenting Conditions
+conceptId: C83118
+dataElementConcepts:
+- conceptId: C83118
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83118
+  ncitCode: C83118
+  shortName: Medical History Reported Term
+- conceptId: C83346
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83346
+  ncitCode: C83346
+  shortName: Medical History Dictionary Derived Term
+- conceptId: C83018
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83018
+  ncitCode: C83018
+  shortName: Medical History Category
+- conceptId: C83143
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83143
+  ncitCode: C83143
+  shortName: Medical History Subcategory
+- conceptId: C87897
+  dataType: boolean
+  exampleSet:
+  - Y
+  - N
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C87897
+  ncitCode: C87897
+  shortName: Medical History Pre-specified
+- conceptId: C83067
+  dataType: boolean
+  exampleSet:
+  - Y
+  - N
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83067
+  ncitCode: C83067
+  shortName: Medical History Occurrence
+definition: The verbatim description of the medical history being reported.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83118
+ncitCode: C83118
+resultScales:
+- Nominal
+shortName: Medical History Reported Term
+synonyms:
+- Medical History
+- MHTERM

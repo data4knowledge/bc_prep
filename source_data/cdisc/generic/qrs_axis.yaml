@@ -1,0 +1,75 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C62085
+    title: ECG Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-03-31
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-03-31/biomedicalconcepts/C118165
+    title: QRS Axis
+    type: Biomedical Concept
+categories:
+- Electrocardiogram Findings
+coding:
+- code: 8632-2
+  system: http://loinc.org/
+  systemName: LOINC
+conceptId: C118165
+dataElementConcepts:
+- conceptId: C83254
+  dataType: string
+  exampleSet:
+  - Measurement
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83254
+  ncitCode: C83254
+  shortName: Electrocardiogram Category
+- conceptId: C83113
+  dataType: string
+  exampleSet:
+  - Supine
+  - Sitting
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83113
+  ncitCode: C83113
+  shortName: Electrocardiogram Position
+- conceptId: C49148
+  dataType: integer
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C49148
+  ncitCode: C49148
+  shortName: Quantitative Result
+- conceptId: C68667
+  dataType: string
+  exampleSet:
+  - Degree
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C68667
+  ncitCode: C68667
+  shortName: Degree Unit of Plane Angle
+- conceptId: C83089
+  dataType: string
+  exampleSet:
+  - 12 Lead Standard
+  - 12 Lead Continuous ECG
+  - 10 Lead Standard
+  - 6 Lead Standard
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83089
+  ncitCode: C83089
+  shortName: Electrocardiogram Method
+- conceptId: C83259
+  dataType: string
+  exampleSet:
+  - Investigator
+  - Vendor
+  - Adjudication Committee
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83259
+  ncitCode: C83259
+  shortName: Electrocardiogram Evaluator
+definition: A numerical representation of the electrocardiographic vector assessed
+  at maximum deviation of the QRS complex from the isoelectric baseline, usually reported
+  for the frontal plane. (CDISC)
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C118165
+ncitCode: C118165
+resultScales:
+- Quantitative
+shortName: QRS Axis

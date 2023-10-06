@@ -1,0 +1,46 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C35553
+    title: Abnormal Blood Chemistry and Hematology Test Result
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-10-03
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-10-03/biomedicalconcepts/C64803
+    title: Polychromasia
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Hematology Tests
+- Abnormal Blood Chemistry and Hematology Test Results
+conceptId: C64803
+dataElementConcepts:
+- conceptId: C36292
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C83309
+  dataType: boolean
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309
+  ncitCode: C83309
+  shortName: Laboratory Test Fasting Status
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The reaction of red cells to stain as indicated by the appearance of bluish
+  or grayish colored erythrocytes.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64803
+ncitCode: C64803
+resultScales:
+- Quantitative
+- Ordinal
+shortName: Polychromasia
+synonyms:
+- POLYCHR

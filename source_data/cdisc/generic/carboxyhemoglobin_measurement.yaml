@@ -1,0 +1,48 @@
+_links:
+  parentBiomedicalConcept:
+    href: /mdr/bc/packages/2023-02-13/biomedicalconcepts/C64848
+    title: Hemoglobin Measurement
+    type: Biomedical Concept
+  parentPackage:
+    href: /mdr/bc/packages/2023-02-13/biomedicalconcepts
+    title: Biomedical Concept Package Effective 2023-02-13
+    type: Biomedical Concept Package
+  self:
+    href: /mdr/bc/packages/2023-02-13/biomedicalconcepts/C96591
+    title: Carboxyhemoglobin Measurement
+    type: Biomedical Concept
+categories:
+- Laboratory Tests
+- Chemistry Tests
+- Hemaglobin Measurements
+coding:
+- code: 31157-1
+  system: http://loinc.org/
+  systemName: LOINC
+conceptId: C96591
+dataElementConcepts:
+- conceptId: C36292
+  dataType: decimal
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+  ncitCode: C36292
+  shortName: Laboratory Test Result
+- conceptId: C64571
+  dataType: string
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64571
+  ncitCode: C64571
+  shortName: Unit of Mass Concentration
+- conceptId: C70713
+  dataType: string
+  exampleSet:
+  - Blood
+  href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713
+  ncitCode: C70713
+  shortName: Biospecimen Type
+definition: The determination of the amount of carboxyhemoglobin present in a sample.
+href: https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96591
+ncitCode: C96591
+resultScales:
+- Quantitative
+shortName: Carboxyhemoglobin Measurement
+synonyms:
+- Carboxyhemoglobin
