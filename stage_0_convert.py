@@ -1,7 +1,6 @@
 import yaml
 from utility.utility import *
 
-
 def process_instances():
   files = files_in_dir('source_data/instances')
   for filename in files:

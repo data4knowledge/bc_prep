@@ -1,0 +1,432 @@
+C100453:
+  c_code:
+    cl: C120527
+    cli: C100453
+  identifier: ''
+  name: Plasmodium
+C100945:
+  c_code:
+    cl: C66741
+    cli: C100945
+  identifier: PULSEPR
+  name: Pulse Pressure
+C100946:
+  c_code:
+    cl: C66741
+    cli: C100946
+  identifier: FARMCIR
+  name: Forearm Circumference
+C100947:
+  c_code:
+    cl: C66741
+    cli: C100947
+  identifier: HIPCIR
+  name: Hip Circumference
+C100948:
+  c_code:
+    cl: C66741
+    cli: C100948
+  identifier: WSTCIR
+  name: Waist Circumference
+C103346:
+  c_code:
+    cl: C66741
+    cli: C103346
+  identifier: ABSKNF
+  name: Abdominal Skinfold Thickness
+C104622:
+  c_code:
+    cl: C66741
+    cli: C104622
+  identifier: TBW
+  name: Total Body Water Measurement
+C105585:
+  c_code:
+    cl: C65047
+    cli: C105585
+  identifier: ''
+  name: Glucose in urine
+C117976:
+  c_code:
+    cl: C66741
+    cli: C117976
+  identifier: IDEALWT
+  name: Ideal Body Weight
+C122232:
+  c_code:
+    cl: C66741
+    cli: C122232
+  identifier: BODYFATM
+  name: Body Fat Measurement
+C124475:
+  c_code:
+    cl: C66741
+    cli: C124475
+  identifier: MUARMCIR
+  name: Mid-Upper Arm Circumference
+C126083:
+  c_code:
+    cl: C66741
+    cli: C126083
+  identifier: BMR
+  name: Basal Metabolic Rate
+C132482:
+  c_code:
+    cl: C66741
+    cli: C132482
+  identifier: EWEIGHT
+  name: Estimated Body Weight
+C147491:
+  c_code:
+    cl: C66741
+    cli: C147491
+  identifier: ENRGEXP
+  name: Energy Expenditure
+C147492:
+  c_code:
+    cl: C66741
+    cli: C147492
+  identifier: MAXPREHR
+  name: Maximum Predicted Heart Rate
+C154891:
+  c_code:
+    cl: C66741
+    cli: C154891
+  identifier: NECKCIR
+  name: Neck Circumference
+C156606:
+  c_code:
+    cl: C66741
+    cli: C156606
+  identifier: CHESTCIR
+  name: Chest Circumference
+C158297:
+  c_code:
+    cl: C66741
+    cli: C158297
+  identifier: FTHDCIRC
+  name: Fetal Head Circumference
+C16358:
+  c_code:
+    cl: C66741
+    cli: C16358
+  identifier: BMI
+  name: BMI
+C174233:
+  c_code:
+    cl: C66741
+    cli: C174233
+  identifier: MANDL
+  name: Mandibular Length
+C174311:
+  c_code:
+    cl: C66741
+    cli: C174311
+  identifier: SAO2FIO2
+  name: Oxygen Saturation/Fraction Inspired O2
+C174370:
+  c_code:
+    cl: C66741
+    cli: C174370
+  identifier: TEMPCB
+  name: Core Body Temperature
+C174371:
+  c_code:
+    cl: C66741
+    cli: C174371
+  identifier: TEMPPB
+  name: Peripheral Body Temperature
+C174372:
+  c_code:
+    cl: C66741
+    cli: C174372
+  identifier: FTEWT
+  name: Fetal Estimated Weight
+C174373:
+  c_code:
+    cl: C66741
+    cli: C174373
+  identifier: FTSAD
+  name: Fetal Sagittal Abdominal Diameter
+C174375:
+  c_code:
+    cl: C66741
+    cli: C174375
+  identifier: FTMANDL
+  name: Fetal Mandibular Length
+C174376:
+  c_code:
+    cl: C66741
+    cli: C174376
+  identifier: ULNARL
+  name: Ulnar Length
+C174446:
+  c_code:
+    cl: C66741
+    cli: C174446
+  identifier: TEMP
+  name: Temperature
+C17651:
+  c_code:
+    cl: C66741
+    cli: C17651
+  identifier: WAISTHIP
+  name: Waist-Hip Ratio
+C25157:
+  c_code:
+    cl: C66741
+    cli: C25157
+  identifier: BSA
+  name: Body Surface Area
+C25208:
+  c_code:
+    cl: C66741
+    cli: C25208
+  identifier: ''
+  name: Weight
+C25298:
+  c_code:
+    cl: C66741
+    cli: C25298
+  identifier: SYSBP
+  name: Systolic Blood Pressure
+C25299:
+  c_code:
+    cl: C66741
+    cli: C25299
+  identifier: DIABP
+  name: Diastolic Blood Pressure
+C25347:
+  c_code:
+    cl: C66741
+    cli: C25347
+  identifier: HEIGHT
+  name: Height
+C25681:
+  c_code:
+    cl: C124300
+    cli: C25681
+  identifier: ''
+  name: Spleen Size
+C38082:
+  c_code:
+    cl: C66741
+    cli: C38082
+  identifier: FIO2
+  name: Fraction of Inspired Oxygen
+C41255:
+  c_code:
+    cl: C71153
+    cli: C41255
+  identifier: INTP
+  name: Electrocardiogram Interpretation
+C49676:
+  c_code:
+    cl: C66741
+    cli: C49676
+  identifier: PULSE
+  name: Pulse Rate
+C49677:
+  c_code:
+    cl: C66741
+    cli: C49677
+  identifier: HR
+  name: Heart Rate
+C49678:
+  c_code:
+    cl: C66741
+    cli: C49678
+  identifier: RESP
+  name: Respiratory Rate
+C49679:
+  c_code:
+    cl: C66741
+    cli: C49679
+  identifier: MAP
+  name: Mean Arterial Pressure
+C49680:
+  c_code:
+    cl: C66741
+    cli: C49680
+  identifier: FRMSIZE
+  name: Body Frame Size
+C60832:
+  c_code:
+    cl: C66741
+    cli: C60832
+  identifier: OXYSAT
+  name: Oxygen Saturation
+C64796:
+  c_code:
+    cl: C65047
+    cli: C64796
+  identifier: ''
+  name: Hematocrit
+C64848:
+  c_code:
+    cl: C65047
+    cli: C64848
+  identifier: ''
+  name: Hemoglobin
+C71258:
+  c_code:
+    cl: C66741
+    cli: C71258
+  identifier: LBM
+  name: Lean Body Mass
+C81255:
+  c_code:
+    cl: C66741
+    cli: C81255
+  identifier: HDCIRC
+  name: Head Circumference
+C81298:
+  c_code:
+    cl: C66741
+    cli: C81298
+  identifier: BODLNGTH
+  name: Total Body Length
+C84372:
+  c_code:
+    cl: C66741
+    cli: C84372
+  identifier: KNEEHEEL
+  name: Knee to Heel Length Measurement
+C87054:
+  c_code:
+    cl: C66741
+    cli: C87054
+  identifier: SAD
+  name: Sagittal Abdominal Diameter
+C92716:
+  c_code:
+    cl: C66741
+    cli: C92716
+  identifier: FTHR
+  name: Fetal Heart Rate
+C98785:
+  c_code:
+    cl: C66741
+    cli: C98785
+  identifier: SSSKNF
+  name: Subscapular Skinfold Thickness
+C98793:
+  c_code:
+    cl: C66741
+    cli: C98793
+  identifier: TRSKNF
+  name: Triceps Skinfold Thicknesss
+D100000:
+  c_code:
+    cl: D000001
+    cli: D100000
+  identifier: ''
+  name: Age
+D100001:
+  c_code:
+    cl: D000001
+    cli: D100001
+  identifier: ''
+  name: Race
+D100002:
+  c_code:
+    cl: D000001
+    cli: D100002
+  identifier: ''
+  name: Sex
+D100003:
+  c_code:
+    cl: D000001
+    cli: D100003
+  identifier: ''
+  name: Ethnicity
+D100004:
+  c_code:
+    cl: D000001
+    cli: D100004
+  identifier: ''
+  name: Adverse Event
+D100005:
+  c_code:
+    cl: D000001
+    cli: D100005
+  identifier: ''
+  name: Exposure
+D100006:
+  c_code:
+    cl: D000001
+    cli: D100006
+  identifier: ''
+  name: Date of Birth
+D100007:
+  c_code:
+    cl: D000001
+    cli: D100007
+  identifier: ''
+  name: Inclusion Criteria
+D100008:
+  c_code:
+    cl: D000001
+    cli: D100008
+  identifier: ''
+  name: Exclusion Criteria
+D100009:
+  c_code:
+    cl: D000001
+    cli: D100009
+  identifier: ''
+  name: Enrollment Date
+D100010:
+  c_code:
+    cl: D000001
+    cli: D100010
+  identifier: ''
+  name: Pregnant
+D100011:
+  c_code:
+    cl: D000001
+    cli: D100011
+  identifier: ''
+  name: Plasmodium vivax, Asexual
+D100012:
+  c_code:
+    cl: D000001
+    cli: D100012
+  identifier: ''
+  name: Plasmodium vivax, Sexual
+D100013:
+  c_code:
+    cl: D000001
+    cli: D100013
+  identifier: ''
+  name: Plasmodium flciparum, Asexual
+D100014:
+  c_code:
+    cl: D000001
+    cli: D100014
+  identifier: ''
+  name: Anemia
+D100015:
+  c_code:
+    cl: D000001
+    cli: D100015
+  identifier: ''
+  name: EVI
+D100016:
+  c_code:
+    cl: D000001
+    cli: D100016
+  identifier: ''
+  name: NLN
+D100017:
+  c_code:
+    cl: D000001
+    cli: D100017
+  identifier: ''
+  name: SES
+D100018:
+  c_code:
+    cl: D000001
+    cli: D100018
+  identifier: ''
+  name: Malaria RDT
