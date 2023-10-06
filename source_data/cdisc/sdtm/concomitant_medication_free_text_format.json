@@ -1,0 +1,297 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C53630",
+            "title": "Concomitant Therapy",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations",
+            "title": "SDTM Dataset Specialization Package Effective 2023-10-03",
+            "type": "SDTM Dataset Specialization Package"
+        },
+        "self": {
+            "href": "/mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/CMFREE",
+            "title": "Concomitant Medication Free Text Format",
+            "type": "SDTM Dataset Specialization"
+        }
+    },
+    "datasetSpecializationId": "CMFREE",
+    "domain": "CM",
+    "shortName": "Concomitant Medication Free Text Format",
+    "source": "CM.CMTRT",
+    "sdtmigStartVersion": "3-2",
+    "sdtmigEndVersion": "",
+    "variables": [
+        {
+            "name": "CMTRT",
+            "dataElementConceptId": "C70902",
+            "isNonStandard": false,
+            "role": "Topic",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMTRT",
+                "linkingPhrase": "is original text for",
+                "predicateTerm": "IS_ORIGINAL_TEXT_FOR",
+                "object": "CMDECOD"
+            },
+            "mandatoryVariable": true,
+            "mandatoryValue": true,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMDECOD",
+            "dataElementConceptId": "C83345",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMDECOD",
+                "linkingPhrase": "is the dictionary-derived term for the value in",
+                "predicateTerm": "DECODES",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": true,
+            "mandatoryValue": false,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "CMCAT",
+            "dataElementConceptId": "C83218",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMCAT",
+                "linkingPhrase": "groups values in",
+                "predicateTerm": "GROUPS",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "CMSCAT",
+            "dataElementConceptId": "C83232",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMSCAT",
+                "linkingPhrase": "groups values in",
+                "predicateTerm": "GROUPS",
+                "object": "CMCAT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "CMCLAS",
+            "dataElementConceptId": "C83232",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMCLAS",
+                "linkingPhrase": "is the dictionary-derived class name for the value in",
+                "predicateTerm": "IS_DERIVED_FROM",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "CMCLASCD",
+            "dataElementConceptId": "C83232",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMCLASCD",
+                "linkingPhrase": "is the dictionary-derived class code for the value in",
+                "predicateTerm": "IS_DECODED_BY",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "CMINDC",
+            "dataElementConceptId": "C83085",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "CMINDC",
+                "linkingPhrase": "is the medical condition that is the reason for the treatment in",
+                "predicateTerm": "INDICATES",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMDOSE",
+            "dataElementConceptId": "C83221",
+            "isNonStandard": false,
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 40,
+            "relationship": {
+                "subject": "CMDOSE",
+                "linkingPhrase": "is the administered amount of the treatment in",
+                "predicateTerm": "IS_ATTRIBUTE_FOR",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMDOSU",
+            "dataElementConceptId": "C83034",
+            "isNonStandard": false,
+            "codelist": {
+                "conceptId": "C71620",
+                "submissionValue": "UNIT",
+                "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71620"
+            },
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 40,
+            "relationship": {
+                "subject": "CMDOSU",
+                "linkingPhrase": "is the unit for",
+                "predicateTerm": "IS_UNIT_FOR",
+                "object": "CMDOSE"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMDOSFRM",
+            "dataElementConceptId": "C83110",
+            "isNonStandard": false,
+            "codelist": {
+                "conceptId": "C66726",
+                "submissionValue": "FRM",
+                "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66726"
+            },
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 40,
+            "relationship": {
+                "subject": "CMDOSFRM",
+                "linkingPhrase": "is the physical form of the product in",
+                "predicateTerm": "IS_ATTRIBUTE_FOR",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMDOSFRQ",
+            "dataElementConceptId": "C83042",
+            "isNonStandard": false,
+            "codelist": {
+                "conceptId": "C71113",
+                "submissionValue": "FREQ",
+                "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C71113"
+            },
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 40,
+            "relationship": {
+                "subject": "CMDOSFRQ",
+                "linkingPhrase": "is the frequency of administration of the amount in",
+                "predicateTerm": "SPECIFIES",
+                "object": "CMDOSE"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMROUTE",
+            "dataElementConceptId": "C83120",
+            "isNonStandard": false,
+            "codelist": {
+                "conceptId": "C66729",
+                "submissionValue": "ROUTE",
+                "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C66729"
+            },
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 40,
+            "relationship": {
+                "subject": "CMROUTE",
+                "linkingPhrase": "is the part of the body through which is administered the treatment in",
+                "predicateTerm": "IS_ATTRIBUTE_FOR",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMSTDTC",
+            "dataElementConceptId": "C83235",
+            "isNonStandard": false,
+            "role": "Timing",
+            "dataType": "datetime",
+            "relationship": {
+                "subject": "CMSTDTC",
+                "linkingPhrase": "is the start date for",
+                "predicateTerm": "IS_TIMING_FOR",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        },
+        {
+            "name": "CMENDTC",
+            "dataElementConceptId": "C83225",
+            "isNonStandard": false,
+            "role": "Timing",
+            "dataType": "datetime",
+            "relationship": {
+                "subject": "CMENDTC",
+                "linkingPhrase": "is the end date for",
+                "predicateTerm": "IS_TIMING_FOR",
+                "object": "CMTRT"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C16735",
+            "title": "Informed Consent",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations",
+            "title": "SDTM Dataset Specialization Package Effective 2023-10-03",
+            "type": "SDTM Dataset Specialization Package"
+        },
+        "self": {
+            "href": "/mdr/specializations/sdtm/packages/2023-10-03/datasetspecializations/CONSENT",
+            "title": "Informed Consent Obtained",
+            "type": "SDTM Dataset Specialization"
+        }
+    },
+    "datasetSpecializationId": "CONSENT",
+    "domain": "DS",
+    "shortName": "Informed Consent Obtained",
+    "source": "DS.DECODE",
+    "sdtmigStartVersion": "3-2",
+    "sdtmigEndVersion": "",
+    "variables": [
+        {
+            "name": "DSCAT",
+            "dataElementConceptId": "C83245",
+            "isNonStandard": false,
+            "codelist": {
+                "conceptId": "C74558",
+                "submissionValue": "DSCAT",
+                "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74558"
+            },
+            "assignedTerm": {
+                "conceptId": "C74588",
+                "value": "PROTOCOL MILESTONE"
+            },
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "DSCAT",
+                "linkingPhrase": "groups values in",
+                "predicateTerm": "GROUPS",
+                "object": "DSTERM"
+            },
+            "mandatoryVariable": true,
+            "mandatoryValue": false
+        },
+        {
+            "name": "DSDECOD",
+            "dataElementConceptId": "C83122",
+            "isNonStandard": false,
+            "codelist": {
+                "conceptId": "C114118",
+                "submissionValue": "PROTMLST",
+                "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C114118"
+            },
+            "assignedTerm": {
+                "conceptId": "C16735",
+                "value": "INFORMED CONSENT OBTAINED"
+            },
+            "role": "Qualifier",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "DSDECOD",
+                "linkingPhrase": "is a dictionary-derived term for the value in",
+                "predicateTerm": "IS_DERIVED_FROM",
+                "object": "DSTERM"
+            },
+            "mandatoryVariable": true,
+            "mandatoryValue": true,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "DSTERM",
+            "dataElementConceptId": "C82571",
+            "isNonStandard": false,
+            "role": "Topic",
+            "dataType": "text",
+            "length": 200,
+            "relationship": {
+                "subject": "DSTERM",
+                "linkingPhrase": "is original text for",
+                "predicateTerm": "IS_ORIGINAL_TEXT_FOR",
+                "object": "DSDECOD"
+            },
+            "mandatoryVariable": true,
+            "mandatoryValue": true,
+            "originType": "Assigned",
+            "originSource": "Sponsor"
+        },
+        {
+            "name": "DSSTDTC",
+            "dataElementConceptId": "C93579",
+            "isNonStandard": false,
+            "role": "Timing",
+            "dataType": "datetime",
+            "relationship": {
+                "subject": "DSSTDTC",
+                "linkingPhrase": "is the start date for",
+                "predicateTerm": "IS_TIMING_FOR",
+                "object": "DSTERM"
+            },
+            "mandatoryVariable": false,
+            "mandatoryValue": false,
+            "originType": "Collected",
+            "originSource": "Investigator"
+        }
+    ]
+}
