@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2022-10-26/biomedicalconcepts/C49237",
+            "title": "Chemistry Test",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C74737",
+            "title": "Ferritin Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C74737",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74737",
+    "categories": [
+        "Laboratory Tests",
+        "Chemistry Tests",
+        "Protein or Enzyme Measurements"
+    ],
+    "shortName": "Ferritin Measurement",
+    "synonyms": [
+        "Ferritin"
+    ],
+    "resultScales": [
+        "Quantitative",
+        "Nominal"
+    ],
+    "definition": "The determination of the amount of ferritin present in a sample.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "string",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C48207",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48207",
+            "shortName": "Unit of Concentration",
+            "dataType": "string",
+            "exampleSet": [
+                "ug/L",
+                "ng/mL",
+                "pmol/L"
+            ],
+            "ncitCode": "C48207"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Blood",
+                "Serum",
+                "Plasma",
+                "Body Fluid"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C74737"
+}

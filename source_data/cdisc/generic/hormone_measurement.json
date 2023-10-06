@@ -1,0 +1,24 @@
+{
+    "_links": {
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C74742",
+            "title": "Hormone Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C74742",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74742",
+    "categories": [
+        "Laboratory Tests",
+        "Chemistry Tests",
+        "Endocrine Tests"
+    ],
+    "shortName": "Hormone Measurement",
+    "definition": "The determination of the amount of hormone present in a sample.",
+    "ncitCode": "C74742"
+}

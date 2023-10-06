@@ -1,0 +1,28 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-03-31/biomedicalconcepts/C49188",
+            "title": "Microbiology Test",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C154812",
+            "title": "Gram Negative Bacteria Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C154812",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C154812",
+    "categories": [
+        "Laboratory Tests",
+        "Microbiology Tests"
+    ],
+    "shortName": "Gram Negative Bacteria Measurement",
+    "definition": "The determination of the gram-negative bacteria present in a sample.",
+    "ncitCode": "C154812"
+}

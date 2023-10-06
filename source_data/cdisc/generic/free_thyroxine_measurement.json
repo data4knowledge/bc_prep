@@ -1,0 +1,76 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C74742",
+            "title": "Hormone Measurement",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C74786",
+            "title": "Free Thyroxine Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C74786",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74786",
+    "categories": [
+        "Laboratory Tests",
+        "Chemistry Tests",
+        "Endocrine Tests",
+        "Hormone Measurements"
+    ],
+    "shortName": "Free Thyroxine Measurement",
+    "synonyms": [
+        "Free T4",
+        "T4FR"
+    ],
+    "resultScales": [
+        "Quantitative"
+    ],
+    "definition": "The determination of the amount of free thyroxine present in a sample.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "decimal",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C48207",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48207",
+            "shortName": "Unit of Concentration",
+            "dataType": "string",
+            "exampleSet": [
+                "ng/dL",
+                "ng/L",
+                "pmol/L"
+            ],
+            "ncitCode": "C48207"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Serum",
+                "Plasma"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C74786"
+}

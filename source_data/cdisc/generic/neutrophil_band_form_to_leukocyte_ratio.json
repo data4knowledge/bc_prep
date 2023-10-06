@@ -1,0 +1,75 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C67208",
+            "title": "Blood Cell Count Ratio Measurement",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C64831",
+            "title": "Neutrophil Band Form to Leukocyte Ratio",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C64831",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64831",
+    "categories": [
+        "Laboratory Tests",
+        "Hematology Tests",
+        "Blood Cell Counts",
+        "Blood Cell Count Ratio Measurements"
+    ],
+    "shortName": "Neutrophil Band Form to Leukocyte Ratio",
+    "synonyms": [
+        "Neutrophils Band Form/Leukocytes",
+        "NEUTBLE"
+    ],
+    "resultScales": [
+        "Quantitative"
+    ],
+    "definition": "The determination of the ratio of band neutrophils compared to leukocytes in a blood sample. The measurement may be expressed as a ratio or percentage.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "decimal",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C48570",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48570",
+            "shortName": "Percent Unit",
+            "dataType": "string",
+            "exampleSet": [
+                "%"
+            ],
+            "ncitCode": "C48570"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Blood",
+                "Body fluid",
+                "Bone Marrow"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C64831"
+}

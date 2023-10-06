@@ -1,0 +1,89 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-03-31/biomedicalconcepts/C82571",
+            "title": "Reported Event Term",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-03-31/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-03-31",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-03-31/biomedicalconcepts/C83118",
+            "title": "Medical History Reported Term",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C83118",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83118",
+    "categories": [
+        "Reported Events",
+        "Medical History Events",
+        "Medical Conditions",
+        "Presenting Conditions"
+    ],
+    "shortName": "Medical History Reported Term",
+    "synonyms": [
+        "Medical History",
+        "MHTERM"
+    ],
+    "resultScales": [
+        "Nominal"
+    ],
+    "definition": "The verbatim description of the medical history being reported.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C83118",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83118",
+            "shortName": "Medical History Reported Term",
+            "dataType": "string",
+            "ncitCode": "C83118"
+        },
+        {
+            "conceptId": "C83346",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83346",
+            "shortName": "Medical History Dictionary Derived Term",
+            "dataType": "string",
+            "ncitCode": "C83346"
+        },
+        {
+            "conceptId": "C83018",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83018",
+            "shortName": "Medical History Category",
+            "dataType": "string",
+            "ncitCode": "C83018"
+        },
+        {
+            "conceptId": "C83143",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83143",
+            "shortName": "Medical History Subcategory",
+            "dataType": "string",
+            "ncitCode": "C83143"
+        },
+        {
+            "conceptId": "C87897",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C87897",
+            "shortName": "Medical History Pre-specified",
+            "dataType": "boolean",
+            "exampleSet": [
+                "Y",
+                "N"
+            ],
+            "ncitCode": "C87897"
+        },
+        {
+            "conceptId": "C83067",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83067",
+            "shortName": "Medical History Occurrence",
+            "dataType": "boolean",
+            "exampleSet": [
+                "Y",
+                "N"
+            ],
+            "ncitCode": "C83067"
+        }
+    ],
+    "ncitCode": "C83118"
+}

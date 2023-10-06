@@ -1,0 +1,73 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-02-13/biomedicalconcepts/C64848",
+            "title": "Hemoglobin Measurement",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C64849",
+            "title": "Glycosylated Hemoglobin Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C64849",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64849",
+    "categories": [
+        "Laboratory Tests",
+        "Hematology Tests",
+        "Hemoglobin Measurements"
+    ],
+    "shortName": "Glycosylated Hemoglobin Measurement",
+    "synonyms": [
+        "Hemoglobin A1C",
+        "HBA1C",
+        "Glycosylated Hemoglobin A1C"
+    ],
+    "resultScales": [
+        "Quantitative"
+    ],
+    "definition": "A quantitative measurement of the amount of glycosylated hemoglobin present in a sample of blood.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "decimal",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C64571",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64571",
+            "shortName": "Unit of Mass Concentration",
+            "dataType": "string",
+            "exampleSet": [
+                "g/dL"
+            ],
+            "ncitCode": "C64571"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Blood"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C64849"
+}

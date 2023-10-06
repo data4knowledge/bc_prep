@@ -1,0 +1,139 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-03-31/biomedicalconcepts/C16502",
+            "title": "Diagnostic Imaging",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C17204",
+            "title": "Computed Tomography",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C17204",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17204",
+    "categories": [
+        "Diagnostic Imaging",
+        "Medical Imaging"
+    ],
+    "shortName": "Computed Tomography",
+    "synonyms": [
+        "CAT Scan",
+        "Computed Axial Tomography",
+        "Computed Tomography",
+        "Computerized Tomography",
+        "CT"
+    ],
+    "resultScales": [
+        "Nominal"
+    ],
+    "definition": "A method of examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C117511",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117511",
+            "shortName": "Reported Name of Procedure",
+            "dataType": "string",
+            "ncitCode": "C117511"
+        },
+        {
+            "conceptId": "C117512",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117512",
+            "shortName": "Standardized Name of Procedure",
+            "dataType": "string",
+            "ncitCode": "C117512"
+        },
+        {
+            "conceptId": "C117513",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117513",
+            "shortName": "Procedure Category",
+            "dataType": "string",
+            "ncitCode": "C117513"
+        },
+        {
+            "conceptId": "C117514",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117514",
+            "shortName": "Procedure Subcategory",
+            "dataType": "string",
+            "ncitCode": "C117514"
+        },
+        {
+            "conceptId": "C117515",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117515",
+            "shortName": "Procedure Pre-specified",
+            "dataType": "boolean",
+            "exampleSet": [
+                "Y",
+                "N"
+            ],
+            "ncitCode": "C117515"
+        },
+        {
+            "conceptId": "C117516",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117516",
+            "shortName": "Procedure Occurrence",
+            "dataType": "boolean",
+            "exampleSet": [
+                "Y",
+                "N"
+            ],
+            "ncitCode": "C117516"
+        },
+        {
+            "conceptId": "C117525",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117525",
+            "shortName": "Procedure Location",
+            "dataType": "string",
+            "exampleSet": [
+                "Chest"
+            ],
+            "ncitCode": "C117525"
+        },
+        {
+            "conceptId": "C117526",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117526",
+            "shortName": "Procedure Laterality",
+            "dataType": "string",
+            "exampleSet": [
+                "Right",
+                "Left",
+                "Bilateral"
+            ],
+            "ncitCode": "C117526"
+        },
+        {
+            "conceptId": "C117527",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117527",
+            "shortName": "Procedure Directionality",
+            "dataType": "string",
+            "exampleSet": [
+                "Inner",
+                "Outer",
+                "Anterior",
+                "Dorsal"
+            ],
+            "ncitCode": "C117527"
+        },
+        {
+            "conceptId": "C117529",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117529",
+            "shortName": "Start Date and Time of Procedure",
+            "dataType": "datetime",
+            "ncitCode": "C117529"
+        },
+        {
+            "conceptId": "C117530",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117530",
+            "shortName": "End Date and Time of Procedure",
+            "dataType": "datetime",
+            "ncitCode": "C117530"
+        }
+    ],
+    "ncitCode": "C17204"
+}

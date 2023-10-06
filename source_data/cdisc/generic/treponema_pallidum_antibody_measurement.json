@@ -1,0 +1,85 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C16723",
+            "title": "Immunology Test",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C132388",
+            "title": "Treponema pallidum Antibody Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C132388",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132388",
+    "categories": [
+        "Laboratory Tests",
+        "Microbiology Tests",
+        "Immunology Tests"
+    ],
+    "shortName": "Treponema pallidum Antibody Measurement",
+    "synonyms": [
+        "TPLAB",
+        "Treponema pallidum Antibody",
+        "Syphilis Antibody"
+    ],
+    "resultScales": [
+        "Quantitative",
+        "Ordinal"
+    ],
+    "definition": "The determination of the amount of Treponema pallidum antibody in a biological sample.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C117062",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117062",
+            "shortName": "Measurement, Test or Examination Detail",
+            "dataType": "string",
+            "exampleSet": [
+                "Detection"
+            ],
+            "ncitCode": "C117062"
+        },
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "string",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83312",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83312",
+            "shortName": "Laboratory Test Method",
+            "dataType": "string",
+            "exampleSet": [
+                "Immunofluorescence",
+                "Hemagglutination",
+                "Enzyme Immunoassay",
+                "Chemiluminescence Immunoassay",
+                "Immunoblots",
+                "Rapid Treponemal Assay"
+            ],
+            "ncitCode": "C83312"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Serum",
+                "Blood",
+                "Cerebrospinal Fluid",
+                "Body Fluid"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C132388"
+}

@@ -1,0 +1,70 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-03-31/biomedicalconcepts/C74804",
+            "title": "Cytokine Measurement",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-07-06",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts/C74834",
+            "title": "Interleukin 6 Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C74834",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74834",
+    "categories": [
+        "Laboratory Tests",
+        "Protein or Enzyme Measurements",
+        "Chemistry Tests"
+    ],
+    "shortName": "Interleukin 6 Measurement",
+    "synonyms": [
+        "INTLK6",
+        "Interleukin 6"
+    ],
+    "resultScales": [
+        "Quantitative",
+        "Ordinal"
+    ],
+    "definition": "The determination of the amount of interleukin 6 present in a sample.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "decimal",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C64571",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64571",
+            "shortName": "Unit of Mass Concentration",
+            "dataType": "string",
+            "exampleSet": [
+                "ng/L",
+                "pg/L"
+            ],
+            "ncitCode": "C64571"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Serum",
+                "Plasma",
+                "Body fluid",
+                "CSF"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C74834"
+}

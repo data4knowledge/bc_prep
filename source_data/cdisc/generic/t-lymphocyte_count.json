@@ -1,0 +1,75 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-02-13/biomedicalconcepts/C51949",
+            "title": "Lymphocyte Count",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-07-06",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts/C122157",
+            "title": "T-Lymphocyte Count",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C122157",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C122157",
+    "categories": [
+        "Laboratory Tests",
+        "Hematology Tests",
+        "Blood Cell Counts",
+        "White Blood Cell Counts"
+    ],
+    "shortName": "T-Lymphocyte Count",
+    "synonyms": [
+        "T-Cell Lymphocytes",
+        "T-Cells",
+        "T-Lymphocytes"
+    ],
+    "resultScales": [
+        "Quantitative"
+    ],
+    "definition": "The determination of the amount of T-lymphocytes in a biological specimen.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "decimal",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C67391",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C67391",
+            "shortName": "Unit of Number Concentration",
+            "dataType": "string",
+            "exampleSet": [
+                "10^6/L"
+            ],
+            "ncitCode": "C67391"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Blood",
+                "Bronchial Specimen"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C122157"
+}

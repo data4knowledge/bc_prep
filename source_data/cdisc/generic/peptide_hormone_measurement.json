@@ -1,0 +1,28 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C74742",
+            "title": "Hormone Measurement",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C75385",
+            "title": "Peptide Hormone Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C75385",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C75385",
+    "categories": [
+        "Laboratory Tests",
+        "Gene Products"
+    ],
+    "shortName": "Peptide Hormone Measurement",
+    "definition": "The determination of the amount of any peptide hormone present in a sample.",
+    "ncitCode": "C75385"
+}

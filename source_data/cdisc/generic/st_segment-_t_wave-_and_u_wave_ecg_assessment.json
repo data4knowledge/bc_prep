@@ -1,0 +1,132 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts/C83146",
+            "title": "Electrocardiogram Test",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-07-06",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-07-06/biomedicalconcepts/C111363",
+            "title": "ST Segment, T wave, and U wave ECG Assessment",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C111363",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C111363",
+    "categories": [
+        "Electrocardiogram Findings",
+        "Electrocardiogram Abnormalities",
+        "ECG Findings",
+        "ECG Abnormalities"
+    ],
+    "shortName": "ST Segment, T wave, and U wave ECG Assessment",
+    "synonyms": [
+        "STSTWUW",
+        "ST Segment, T wave, and U wave"
+    ],
+    "resultScales": [
+        "Nominal"
+    ],
+    "definition": "An electrocardiographic assessment of the characteristics of the ST segment, T wave, and U wave.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C83254",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83254",
+            "shortName": "Electrocardiogram Category",
+            "dataType": "string",
+            "exampleSet": [
+                "Finding"
+            ],
+            "ncitCode": "C83254"
+        },
+        {
+            "conceptId": "C70856",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70856",
+            "shortName": "Observation Result",
+            "dataType": "string",
+            "exampleSet": [
+                "CV Endpoints Ischemic ECG Changes",
+                "Borderline QTcB",
+                "Borderline QTcF",
+                "Early Repolarization",
+                "J Point Elevation",
+                "Non-Specific ST-T Changes",
+                "Notched T Waves",
+                "Prolonged QT",
+                "Prolonged ST Segment",
+                "QTc Prolongation",
+                "QTcB Prolongation",
+                "QTcF Prolongation",
+                "Repolarization Abnormality",
+                "Repolarization Abnormality Secondary To Ventricular Hypertrophy",
+                "Short QTc Interval",
+                "Short QTcB",
+                "Short QTcF",
+                "Short ST Segment",
+                "ST Depression",
+                "ST Elevation",
+                "ST Elevation Pericarditis",
+                "T Wave Alternans",
+                "T Wave inversion",
+                "T Wave Peaked",
+                "T Waves Biphasic",
+                "T Waves Flat",
+                "U Wave Abnormality"
+            ],
+            "ncitCode": "C70856"
+        },
+        {
+            "conceptId": "C83113",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83113",
+            "shortName": "Electrocardiogram Position",
+            "dataType": "string",
+            "exampleSet": [
+                "Supine",
+                "Sitting"
+            ],
+            "ncitCode": "C83113"
+        },
+        {
+            "conceptId": "C83089",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83089",
+            "shortName": "Electrocardiogram Method",
+            "dataType": "string",
+            "exampleSet": [
+                "12 Lead Standard",
+                "12 Lead Continuous ECG",
+                "10 Lead Standard",
+                "6 Lead Standard"
+            ],
+            "ncitCode": "C83089"
+        },
+        {
+            "conceptId": "C123976",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C123976",
+            "shortName": "Electrocardiogram Lead",
+            "dataType": "string",
+            "exampleSet": [
+                "Lead 1",
+                "Lead 2"
+            ],
+            "ncitCode": "C123976"
+        },
+        {
+            "conceptId": "C83259",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83259",
+            "shortName": "Electrocardiogram Evaluator",
+            "dataType": "string",
+            "exampleSet": [
+                "Investigator",
+                "Vendor",
+                "Adjudication Committee"
+            ],
+            "ncitCode": "C83259"
+        }
+    ],
+    "ncitCode": "C111363"
+}

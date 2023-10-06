@@ -1,0 +1,62 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C35553",
+            "title": "Abnormal Blood Chemistry and Hematology Test Result",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C64803",
+            "title": "Polychromasia",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C64803",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C64803",
+    "categories": [
+        "Laboratory Tests",
+        "Hematology Tests",
+        "Abnormal Blood Chemistry and Hematology Test Results"
+    ],
+    "shortName": "Polychromasia",
+    "synonyms": [
+        "POLYCHR"
+    ],
+    "resultScales": [
+        "Quantitative",
+        "Ordinal"
+    ],
+    "definition": "The reaction of red cells to stain as indicated by the appearance of bluish or grayish colored erythrocytes.",
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "string",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Blood"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C64803"
+}

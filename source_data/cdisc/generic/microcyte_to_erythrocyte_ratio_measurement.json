@@ -1,0 +1,80 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2023-02-13/biomedicalconcepts/C51946",
+            "title": "Erythrocyte Count",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C201227",
+            "title": "Microcyte to Erythrocyte Ratio Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C201227",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C201227",
+    "categories": [
+        "Laboratory Tests",
+        "Hematology Tests",
+        "Erythrocyte Counts",
+        "Blood Cell Count Ratio Measurements"
+    ],
+    "shortName": "Microcyte to Erythrocyte Ratio Measurement",
+    "synonyms": [
+        "Microcyte/Erythrocyte",
+        "MICRORBC"
+    ],
+    "resultScales": [
+        "Quantitative"
+    ],
+    "definition": "The determination of the ratio of microcytes compared to erythrocytes present in a sample. The measurement may be expressed as a ratio or percentage.",
+    "coding": [
+        {
+            "code": "74761-8",
+            "system": "http://loinc.org/",
+            "systemName": "LOINC"
+        }
+    ],
+    "dataElementConcepts": [
+        {
+            "conceptId": "C36292",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292",
+            "shortName": "Laboratory Test Result",
+            "dataType": "decimal",
+            "ncitCode": "C36292"
+        },
+        {
+            "conceptId": "C83309",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83309",
+            "shortName": "Laboratory Test Fasting Status",
+            "dataType": "boolean",
+            "ncitCode": "C83309"
+        },
+        {
+            "conceptId": "C48570",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48570",
+            "shortName": "Percent Unit",
+            "dataType": "string",
+            "exampleSet": [
+                "%"
+            ],
+            "ncitCode": "C48570"
+        },
+        {
+            "conceptId": "C70713",
+            "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70713",
+            "shortName": "Biospecimen Type",
+            "dataType": "string",
+            "exampleSet": [
+                "Blood"
+            ],
+            "ncitCode": "C70713"
+        }
+    ],
+    "ncitCode": "C201227"
+}

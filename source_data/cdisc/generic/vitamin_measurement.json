@@ -1,0 +1,28 @@
+{
+    "_links": {
+        "parentBiomedicalConcept": {
+            "href": "/mdr/bc/packages/2022-10-26/biomedicalconcepts/C49237",
+            "title": "Chemistry Test",
+            "type": "Biomedical Concept"
+        },
+        "parentPackage": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts",
+            "title": "Biomedical Concept Package Effective 2023-10-03",
+            "type": "Biomedical Concept Package"
+        },
+        "self": {
+            "href": "/mdr/bc/packages/2023-10-03/biomedicalconcepts/C74803",
+            "title": "Vitamin Measurement",
+            "type": "Biomedical Concept"
+        }
+    },
+    "conceptId": "C74803",
+    "href": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74803",
+    "categories": [
+        "Laboratory Tests",
+        "Chemistry Tests"
+    ],
+    "shortName": "Vitamin Measurement",
+    "definition": "The determination of the type and amount of vitamins in a sample.",
+    "ncitCode": "C74803"
+}
