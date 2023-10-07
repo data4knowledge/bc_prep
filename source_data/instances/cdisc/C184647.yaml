@@ -42,7 +42,11 @@ has_items:
   collect: true
   data_type:
   - name: quantity
-  - name: coding
+    value_set:
+    - cl: C71620
+      cli: C41140
+    - cl: C71620
+      cli: C66965
   enabled: true
   mandatory: true
   name: Result
