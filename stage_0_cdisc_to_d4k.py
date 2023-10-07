@@ -141,7 +141,7 @@ for name, specialization in specializations.items.items():
         ct_ref = ct.match_identifier(identifier)
         if ct_ref:
           instance['name'] = specialization.definition['shortName']
-          instance['identified_by']['data_type'][0]['value_set'] = ct_ref
+          instance['identified_by']['data_type'][0]['value_set'] = [ct_ref]
           filename = get_filename(instance['name'])
           for item in instance['has_items']:
             #print(f"ITEM: {item}")
@@ -172,7 +172,7 @@ for name, specialization in specializations.items.items():
             else:
               item['enabled'] = False
           with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:
-            yaml.dump(instance, file)
+            yaml.dump([instance], file)
       else:
         print(f"  Match found for identifier {identifier} in catalogue")
     else:

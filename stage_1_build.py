@@ -96,11 +96,12 @@ def process_instances(base_uri, ns_uri, ra_uri):
   files = files_in_dir('source_data/instances')
   for filename in files:
     with open(filename) as file:
+      print(f"Filename: {filename}")
       narrower = {}
       instances = yaml.load(file, Loader=yaml.FullLoader)
       for instance in instances:
         #print(instance)
-        print("Instance:", instance["name"])
+        print(f"Instance: {instance}")
         based_on_uri = template_uri(base_uri, instance["based_on"])
         #print("based on:", based_on_uri)
         the_instance_uri, uri_name = instance_uri(base_uri, instance["name"])
@@ -139,12 +140,14 @@ def process_instances(base_uri, ns_uri, ra_uri):
             relationships["HAS_DATA_TYPE"].append({"from": item_uri, "to": dt_uri})
             if "value_set" in data_type:
               for term in data_type["value_set"]: 
+                #print(f"TERM: {term}")
                 cl = term["cl"]
                 cli = term["cli"]
                 result = ct_server.term_reference(cl, cli)
                 if result == []:
                   print("***** CL NOT FOUND %s, %s *****" % (cl, cli))
                   result = [ { 'uri': "", 'notation': "", 'pref_label': "" } ]
+                #print(f"CT RESULT: {result}")
                 record = {
                   "uuid": str(uuid4()),
                   "cl": cl,
@@ -214,9 +217,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
 delete_dir("load_data")
 
 ns_s_json = RaService().namespace_by_name("d4k BC namespace")
-#print(ns_s_json)
 ra_s_json = RaService().registration_authority_by_namespace_uuid(ns_s_json['uuid'])
-#print(ra_s_json)
 
 process_templates(ns_s_json['value'], ns_s_json['uri'], ra_s_json['uri'])
 process_instances(ns_s_json['value'], ns_s_json['uri'], ra_s_json['uri'])

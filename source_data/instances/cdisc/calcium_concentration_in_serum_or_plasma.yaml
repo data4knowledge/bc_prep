@@ -1,75 +1,75 @@
-based_on: Base Laboratory
-has_items:
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Position
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Site of Administration
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Laterality
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Directionality
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Method
-- canonical: DATE TIME
-  collect: true
-  data_type:
-  - name: date_time
-  enabled: true
-  mandatory: true
-  name: Date Time
-- canonical: RESULT
-  collect: true
-  data_type:
-  - name: quantity
-    value_set:
-    - cl: C71620
-      cli: C67015
-    - cl: C71620
-      cli: C64572
-    - cl: C71620
-      cli: C64387
-    - cl: C71620
-      cli: C67473
-    - cl: C71620
-      cli: C67474
-  enabled: true
-  mandatory: true
-  name: Result
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Specimen
-identified_by:
-  canonical: TEST
-  collect: true
-  data_type:
-  - name: coding
-    value_set:
-      cl: C65047
-      cli: C64488
-  enabled: true
-  mandatory: true
-  name: Test
-name: Calcium Concentration in Serum or Plasma
+- based_on: Base Laboratory
+  has_items:
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Position
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Site of Administration
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Laterality
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Directionality
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Method
+  - canonical: DATE TIME
+    collect: true
+    data_type:
+    - name: date_time
+    enabled: true
+    mandatory: true
+    name: Date Time
+  - canonical: RESULT
+    collect: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C71620
+        cli: C67015
+      - cl: C71620
+        cli: C64572
+      - cl: C71620
+        cli: C64387
+      - cl: C71620
+        cli: C67473
+      - cl: C71620
+        cli: C67474
+    enabled: true
+    mandatory: true
+    name: Result
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Specimen
+  identified_by:
+    canonical: TEST
+    collect: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C65047
+        cli: C64488
+    enabled: true
+    mandatory: true
+    name: Test
+  name: Calcium Concentration in Serum or Plasma

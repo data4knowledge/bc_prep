@@ -1,67 +1,67 @@
-based_on: Base Laboratory
-has_items:
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Position
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Site of Administration
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Laterality
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Directionality
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Method
-- canonical: DATE TIME
-  collect: true
-  data_type:
-  - name: date_time
-  enabled: true
-  mandatory: true
-  name: Date Time
-- canonical: RESULT
-  collect: true
-  data_type:
-  - name: quantity
-    value_set:
-    - cl: C71620
-      cli: C67255
-  enabled: true
-  mandatory: true
-  name: Result
-- collect: true
-  data_type:
-  - name: coding
-  enabled: false
-  mandatory: false
-  name: Specimen
-identified_by:
-  canonical: TEST
-  collect: true
-  data_type:
-  - name: coding
-    value_set:
-      cl: C181173
-      cli: C51951
-  enabled: true
-  mandatory: true
-  name: Test
-name: Platelet Count in Blood
+- based_on: Base Laboratory
+  has_items:
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Position
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Site of Administration
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Laterality
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Directionality
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Method
+  - canonical: DATE TIME
+    collect: true
+    data_type:
+    - name: date_time
+    enabled: true
+    mandatory: true
+    name: Date Time
+  - canonical: RESULT
+    collect: true
+    data_type:
+    - name: quantity
+      value_set:
+      - cl: C71620
+        cli: C67255
+    enabled: true
+    mandatory: true
+    name: Result
+  - collect: true
+    data_type:
+    - name: coding
+    enabled: false
+    mandatory: false
+    name: Specimen
+  identified_by:
+    canonical: TEST
+    collect: true
+    data_type:
+    - name: coding
+      value_set:
+      - cl: C181173
+        cli: C51951
+    enabled: true
+    mandatory: true
+    name: Test
+  name: Platelet Count in Blood
