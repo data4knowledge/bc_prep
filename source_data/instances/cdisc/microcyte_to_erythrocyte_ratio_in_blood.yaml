@@ -47,7 +47,9 @@ has_items:
     - cl: C71620
       cli: C42576
     - cl: C71620
-      cli: C67015
+      cli: C64387
+    - cl: C71620
+      cli: C48508
   enabled: true
   mandatory: true
   name: Result

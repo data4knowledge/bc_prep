@@ -6,6 +6,15 @@ from utility.crm_service import *
 from utility.ct_service import *
 from utility.sdtm_service import *
 
+class Catalogue():
+
+  def __init__(self) -> None:
+    with open("source_data/catalogue/catalogue.yaml", "r") as file:
+      self.entries = yaml.load(file, Loader=yaml.FullLoader)
+    
+  def match(self, cli):
+    return cli in self.entries
+
 class Template():
 
   def __init__(self, template):
@@ -91,6 +100,7 @@ def remove_datatype(item, name):
         break
 
 print("Processing ...")
+catalogue = Catalogue()
 templates = Templates()
 #for name, template in templates.items.items():
 #  print(f"Name: {name}")
@@ -124,46 +134,50 @@ for name, specialization in specializations.items.items():
     template_name = domain_template_map[domain]['template']
     identifier = specialization.identifier()
     if identifier:
-      template = templates.items[template_name]
-      instance = template.definition
-      instance['based_on'] = template_name
-      ct_ref = ct.match_identifier(identifier)
-      if ct_ref:
-        instance['name'] = specialization.definition['shortName']
-        instance['identified_by']['data_type'][0]['value_set'] = ct_ref
-        filename = get_filename(instance['name'])
-        for item in instance['has_items']:
-          #print(f"ITEM: {item}")
-          if item['name'] in template.crm_property:
-            #print(f"ITEM NAME")
-            for crm_ref in template.crm_property[item['name']]:
-              #print(f"CRM REF {crm_ref}")
-              if crm_ref in variable_crm[domain]:
-                #print(f"VAR FOUND: {crm_ref} -> {variable_crm[domain][crm_ref]}")
-                var = specialization.variable(variable_crm[domain][crm_ref])
-                if var and 'valueList' in var:
-                  var_name = var['name']
-                  #print(f"VALUE LIST FOUND: {variable_crm[domain][crm_ref]} with {var['valueList']}")
-                  terms = []
-                  for term in var['valueList']:
-                    ct_result = ct.match_notation(term, var['codelist']['conceptId'])
-                    terms.append(ct_result)
-                    #print(f"CT RESULT: {ct_result}")
-                  item['data_type'][0]['value_set'] = terms
-                  if len(item['data_type']) > 1:
+      if not catalogue.match(identifier['conceptId']):
+        template = templates.items[template_name]
+        instance = template.definition
+        instance['based_on'] = template_name
+        ct_ref = ct.match_identifier(identifier)
+        if ct_ref:
+          instance['name'] = specialization.definition['shortName']
+          instance['identified_by']['data_type'][0]['value_set'] = ct_ref
+          filename = get_filename(instance['name'])
+          for item in instance['has_items']:
+            #print(f"ITEM: {item}")
+            if item['name'] in template.crm_property:
+              #print(f"ITEM NAME")
+              for crm_ref in template.crm_property[item['name']]:
+                #print(f"CRM REF {crm_ref}")
+                if crm_ref in variable_crm[domain]:
+                  #print(f"VAR FOUND: {crm_ref} -> {variable_crm[domain][crm_ref]}")
+                  var = specialization.variable(variable_crm[domain][crm_ref])
+                  if var and 'valueList' in var:
+                    var_name = var['name']
+                    #print(f"VALUE LIST FOUND: {variable_crm[domain][crm_ref]} with {var['valueList']}")
+                    terms = []
+                    for term in var['valueList']:
+                      ct_result = ct.match_notation(term, var['codelist']['conceptId'])
+                      terms.append(ct_result)
+                      #print(f"CT RESULT: {ct_result}")
+                    item['data_type'][0]['value_set'] = terms
+                    if len(item['data_type']) > 1:
+                      if var_name.endswith('ORRES'):
+                        remove_quantity_datatype(item)
+                  elif var:
+                    #print(f"VAR: {var}")
+                    var_name = var['name']
                     if var_name.endswith('ORRES'):
-                      remove_quantity_datatype(item)
-                elif var:
-                  #print(f"VAR: {var}")
-                  var_name = var['name']
-                  if var_name.endswith('ORRES'):
-                    remove_coding_datatype(item)
-          else:
-            item['enabled'] = False
-        with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:
-          yaml.dump(instance, file)
+                      remove_coding_datatype(item)
+            else:
+              item['enabled'] = False
+          with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:
+            yaml.dump(instance, file)
       else:
-        print(f"Failed to match CT for identifier {identifier}")
+        print(f"  Match found for identifier {identifier} in catalogue")
+    else:
+      print(f"  Failed to match CT for identifier {identifier}")
   else:
     print(f"  In domain {domain} but not selected for processing")
+  print("\n")
 print("Done")

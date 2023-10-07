@@ -43,12 +43,12 @@ has_items:
   data_type:
   - name: quantity
     value_set:
-    - cl: C66733
-      cli: C25376
-    - cl: C66733
-      cli: C49507
-    - cl: C66733
-      cli: C49508
+    - cl: C66742
+      cli: C49488
+    - cl: C66742
+      cli: C49487
+    - cl: C66742
+      cli: C17998
   enabled: true
   mandatory: true
   name: Result

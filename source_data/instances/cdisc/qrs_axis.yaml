@@ -44,9 +44,9 @@ has_items:
   - name: quantity
     value_set:
     - cl: C71620
-      cli: C49671
+      cli: C41140
     - cl: C71620
-      cli: C67334
+      cli: C66965
   enabled: true
   mandatory: true
   name: Result
