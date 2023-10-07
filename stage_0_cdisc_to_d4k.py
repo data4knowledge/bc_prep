@@ -90,6 +90,7 @@ def remove_datatype(item, name):
         del data_types[i]
         break
 
+print("Processing ...")
 templates = Templates()
 #for name, template in templates.items.items():
 #  print(f"Name: {name}")
@@ -157,9 +158,12 @@ for name, specialization in specializations.items.items():
                   var_name = var['name']
                   if var_name.endswith('ORRES'):
                     remove_coding_datatype(item)
+          else:
+            item['enabled'] = False
         with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:
           yaml.dump(instance, file)
       else:
         print(f"Failed to match CT for identifier {identifier}")
   else:
-    pass
+    print(f"  In domain {domain} but not selected for processing")
+print("Done")

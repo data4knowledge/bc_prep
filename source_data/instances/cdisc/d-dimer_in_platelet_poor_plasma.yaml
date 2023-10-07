@@ -3,31 +3,31 @@ has_items:
 - collect: true
   data_type:
   - name: coding
-  enabled: true
+  enabled: false
   mandatory: false
   name: Position
 - collect: true
   data_type:
   - name: coding
-  enabled: true
+  enabled: false
   mandatory: false
   name: Site of Administration
 - collect: true
   data_type:
   - name: coding
-  enabled: true
+  enabled: false
   mandatory: false
   name: Laterality
 - collect: true
   data_type:
   - name: coding
-  enabled: true
+  enabled: false
   mandatory: false
   name: Directionality
 - collect: true
   data_type:
   - name: coding
-  enabled: true
+  enabled: false
   mandatory: false
   name: Method
 - canonical: DATE TIME
@@ -54,7 +54,7 @@ has_items:
 - collect: true
   data_type:
   - name: coding
-  enabled: true
+  enabled: false
   mandatory: false
   name: Specimen
 identified_by:
