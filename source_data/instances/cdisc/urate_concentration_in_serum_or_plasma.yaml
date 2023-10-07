@@ -1,0 +1,73 @@
+based_on: Base Laboratory
+has_items:
+- collect: true
+  data_type:
+  - name: coding
+  enabled: true
+  mandatory: false
+  name: Position
+- collect: true
+  data_type:
+  - name: coding
+  enabled: true
+  mandatory: false
+  name: Site of Administration
+- collect: true
+  data_type:
+  - name: coding
+  enabled: true
+  mandatory: false
+  name: Laterality
+- collect: true
+  data_type:
+  - name: coding
+  enabled: true
+  mandatory: false
+  name: Directionality
+- collect: true
+  data_type:
+  - name: coding
+  enabled: true
+  mandatory: false
+  name: Method
+- canonical: DATE TIME
+  collect: true
+  data_type:
+  - name: date_time
+  enabled: true
+  mandatory: true
+  name: Date Time
+- canonical: RESULT
+  collect: true
+  data_type:
+  - name: quantity
+    value_set:
+    - cl: C71620
+      cli: C67015
+    - cl: C71620
+      cli: C64572
+    - cl: C71620
+      cli: C48508
+    - cl: C71620
+      cli: C64387
+  enabled: true
+  mandatory: true
+  name: Result
+- collect: true
+  data_type:
+  - name: coding
+  enabled: true
+  mandatory: false
+  name: Specimen
+identified_by:
+  canonical: TEST
+  collect: true
+  data_type:
+  - name: coding
+    value_set:
+      cl: C65047
+      cli: C64814
+  enabled: true
+  mandatory: true
+  name: Test
+name: Urate Concentration in Serum or Plasma
