@@ -1,3 +1,4 @@
+import re
 import yaml
 from utility.utility import *
 from utility.ra_service import *
@@ -23,7 +24,7 @@ class Template():
         for key, value in results.items():
           self._crm_paths[value] = {'name': item["name"], 'data_type_path': key}
     #print(f"\n\nTEMPLATE: {template['name']}")
-    print(f"PATHS: {self.crm_property}")
+    #print(f"PATHS: {self.crm_property}")
 
 class Templates():
 
@@ -34,7 +35,6 @@ class Templates():
       for template in templates:
         self.items[template['name']] = Template(template)
       
-
 class Specialization():
   
   def __init__(self, definition):
@@ -78,6 +78,11 @@ def remove_quantity_datatype(item):
 def remove_coding_datatype(item):
   remove_datatype(item, 'coding')
 
+def get_filename(name): 
+  filename = name.lower().replace(" ", "_")
+  filename = re.sub('[^0-9a-zA-Z_]', '-', filename)
+  return filename
+
 def remove_datatype(item, name):
   data_types = item['data_type']
   for i in range(len(data_types)):
@@ -86,8 +91,8 @@ def remove_datatype(item, name):
         break
 
 templates = Templates()
-for name, template in templates.items.items():
-  print(f"Name: {name}")
+#for name, template in templates.items.items():
+#  print(f"Name: {name}")
 
 domain_template_map = {
   'DM': {'template': 'Base Observation'},
@@ -112,6 +117,7 @@ for domain, entry in domain_template_map.items():
 specializations = Specializations()
 ct = CTService()
 for name, specialization in specializations.items.items():
+  print(f"- BC {name}")
   domain = specialization.domain
   if domain in domain_template_map:
     template_name = domain_template_map[domain]['template']
@@ -122,7 +128,9 @@ for name, specialization in specializations.items.items():
       instance['based_on'] = template_name
       ct_ref = ct.match_identifier(identifier)
       if ct_ref:
+        instance['name'] = specialization.definition['shortName']
         instance['identified_by']['data_type'][0]['value_set'] = ct_ref
+        filename = get_filename(instance['name'])
         for item in instance['has_items']:
           #print(f"ITEM: {item}")
           if item['name'] in template.crm_property:
@@ -134,23 +142,22 @@ for name, specialization in specializations.items.items():
                 var = specialization.variable(variable_crm[domain][crm_ref])
                 if var and 'valueList' in var:
                   var_name = var['name']
-                  print(f"VALUE LIST FOUND: {variable_crm[domain][crm_ref]} with {var['valueList']}")
+                  #print(f"VALUE LIST FOUND: {variable_crm[domain][crm_ref]} with {var['valueList']}")
                   terms = []
                   for term in var['valueList']:
                     ct_result = ct.match_notation(term, var['codelist']['conceptId'])
                     terms.append(ct_result)
-                    print(f"CT RESULT: {ct_result}")
+                    #print(f"CT RESULT: {ct_result}")
                   item['data_type'][0]['value_set'] = terms
                   if len(item['data_type']) > 1:
                     if var_name.endswith('ORRES'):
                       remove_quantity_datatype(item)
                 elif var:
-                  print(f"VAR: {var}")
+                  #print(f"VAR: {var}")
                   var_name = var['name']
                   if var_name.endswith('ORRES'):
                     remove_coding_datatype(item)
-
-        with open(f"source_data/instances/cdisc/{identifier['conceptId']}.yaml", 'w') as file:
+        with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:
           yaml.dump(instance, file)
       else:
         print(f"Failed to match CT for identifier {identifier}")
