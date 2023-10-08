@@ -28,14 +28,14 @@
     collect: true
     data_type:
     - name: coding
-    enabled: true
+    enabled: false
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: true
+    enabled: false
     mandatory: true
     name: Date Time
   - canonical: RESULT
@@ -49,7 +49,7 @@
         cli: C67305
       - cl: C71620
         cli: C67434
-    enabled: true
+    enabled: false
     mandatory: true
     name: Result
   - canonical: SPECIMEN TYPE
@@ -59,7 +59,7 @@
       value_set:
       - cl: C78734
         cli: C158282
-    enabled: true
+    enabled: false
     mandatory: false
     name: Specimen
   identified_by:

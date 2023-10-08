@@ -176,6 +176,10 @@ for name, specialization in specializations.items.items():
                     var_name = var['name']
                     if var_name.endswith('ORRES'):
                       remove_coding_datatype(item)
+                  else:
+                    item['enabled'] = False
+                else:
+                  item['enabled'] = False
             else:
               item['enabled'] = False
           with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:

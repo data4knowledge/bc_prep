@@ -22,7 +22,7 @@
     collect: true
     data_type:
     - name: coding
-    enabled: true
+    enabled: false
     mandatory: false
     name: Laterality
   - canonical: METHOD
@@ -32,14 +32,14 @@
       value_set:
       - cl: C85492
         cli: C16714
-    enabled: true
+    enabled: false
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: true
+    enabled: false
     mandatory: true
     name: Date Time
   - canonical: RESULT
@@ -53,14 +53,14 @@
         cli: C49487
       - cl: C66742
         cli: C17998
-    enabled: true
+    enabled: false
     mandatory: true
     name: Result
   - canonical: RESULT OTHER
     collect: true
     data_type:
     - name: string
-    enabled: true
+    enabled: false
     mandatory: false
     name: Result Other
   identified_by:
