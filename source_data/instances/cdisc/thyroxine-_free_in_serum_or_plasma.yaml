@@ -35,7 +35,7 @@
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
@@ -49,7 +49,7 @@
         cli: C67327
       - cl: C71620
         cli: C67434
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: SPECIMEN TYPE
@@ -59,7 +59,7 @@
       value_set:
       - cl: C78734
         cli: C105706
-    enabled: false
+    enabled: true
     mandatory: false
     name: Specimen
   identified_by:

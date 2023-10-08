@@ -5,6 +5,7 @@ from utility.ra_service import *
 from utility.crm_service import *
 from utility.ct_service import *
 from utility.sdtm_service import *
+import copy
 
 class Catalogue():
 
@@ -71,12 +72,16 @@ class Specialization():
 
 class Specializations():
 
+  debug_set = ['source_data/cdisc/sdtm/anisocytes_in_blood.yaml']
+
   def __init__(self):
     self.items = {}
     files = files_in_dir('source_data/cdisc/sdtm')
     for filename in files:
       if not filename.endswith('yaml'):
         continue
+      #if filename not in self.debug_set:
+      #  continue
       with open(filename, "r+") as file:
         instance = yaml.load(file, Loader=yaml.FullLoader)
         self.items[instance['shortName']] = Specialization(instance)
@@ -136,7 +141,7 @@ for name, specialization in specializations.items.items():
     if identifier:
       if not catalogue.match(identifier['conceptId']):
         template = templates.items[template_name]
-        instance = template.definition
+        instance = copy.deepcopy(template.definition)
         instance['based_on'] = template_name
         ct_ref = ct.match_identifier(identifier)
         if ct_ref:
@@ -144,15 +149,21 @@ for name, specialization in specializations.items.items():
           instance['identified_by']['data_type'][0]['value_set'] = [ct_ref]
           filename = get_filename(instance['name'])
           for item in instance['has_items']:
-            #print(f"ITEM: {item}")
+            #print(f"ITEM START: {item}")
+            if item['mandatory']:
+              item['enabled'] = True
+            else:
+              item['enabled'] = False 
             if item['name'] in template.crm_property:
-              #print(f"ITEM NAME")
+              #print(f"CRM references: {template.crm_property[item['name']]}")
               for crm_ref in template.crm_property[item['name']]:
                 #print(f"CRM REF {crm_ref}")
                 if crm_ref in variable_crm[domain]:
-                  print(f"VAR FOUND: {crm_ref} -> {variable_crm[domain][crm_ref]}")
+                  #print(f"VAR MATCHED: {crm_ref} -> {variable_crm[domain][crm_ref]}")
                   var = specialization.variable(variable_crm[domain][crm_ref])
+                  #print(f"VAR ALIGNED: {variable_crm[domain][crm_ref]} -> {var}")
                   if var and 'valueList' in var:
+                    item['enabled'] = True
                     var_name = var['name']
                     #print(f"VALUE LIST FOUND: {variable_crm[domain][crm_ref]} with {var['valueList']}")
                     terms = []
@@ -165,23 +176,21 @@ for name, specialization in specializations.items.items():
                       if var_name.endswith('ORRES'):
                         remove_quantity_datatype(item)
                   elif var and 'assignedTerm' in var:
+                    item['enabled'] = True
                     var_name = var['name']
-                    print(f"ASSIGNED TERM FOUND: {variable_crm[domain][crm_ref]} with {var['assignedTerm']}")
+                    #print(f"ASSIGNED TERM FOUND: {variable_crm[domain][crm_ref]} with {var['assignedTerm']}")
                     item['data_type'][0]['value_set'] = [{'cl': var['codelist']['conceptId'], 'cli': var['assignedTerm']['conceptId']}]
                     if len(item['data_type']) > 1:
                       if var_name.endswith('ORRES'):
                         remove_quantity_datatype(item)
                   elif var:
+                    item['enabled'] = True
                     #print(f"VAR: {var}")
                     var_name = var['name']
                     if var_name.endswith('ORRES'):
                       remove_coding_datatype(item)
-                  else:
-                    item['enabled'] = False
-                else:
-                  item['enabled'] = False
-            else:
-              item['enabled'] = False
+            #print(f"ITEM END: {item}")
+
           with open(f"source_data/instances/cdisc/{filename}.yaml", 'w') as file:
             yaml.dump([instance], file)
       else:

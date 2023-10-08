@@ -29,31 +29,21 @@
     collect: true
     data_type:
     - name: coding
-      value_set:
-      - cl: C85492
-        cli: C16714
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
     collect: true
     data_type:
     - name: quantity
-      value_set:
-      - cl: C66742
-        cli: C49488
-      - cl: C66742
-        cli: C49487
-      - cl: C66742
-        cli: C17998
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER

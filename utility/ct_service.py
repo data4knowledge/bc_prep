@@ -39,5 +39,5 @@ class CTService():
     if response.status_code == 200:
       return response.json()
     else:
-      print(response.text)
+      print(f"CT SERVICE ERROR: {response.text} >> {full_url}")
       return None

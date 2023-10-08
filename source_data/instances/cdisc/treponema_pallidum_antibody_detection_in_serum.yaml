@@ -42,24 +42,21 @@
         cli: C17638
       - cl: C85492
         cli: C178031
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
     collect: true
     data_type:
     - name: quantity
-      value_set:
-      - cl: C123650
-        cli: C94520
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER

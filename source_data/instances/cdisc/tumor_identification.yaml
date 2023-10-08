@@ -60,20 +60,20 @@
         cli: C17230
       - cl: C85492
         cli: C38101
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
     collect: true
     data_type:
-    - name: quantity
+    - name: coding
       value_set:
       - cl: C123650
         cli: C94520
@@ -81,7 +81,7 @@
         cli: C94521
       - cl: C123650
         cli: C94522
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER

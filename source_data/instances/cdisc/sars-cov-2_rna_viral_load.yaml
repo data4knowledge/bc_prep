@@ -32,14 +32,14 @@
       value_set:
       - cl: C85492
         cli: C28408
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
@@ -51,7 +51,7 @@
         cli: C117972
       - cl: C71620
         cli: C67441
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER

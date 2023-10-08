@@ -29,17 +29,14 @@
     collect: true
     data_type:
     - name: coding
-      value_set:
-      - cl: C85492
-        cli: C28408
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
@@ -51,7 +48,7 @@
         cli: C41140
       - cl: C71620
         cli: C66965
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER

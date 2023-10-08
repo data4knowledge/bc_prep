@@ -29,45 +29,14 @@
     collect: true
     data_type:
     - name: coding
-      value_set:
-      - cl: C85492
-        cli: C17204
-      - cl: C85492
-        cli: C176470
-      - cl: C85492
-        cli: C16546
-      - cl: C85492
-        cli: C38069
-      - cl: C85492
-        cli: C16818
-      - cl: C85492
-        cli: C16809
-      - cl: C85492
-        cli: C127514
-      - cl: C85492
-        cli: C17007
-      - cl: C85492
-        cli: C103512
-      - cl: C85492
-        cli: C103514
-      - cl: C85492
-        cli: C94527
-      - cl: C85492
-        cli: C62667
-      - cl: C85492
-        cli: C96640
-      - cl: C85492
-        cli: C17230
-      - cl: C85492
-        cli: C38101
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
@@ -79,7 +48,7 @@
         cli: C41140
       - cl: C71620
         cli: C66965
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER

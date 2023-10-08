@@ -36,13 +36,13 @@
     collect: true
     data_type:
     - name: date_time
-    enabled: false
+    enabled: true
     mandatory: true
     name: Date Time
   - canonical: RESULT
     collect: true
     data_type:
-    - name: quantity
+    - name: coding
       value_set:
       - cl: C66742
         cli: C49488
@@ -50,7 +50,7 @@
         cli: C49487
       - cl: C66742
         cli: C17998
-    enabled: false
+    enabled: true
     mandatory: true
     name: Result
   - canonical: RESULT OTHER
