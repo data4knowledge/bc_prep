@@ -24,10 +24,11 @@
     enabled: false
     mandatory: false
     name: Directionality
-  - collect: true
+  - canonical: METHOD
+    collect: true
     data_type:
     - name: coding
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME
@@ -53,10 +54,11 @@
     enabled: true
     mandatory: true
     name: Result
-  - collect: true
+  - canonical: SPECIMEN TYPE
+    collect: true
     data_type:
     - name: coding
-    enabled: false
+    enabled: true
     mandatory: false
     name: Specimen
   identified_by:

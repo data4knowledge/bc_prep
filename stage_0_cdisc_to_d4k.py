@@ -150,7 +150,7 @@ for name, specialization in specializations.items.items():
               for crm_ref in template.crm_property[item['name']]:
                 #print(f"CRM REF {crm_ref}")
                 if crm_ref in variable_crm[domain]:
-                  #print(f"VAR FOUND: {crm_ref} -> {variable_crm[domain][crm_ref]}")
+                  print(f"VAR FOUND: {crm_ref} -> {variable_crm[domain][crm_ref]}")
                   var = specialization.variable(variable_crm[domain][crm_ref])
                   if var and 'valueList' in var:
                     var_name = var['name']

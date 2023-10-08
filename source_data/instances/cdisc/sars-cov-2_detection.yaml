@@ -25,10 +25,24 @@
     enabled: true
     mandatory: false
     name: Laterality
-  - collect: true
+  - canonical: METHOD
+    collect: true
     data_type:
     - name: coding
-    enabled: false
+      value_set:
+      - cl: C85492
+        cli: C17370
+      - cl: C85492
+        cli: C130173
+      - cl: C85492
+        cli: C172557
+      - cl: C85492
+        cli: C17003
+      - cl: C85492
+        cli: C17638
+      - cl: C85492
+        cli: C178031
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME

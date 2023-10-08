@@ -25,10 +25,11 @@
     enabled: true
     mandatory: false
     name: Laterality
-  - collect: true
+  - canonical: METHOD
+    collect: true
     data_type:
     - name: coding
-    enabled: false
+    enabled: true
     mandatory: false
     name: Method
   - canonical: DATE TIME

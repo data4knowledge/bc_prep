@@ -38,6 +38,7 @@
     mandatory: false
     enabled: true  
     collect: true
+    canonical: METHOD
     data_type: 
     - name: coding
   - name: "Date Time"
@@ -100,6 +101,7 @@
     mandatory: false
     enabled: true  
     collect: true
+    canonical: METHOD
     data_type: 
     - name: coding
   - name: "Date Time"
@@ -121,6 +123,7 @@
     mandatory: false
     enabled: true  
     collect: true
+    canonical: SPECIMEN TYPE
     data_type: 
     - name: coding
 - name: "Event Observation"

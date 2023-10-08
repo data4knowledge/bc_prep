@@ -100,8 +100,7 @@ def process_instances(base_uri, ns_uri, ra_uri):
       narrower = {}
       instances = yaml.load(file, Loader=yaml.FullLoader)
       for instance in instances:
-        #print(instance)
-        print(f"Instance: {instance}")
+        #print(f"Instance: {instance}")
         based_on_uri = template_uri(base_uri, instance["based_on"])
         #print("based on:", based_on_uri)
         the_instance_uri, uri_name = instance_uri(base_uri, instance["name"])
