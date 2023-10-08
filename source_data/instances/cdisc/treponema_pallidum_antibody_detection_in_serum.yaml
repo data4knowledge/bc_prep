@@ -57,10 +57,8 @@
     data_type:
     - name: quantity
       value_set:
-      - cl: C71620
-        cli: C41140
-      - cl: C71620
-        cli: C66965
+      - cl: C123650
+        cli: C94520
     enabled: true
     mandatory: true
     name: Result

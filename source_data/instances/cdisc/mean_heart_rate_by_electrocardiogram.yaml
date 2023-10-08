@@ -29,6 +29,9 @@
     collect: true
     data_type:
     - name: coding
+      value_set:
+      - cl: C85492
+        cli: C16714
     enabled: true
     mandatory: false
     name: Method
@@ -44,12 +47,8 @@
     data_type:
     - name: quantity
       value_set:
-      - cl: C66742
-        cli: C49488
-      - cl: C66742
-        cli: C49487
-      - cl: C66742
-        cli: C17998
+      - cl: C71620
+        cli: C49673
     enabled: true
     mandatory: true
     name: Result

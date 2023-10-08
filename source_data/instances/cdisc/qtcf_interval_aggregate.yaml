@@ -29,6 +29,9 @@
     collect: true
     data_type:
     - name: coding
+      value_set:
+      - cl: C85492
+        cli: C16714
     enabled: true
     mandatory: false
     name: Method

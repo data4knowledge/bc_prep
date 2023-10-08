@@ -31,17 +31,7 @@
     - name: coding
       value_set:
       - cl: C85492
-        cli: C17370
-      - cl: C85492
-        cli: C130173
-      - cl: C85492
-        cli: C172557
-      - cl: C85492
-        cli: C17003
-      - cl: C85492
-        cli: C17638
-      - cl: C85492
-        cli: C178031
+        cli: C28408
     enabled: true
     mandatory: false
     name: Method

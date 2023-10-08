@@ -44,9 +44,7 @@
     - name: quantity
       value_set:
       - cl: C71620
-        cli: C67432
-      - cl: C71620
-        cli: C67306
+        cli: C25613
     enabled: true
     mandatory: true
     name: Result
@@ -54,6 +52,9 @@
     collect: true
     data_type:
     - name: coding
+      value_set:
+      - cl: C78734
+        cli: C105706
     enabled: true
     mandatory: false
     name: Specimen

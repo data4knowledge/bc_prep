@@ -54,6 +54,9 @@
     collect: true
     data_type:
     - name: coding
+      value_set:
+      - cl: C78734
+        cli: C13283
     enabled: true
     mandatory: false
     name: Specimen

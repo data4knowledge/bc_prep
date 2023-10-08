@@ -164,6 +164,13 @@ for name, specialization in specializations.items.items():
                     if len(item['data_type']) > 1:
                       if var_name.endswith('ORRES'):
                         remove_quantity_datatype(item)
+                  elif var and 'assignedTerm' in var:
+                    var_name = var['name']
+                    print(f"ASSIGNED TERM FOUND: {variable_crm[domain][crm_ref]} with {var['assignedTerm']}")
+                    item['data_type'][0]['value_set'] = [{'cl': var['codelist']['conceptId'], 'cli': var['assignedTerm']['conceptId']}]
+                    if len(item['data_type']) > 1:
+                      if var_name.endswith('ORRES'):
+                        remove_quantity_datatype(item)
                   elif var:
                     #print(f"VAR: {var}")
                     var_name = var['name']
