@@ -83,7 +83,8 @@ class CDISCBiomedicalConcepts():
 
 required_names = [
   "SYSTOLIC BLOOD PRESSURE",
-  "DIASTOLIC BLOOD PRESSURE"
+  "DIASTOLIC BLOOD PRESSURE",
+  "SODIUM CONCENTRATION IN SERUM/PLASMA"
 ]
 
 cdisc_library = CDISCBiomedicalConcepts()
@@ -101,5 +102,12 @@ for collection in [cdisc_library.GENERIC, cdisc_library.SDTM]:
         print(f"- {collection}-{name} --> {filename}.yaml & .json")
         with open(f'example_data/cdisc/{collection.lower()}/{filename}.json', 'w') as file:
           json.dump(data, file, ensure_ascii=False, indent=4)
+        if collection == cdisc_library.SDTM:
+          print(f"- Model {name}")
+          for variable in data['variables']:
+            var_name = variable['name']
+            var_rel = variable['relationship']
+            print(f"  {var_name}: {var_rel}")
+      print("\n")
   print("\n\n")
 print("Done")
