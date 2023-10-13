@@ -81,13 +81,18 @@ class CDISCBiomedicalConcepts():
       self._bc_responses[url] = result
       return result
 
+required_names = [
+  "SYSTOLIC BLOOD PRESSURE",
+  "DIASTOLIC BLOOD PRESSURE"
+]
+
 cdisc_library = CDISCBiomedicalConcepts()
 print("Processing ...")
 for collection in [cdisc_library.GENERIC, cdisc_library.SDTM]:
   print(f"Collection: {collection}")
   names = cdisc_library.catalogue(collection)
   for name in names:
-    if name == "SYSTOLIC BLOOD PRESSURE":
+    if name in required_names:
       print(f"- {name}")
       data = cdisc_library.to_cdisc_json(name, collection)
       if data:
